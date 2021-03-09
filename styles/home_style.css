@@ -4,11 +4,12 @@
 }
 
 nav {
-  background-color: lightgray;
-  width: 1480px;
+  background-color: rgb(219, 219, 219);
+  width: 1490px;
   height: 40px;
   position: absolute;
-  left: 400px;
+  top: 0px;
+  left: 390px;
   padding-left: 40px;
 }
 
@@ -21,8 +22,8 @@ nav ul li {
   list-style: none;
   position: relative;
   font-size: 21px;
-  font-weight: 600;
-  color: #555555;
+  font-weight: bolder;
+  color: #666666;
   top: 5px;
 }
 
@@ -42,6 +43,31 @@ nav ul li:hover {
   border: solid 1px deepskyblue;
   border-radius: 5px;
   position: relative;
-  left: 600px;
+  left: 700px;
   top: 12px;
+}
+
+.background_1 {
+  width: 230px;
+  height: 300px;
+  background-color: rgb(219, 219, 219);
+  position: absolute;
+  top: 0px;
+}
+
+.background_2 {
+  position: absolute;
+  top: 0px;
+  left: 230px;
+  width: 1690px;
+  height: 250px;
+  background-color: #999999;
+}
+
+.background_3 {
+  width: 100%;
+  height: 718px;
+  position: absolute;
+  top: 250px;
+  background-color: #b6b4b4;
 }
