@@ -1,59 +1,58 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-a, li{
-    text-decoration: none;
-    list-style: none;
-}
-
-header{
-    height: 300px;
-    background-color: #979797;
-    display: flex;
-}
-.logo{
-    background-color: rgb(78, 78, 78);
-    position: absolute;
-    display: block;
-    top: 70px;
-    left: 200px;
-    padding: 10px;
-    font-size: 30px;
-}
-nav{
-    position: absolute;
-    background-color: #999999;
-    left: 50%;
-    display: block; 
-}
-nav ul{
-    clear: both;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav ul .list{
-    display: inline-flex;
-}
-nav ul .list a{
-    display: flex;
-    color:rgb(78, 78, 78);
-}
-.backsquare{
-    width: 250px;
-    background-color: rgb(207, 207, 207);
-    display: flex;
+a,
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
-main{
-    margin: 0;
-    padding: 40px;
-    height: 500px;
-    background-color: #6d6d6d;
+header {
+  height: 300px;
+  background-color: #979797;
+  display: flex;
 }
-main .animal{
-    display: flex;
-
+.logo {
+  background-color: rgb(78, 78, 78);
+  position: absolute;
+  display: block;
+  top: 70px;
+  left: 200px;
+  padding: 10px;
+  font-size: 30px;
+}
+nav {
+  position: absolute;
+  background-color: #999999;
+  left: 50%;
+  display: block;
+}
+nav ul {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul .list {
+  display: inline-flex;
+}
+nav ul .list a {
+  display: flex;
+  color: rgb(78, 78, 78);
+}
+.backsquare {
+  width: 250px;
+  background-color: rgb(207, 207, 207);
+  display: flex;
 }
 
+main {
+  margin: 0;
+  padding: 40px;
+  height: 500px;
+  background-color: #6d6d6d;
+}
+main .animal {
+  display: flex;
+}
