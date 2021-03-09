@@ -26,16 +26,22 @@ nav ul li {
   top: 5px;
 }
 
+nav ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 0.2em;
+}
+
 .Login {
-  font-size: 12px;
-  width: 50px;
-  height: 20px;
+  font-size: 11px;
+  width: 60px;
+  height: 15px;
   text-align: center;
   background-color: white;
-  color: skyblue;
-  border: solid 1px skyblue;
+  color: deepskyblue;
+  border: solid 1px deepskyblue;
   border-radius: 5px;
   position: relative;
   left: 600px;
-  top: 10px;
+  top: 12px;
 }
