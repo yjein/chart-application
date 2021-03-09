@@ -13,7 +13,6 @@ header{
 }
 nav{
     background-color: #999999;
-    position: absolute;
     left: 50%;
     display: inline-flex;
 }
