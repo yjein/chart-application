@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin:0px;
+}
+
+nav {
+  background-color: lightgray;
+  width: 1480px;
+  height: 40px;
+  position: absolute;
+  left: 400px;
+  padding-left: 40px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-right: 100px;
+  list-style: none;
+  position: relative;
+  font-size: 21px;
+  font-weight: 600;
+  color: #555555;
+  top: 5px;
+}
+
+.Login {
+  font-size: 12px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  background-color: white;
+  color: skyblue;
+  border: solid 1px skyblue;
+  border-radius: 5px;
+  position: relative;
+  left: 600px;
+  top: 10px;
+}
