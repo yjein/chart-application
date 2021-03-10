@@ -63,6 +63,11 @@ nav .login {
   color: #4ba5fa;
 
 }
+.backsquare {
+  width: 15%;
+  background-color: rgb(207, 207, 207);
+  display: flex;
+}
 
 main {
   margin: 0;
@@ -76,6 +81,11 @@ main {
   position: relative;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
 main .animal {
