@@ -63,6 +63,11 @@ nav .login {
   display: inline-flex;
   color: #4ba5fa;
 }
+.backsquare {
+  width: 15%;
+  background-color: rgb(207, 207, 207);
+  display: flex;
+}
 
 main {
   margin: 0;
