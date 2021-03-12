@@ -28,7 +28,7 @@ header {
   background: linear-gradient(
     to right,
     rgb(207, 207, 207) 50%,
-    rgb(78, 78, 78) 50%
+    #979797 50%
   );
 }
 
