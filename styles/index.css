@@ -39,7 +39,7 @@ nav {
   flex-wrap: wrap;
   align-content: center;
   left: 25%;
-  width: 80%;
+  width: 75%;
   background-color: rgb(207, 207, 207);
 }
 
@@ -57,12 +57,12 @@ nav ul .list {
 nav ul .list a {
   margin: 0;
   padding: 0;
-  color: rgb(78, 78, 78);
+  color: rgb(90, 78, 78);
 }
 
 nav .login {
   display: inline-flex;
-  color: #4ba5fa;
+  color: deepskyblue;
 }
 
 .backsquare {
