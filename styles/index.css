@@ -20,7 +20,13 @@ header {
 }
 
 .logoback {
-  background-color: linear-gradient(
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
     rgb(207, 207, 207) 50%,
     rgb(78, 78, 78) 50%
   );
@@ -31,6 +37,7 @@ header {
   padding: 10px;
   background-color: rgb(78, 78, 78);
   font-size: 30px;
+  display: inline-block;
 }
 
 nav {
