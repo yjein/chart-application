@@ -15,7 +15,6 @@ header {
   margin: 0;
   padding: 0;
   height: 300px;
-  overflow: hidden;
   background-color: #979797;
 }
 
@@ -61,7 +60,6 @@ nav ul .list a {
 }
 
 nav .login {
-  display: inline-flex;
   color: deepskyblue;
 }
 
