@@ -14,6 +14,7 @@ header {
   position: relative;
   margin: 0;
   padding: 0;
+  width: 100%;
   height: 300px;
   background-color: #979797;
 }
@@ -51,16 +52,40 @@ nav ul .list {
   display: inline-flex;
   text-align: center;
   margin: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul .cur_display {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-thickness: 0.2em;
+}
+
+nav ul .list:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-thickness: 0.2em;
 }
 
 nav ul .list a {
   margin: 0;
   padding: 0;
-  color: rgb(90, 78, 78);
+  color: rgb(90, 90, 90);
 }
 
 nav .login {
-  color: deepskyblue;
+  position: relative;
+  top: 13px;
+  left: 60%;
+  text-align: center;
+  width: 8%;
+  height: 17px;
+  max-width: 70px;
+  border: solid 1px deepskyblue;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: white;
 }
 
 .backsquare {
