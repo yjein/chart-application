@@ -65,12 +65,6 @@ nav .login {
   color: #4ba5fa;
 }
 
-.backsquare {
-  display: flex;
-  width: 15%;
-  background-color: rgb(207, 207, 207);
-}
-
 main {
   margin: 0;
   padding: 40px;
