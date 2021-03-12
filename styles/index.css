@@ -1,4 +1,5 @@
 body {
+  display: grid;
   margin: 0;
   padding: 0;
 }
@@ -10,8 +11,9 @@ li {
 }
 
 header {
-  display: flex;
+  display: grid;
   position: relative;
+  grid-template-columns: 1fr 3fr;
   margin: 0;
   padding: 0;
   height: 300px;
@@ -23,7 +25,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
   height: 100%;
   background: linear-gradient(
     to right,
@@ -45,7 +46,6 @@ nav {
   position: absolute;
   flex-wrap: wrap;
   align-content: center;
-  left: 25%;
   width: 80%;
   background-color: rgb(207, 207, 207);
 }
