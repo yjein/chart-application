@@ -66,7 +66,13 @@ nav .login {
   border: solid 1px deepskyblue;
   border-radius: 5px;
   font-size: 12px;
-  background-color: white;
+.button {
+  border-style: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #525252;
+  color: #ffffff;
 }
 
 main {
