@@ -5,16 +5,16 @@ body {
 }
 
 a,
-li {
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
-  list-style: none;
+  color: inherit;
 }
 
 header {
   display: grid;
-  position: relative;
   grid-template-columns: 1fr 3fr;
-  width: 100%;
   height: 300px;
   background-color: #6d6d6d;
 }
@@ -23,16 +23,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   background: linear-gradient(to right, rgb(207, 207, 207) 50%, #6d6d6d 50%);
 }
 
 .logo {
-  margin: auto;
   padding: 10px;
   background-color: rgb(78, 78, 78);
   font-size: 30px;
-  display: inline-block;
 }
 
 nav {
@@ -42,31 +39,26 @@ nav {
 }
 
 nav ul {
-  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul .list {
+  display: inline;
   margin: 10px 35px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 nav ul .cur_display {
   text-decoration: underline;
-  text-underline-offset: 0.4em;
-  text-decoration-thickness: 0.2em;
+  text-decoration-thickness: 3px;
 }
 
 nav ul .list:hover {
   text-decoration: underline;
-  text-underline-offset: 0.4em;
-  text-decoration-thickness: 0.2em;
-}
-
-nav ul .list a {
-  color: rgb(90, 90, 90);
+  text-decoration-thickness: 3px;
 }
 
 nav .login {
@@ -80,29 +72,21 @@ nav .login {
 }
 
 main {
-  margin: 0;
   padding: 40px;
-  height: 500px;
   background-color: #979797;
 }
 
 main .dashboard {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  place-items: center;
-  object-fit: fill;
-  gap: 10px;
-  margin: 0 auto;
-  min-width: 100%;
-  max-height: 100%;
-  height: 80vh;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 
 main .dashboard > div {
   background-color: #fff;
   width: 100%;
-  height: 100%;
+  padding-bottom: 100%;
 }
 
 main .dashboard > div:nth-child(1) {
@@ -115,24 +99,11 @@ main .dashboard > div:nth-child(2) {
   grid-row: 2 / span 2;
 }
 
-button a {
-  color: white;
-  padding: 10px 25px;
-}
-
 .button {
-  position: relative;
-  top: 65%;
-  left: 25%;
-  width: 20%;
-  height: 12%;
-  max-width: 160px;
-  margin-right: 70px;
   border-style: none;
   border-radius: 10px;
   outline: none;
   font-size: 20px;
-  font-weight: 500;
   background-color: rgb(80, 80, 80);
   color: white;
 }
