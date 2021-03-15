@@ -24,18 +24,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, rgb(207, 207, 207) 50%, #6d6d6d 50%);
+  background: linear-gradient(to right, #cfcfcf 50%, #6e6e6e 50%);
 }
 
 .logo {
   padding: 10px;
-  background-color: rgb(78, 78, 78);
+  background-color: #4e4e4e;
   font-size: 30px;
 }
 
 nav {
   display: flex;
-  background-color: rgb(207, 207, 207);
+  background-color: #cfcfcf;
 }
 
 nav ul {
@@ -63,9 +63,12 @@ nav ul .list:hover {
 
 nav .login {
   text-align: center;
-  border: solid 1px deepskyblue;
+  border: solid 1px #00aeff;
   border-radius: 5px;
   font-size: 12px;
+  background-color: #ffffff;
+}
+
 .button {
   border-style: none;
   border-radius: 10px;
@@ -77,7 +80,7 @@ nav .login {
 
 main {
   padding: 40px;
-  background-color: #979797;
+  background-color: #9b9b9b;
 }
 
 main .dashboard {
@@ -88,7 +91,7 @@ main .dashboard {
 }
 
 main .dashboard > div {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   padding-bottom: 100%;
 }
