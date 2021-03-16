@@ -14,63 +14,71 @@ a:active {
 header {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  box-sizing: border-box;
   background-color: #6d6d6d;
 }
 
-.logoback {
+.logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
   padding: 15px;
   background: linear-gradient(to right, #cfcfcf 50%, #6e6e6e 50%);
 }
 
 .logo {
-  padding: 10px;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #ffffff;
   background-color: #4e4e4e;
-  font-size: 30px;
 }
 
 nav {
   display: flex;
-  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 2 / 3;
+  padding: 0 1rem;
   background-color: #cfcfcf;
 }
 
 nav ul {
-  margin: auto 0;
+  margin: 5px 0;
   padding: 0;
   list-style: none;
-}
-
-nav ul .list {
-  display: inline;
-  margin: 10px 20px;
-  font-size: 18px;
-  font-weight: 700;
   color: #4e4e4e;
 }
 
+nav ul .list {
+  display: inline-flex;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 nav ul .cur_display {
-  border-bottom: 5px solid;
-  padding-bottom: 6px;
+  border-bottom: 4px solid;
+  padding-bottom: 3px;
 }
 
 nav ul .list:hover {
-  border-bottom: 5px solid;
-  padding-bottom: 6px;
+  border-bottom: 4px solid;
+  padding-bottom: 3px;
 }
 
 nav .login {
-  text-align: center;
-  border: solid 1px #00aeff;
+  padding: 0.2rem 0.8rem;
+  border: solid 2.5px #00aeff;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 0.85rem;
   background-color: #ffffff;
 }
 
-header > div {
-  margin: auto;
+header .btn-wrapper {
+  grid-column: 2 / 3;
+  height: 300px;
 }
 
 .button {
