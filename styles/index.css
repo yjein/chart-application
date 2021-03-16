@@ -34,8 +34,8 @@ header {
 }
 
 nav {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
+  display: flex;
+  justify-content: space-between;
   background-color: rgb(207, 207, 207);
 }
 
@@ -67,6 +67,7 @@ nav ul .list:hover {
 nav .login {
   align-self: center;
   text-align: center;
+  margin-right: 10%;
   width: 70px;
   border: solid 1px deepskyblue;
   border-radius: 5px;
