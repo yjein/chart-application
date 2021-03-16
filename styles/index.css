@@ -107,9 +107,8 @@ main .dashboard > div:nth-child(2) {
   display: flex;
   align-items: flex-end;
   justify-content:space-evenly;
-  height: 65%;
-  width: 65%;
-  min-width: 320px;
+  height: 70%;
+  max-width: 800px;
 }
 
 .btn_style button {
