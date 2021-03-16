@@ -33,6 +33,7 @@ header {
 
 nav {
   display: flex;
+  padding: 10px;
   background-color: #cfcfcf;
 }
 
@@ -47,16 +48,17 @@ nav ul .list {
   margin: 10px 20px;
   font-size: 18px;
   font-weight: 700;
+  color: #4e4e4e;
 }
 
 nav ul .cur_display {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
+  border-bottom: 5px solid;
+  padding-bottom: 6px;
 }
 
 nav ul .list:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
+  border-bottom: 5px solid;
+  padding-bottom: 6px;
 }
 
 nav .login {
