@@ -1,5 +1,4 @@
 body {
-  display: grid;
   margin: 0;
   padding: 0;
 }
@@ -15,80 +14,96 @@ a:active {
 header {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  height: 300px;
+  box-sizing: border-box;
   background-color: #6d6d6d;
   color: #686767;
 }
 
-.logoback {
+.logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, rgb(207, 207, 207) 50%, #6d6d6d 50%);
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  padding: 15px;
+  background: linear-gradient(to right, #cfcfcf 50%, #6e6e6e 50%);
 }
 
 .logo {
-  padding: 10px;
-  background-color: rgb(78, 78, 78);
-  font-size: 30px;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #4e4e4e;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(207, 207, 207);
+  align-items: center;
+  grid-column: 2 / 3;
+  padding: 0 1rem;
+  background-color: #cfcfcf;
 }
 
 nav ul {
+  margin: 5px 0;
+  padding: 0;
   list-style: none;
-  margin: 0;
-  padding: 5px 0px;
+  color: #4e4e4e;
 }
 
 nav ul .list {
-  display: inline;
-  margin: 0px 35px;
-  font-size: 20px;
-  font-weight: bold;
+  display: inline-flex;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 nav ul .cur_display {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 3px;
+  border-bottom: 4px solid;
+  padding-bottom: 3px;
 }
 
 nav ul .list:hover {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 3px;
+  border-bottom: 4px solid;
+  padding-bottom: 3px;
 }
 
 nav .login {
-  align-self: center;
-  text-align: center;
-  margin-right: 10%;
-  width: 70px;
-  border: solid 1px deepskyblue;
+  padding: 0.2rem 0.8rem;
+  border: solid 2.5px #00aeff;
   border-radius: 5px;
-  font-size: 12px;
-  background-color: white;
+  font-size: 0.85rem;
+  background-color: #ffffff;
+}
+
+header .btn-wrapper {
+  grid-column: 2 / 3;
+  height: 300px;
+}
+
+.button {
+  border-style: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #525252;
+  color: #ffffff;
 }
 
 main {
   padding: 40px;
-  background-color: #979797;
+  background-color: #9b9b9b;
 }
 
 main .dashboard {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  row-gap: 10px;
-  column-gap: 10px;
+  gap: 0.6rem;
 }
 
 main .dashboard > div {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   padding-bottom: 100%;
 }
