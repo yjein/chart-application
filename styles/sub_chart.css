@@ -108,3 +108,27 @@ main {
 .chart-source {
   background-color: #ffffff;
 }
+
+#chartOption {
+  padding: 0.5rem;
+  background-color: #505050;
+}
+
+.option {
+  margin: 8px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+fieldset {
+  margin-bottom: 10px;
+  border-style: none;
+  background-color: #cfcfcf;
+}
+
+.color-chart {
+  height: 200px;
+  background-color: #686767;
+}
