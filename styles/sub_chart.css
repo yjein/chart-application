@@ -1,1 +1,51 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
 
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.5fr) 3fr minmax(250px, 0.5fr);
+  height: 100%;
+}
+
+nav {
+  background-color: #cfcfcf;
+}
+
+.sidebar {
+  overflow: auto;
+}
+
+button {
+  margin: 8px;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  color: #686767;
+}
+
+.side-ul {
+  padding: 2rem 0;
+}
+
+li {
+  font-weight: 700;
+}
+
+.side-list {
+  padding: 5px 0;
+  text-align: center;
+  border: 2px solid #cfcfcf;
+  background-color: #ffffff;
+}
