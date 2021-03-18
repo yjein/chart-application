@@ -22,6 +22,9 @@ nav {
 }
 
 .sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
   overflow-y: auto;
 }
 
@@ -60,6 +63,8 @@ li {
 }
 
 header {
+  position: sticky;
+  top: 0;
   margin: 0;
 }
 
@@ -114,6 +119,9 @@ main {
 }
 
 #chartOption {
+  position: sticky;
+  top: 0;
+  height: 100vh;
   overflow-y: auto;
   background-color: #505050;
 }
