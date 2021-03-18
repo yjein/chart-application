@@ -60,9 +60,9 @@ header {
 }
 
 .navbar {
-  padding: 0 1.25rem;
   display: flex;
   align-items: center;
+  padding: 0 1.25rem;
 }
 
 .navbar .logo {
@@ -85,13 +85,13 @@ header {
 }
 
 .navbar ul .cur_display {
-  border-bottom: 0.2rem solid;
   padding-bottom: 0.2rem;
+  border-bottom: 0.2rem solid;
 }
 
 .navbar ul .nav-list:hover {
-  border-bottom: 0.2rem solid;
   padding-bottom: 0.2rem;
+  border-bottom: 0.2rem solid;
 }
 
 main {
