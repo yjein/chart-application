@@ -22,7 +22,11 @@ nav {
 }
 
 .sidebar {
-  overflow: auto;
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 button {
@@ -110,8 +114,12 @@ main {
 }
 
 #chartOption {
-  padding: 0.5rem;
+  overflow-y: auto;
   background-color: #505050;
+}
+
+#chartOption::-webkit-scrollbar {
+  display: none;
 }
 
 .option {
