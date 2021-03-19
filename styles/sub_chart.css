@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  height: 100vh;
 }
 
 a,
@@ -13,7 +12,7 @@ a:active {
 
 .wrap {
   display: grid;
-  grid-template-columns: minmax(150px, 0.5fr) 3fr minmax(250px, 0.5fr);
+  grid-template-columns: max-content auto max-content;
   height: 100%;
 }
 
@@ -24,6 +23,7 @@ nav {
 .sidebar {
   position: sticky;
   top: 0;
+  width: 200px;
   height: 100vh;
   overflow-y: auto;
 }
@@ -121,6 +121,7 @@ main {
 #chartOption {
   position: sticky;
   top: 0;
+  width: 250px;
   height: 100vh;
   overflow-y: auto;
   background-color: #505050;
