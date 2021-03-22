@@ -17,9 +17,13 @@ a:active {
 }
 
 header {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: 200px auto 50px;
   position: sticky;
   top: 0;
-  grid-column: 1 / 4;
+  width: 100vw;
+  height: 45px;
   margin: 0;
 }
 
@@ -27,23 +31,20 @@ nav {
   background-color: #cfcfcf;
 }
 
-.navbar {
+.navbar > div {
   display: flex;
-  /* padding: 0 1.25rem; */
-  height: 45px;
 }
 
-.navbar .box-left {
-  width: 200px;
+.box-left {
+  background-color: #cfcfcf;
+}
+
+.box-right {
+  background-color: #cfcfcf;
 }
 
 button {
   margin: 8px;
-}
-
-.navbar .box-right > div {
-  display: flex;
-  align-items: center;
 }
 
 .navbar .logo {
@@ -79,9 +80,6 @@ li {
   border-bottom: 0.2rem solid;
 }
 
-.navbar .optBtn {
-}
-
 .sidebar {
   position: sticky;
   top: 45px;
@@ -101,7 +99,7 @@ ul {
 }
 
 .side-ul {
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .side-list {
