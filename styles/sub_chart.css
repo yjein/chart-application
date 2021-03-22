@@ -16,62 +16,34 @@ a:active {
   height: 100%;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  grid-column: 1 / 4;
+  margin: 0;
+}
+
 nav {
   background-color: #cfcfcf;
 }
 
-.sidebar {
-  position: sticky;
-  top: 0;
-  width: 200px;
-  height: 100vh;
-  overflow-y: auto;
+.navbar {
+  display: flex;
+  /* padding: 0 1.25rem; */
+  height: 45px;
 }
 
-.sidebar::-webkit-scrollbar {
-  display: none;
+.navbar .box-left {
+  width: 200px;
 }
 
 button {
   margin: 8px;
 }
 
-ul {
-  margin: 0;
-  list-style: none;
-  color: #686767;
-}
-
-.side-ul {
-  padding: 2rem 0;
-}
-
-li {
-  font-weight: 700;
-}
-
-.side-list {
-  padding: 5px 0;
-  text-align: center;
-  border: 2px solid #cfcfcf;
-  background-color: #ffffff;
-}
-
-.grid {
-  display: grid;
-  grid-template-rows: 0.1fr 3fr;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  margin: 0;
-}
-
-.navbar {
+.navbar .box-right > div {
   display: flex;
   align-items: center;
-  padding: 0 1.25rem;
 }
 
 .navbar .logo {
@@ -93,14 +65,50 @@ header {
   padding: 0.75rem 0;
 }
 
-.navbar ul .cur_display {
+li {
+  font-weight: 700;
+}
+
+.navbar .cur_display {
   padding-bottom: 0.2rem;
   border-bottom: 0.2rem solid;
 }
 
-.navbar ul .nav-list:hover {
+.navbar .nav-list:hover {
   padding-bottom: 0.2rem;
   border-bottom: 0.2rem solid;
+}
+
+.navbar .optBtn {
+}
+
+.sidebar {
+  position: sticky;
+  top: 45px;
+  width: 200px;
+  height: calc(100vh - 45px);
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  color: #686767;
+}
+
+.side-ul {
+  padding: 2rem 0;
+}
+
+.side-list {
+  padding: 5px 0;
+  text-align: center;
+  border: 2px solid #cfcfcf;
+  background-color: #ffffff;
 }
 
 main {
@@ -120,9 +128,9 @@ main {
 
 #chartOption {
   position: sticky;
-  top: 0;
+  top: 45px;
   width: 250px;
-  height: 100vh;
+  height: calc(100vh - 45px);
   overflow-y: auto;
   background-color: #505050;
 }
