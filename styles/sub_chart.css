@@ -33,6 +33,7 @@ nav {
 
 .navbar > div {
   display: flex;
+  align-items: center;
 }
 
 .box-left {
