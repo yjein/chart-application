@@ -88,6 +88,7 @@ li {
   width: 200px;
   height: calc(100vh - 45px);
   overflow-y: auto;
+  transition: all 150ms;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -126,16 +127,17 @@ main {
   background-color: #ffffff;
 }
 
-#chartOption {
+.chartOption {
   position: sticky;
   top: 45px;
   width: 250px;
   height: calc(100vh - 45px);
   overflow-y: auto;
   background-color: #505050;
+  transition: all 150ms;
 }
 
-#chartOption::-webkit-scrollbar {
+.chartOption::-webkit-scrollbar {
   display: none;
 }
 
@@ -153,15 +155,23 @@ fieldset {
   background-color: #cfcfcf;
 }
 
-#chartOption .box {
+.chartOption .box {
   display: flex;
   flex-direction: column;
   margin: 1rem auto;
   text-align: left;
 }
 
+.chartOption .box > div {
+  margin: 5px 0;
+}
+
 .color-chart {
   margin-bottom: 15px;
   height: 150px;
   background-color: #686767;
+}
+
+.--close {
+  width: 0;
 }
