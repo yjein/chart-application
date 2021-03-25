@@ -7,6 +7,8 @@ const Wrap = () => {
   wrap.classList.add("wrap")
 
   const header = document.createElement("header")
+  const left_box = document.createElement("div")
+  left_box.classList.add("box-left")
 }
 Wrap()
 
