@@ -126,7 +126,7 @@ main {
   background-color: #ffffff;
 }
 
-#chartOption {
+.chartOption {
   position: sticky;
   top: 45px;
   width: 250px;
@@ -135,7 +135,7 @@ main {
   background-color: #505050;
 }
 
-#chartOption::-webkit-scrollbar {
+.chartOption::-webkit-scrollbar {
   display: none;
 }
 
@@ -153,14 +153,14 @@ fieldset {
   background-color: #cfcfcf;
 }
 
-#chartOption .box {
+.chartOption .box {
   display: flex;
   flex-direction: column;
   margin: 1rem auto;
   text-align: left;
 }
 
-#chartOption .box > div {
+.chartOption .box > div {
   margin: 5px 0;
 }
 
