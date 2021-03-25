@@ -9,13 +9,13 @@
 
   <body>
     <div class="wrap">
-      <nav class="sidebar">
-        <button>=</button>
-        <ul class="side-ul"></ul>
-      </nav>
-      <div class="grid">
-        <header>
-          <nav class="navbar">
+      <header>
+        <div class="box-left">
+          <button class="sideBtn">=</button>
+        </div>
+
+        <nav class="navbar">
+          <div>
             <div class="logo">RaonChart</div>
             <ul class="nav-ul">
               <li class="nav-list"><a href="#">Home</a></li>
@@ -23,19 +23,26 @@
               <li class="nav-list"><a href="#">Docs</a></li>
               <li class="nav-list"><a href="#">Contact</a></li>
             </ul>
-          </nav>
-        </header>
-
-        <main>
-          <div class="chart">
-            <p class="chart-ex">TEXT~~~~~~</p>
-            <div class="chart-source">Chart</div>
           </div>
-        </main>
-      </div>
+        </nav>
+
+        <div class="box-right">
+          <button class="optBtn">=</button>
+        </div>
+      </header>
+
+      <nav class="sidebar">
+        <ul class="side-ul"></ul>
+      </nav>
+
+      <main>
+        <div class="chart">
+          <p class="chart-ex">TEXT~~~~~~</p>
+          <div class="chart-source">Chart</div>
+        </div>
+      </main>
 
       <div id="chartOption">
-        <button>=</button>
         <p class="option">Option</p>
         <form action="#" name="font" method="GET">
           <fieldset>
