@@ -9,6 +9,14 @@ const Wrap = () => {
   const header = document.createElement("header")
   const left_box = document.createElement("div")
   left_box.classList.add("box-left")
+  
+  const side_btn = document.createElement("button")
+  side_btn.classList.add("sideBtn")
+  side_btn.textContent = "="
+
+  header.appendChild(left_box)
+  header.appendChild(side_btn)
+  root.appendChild(header)
 }
 Wrap()
 
