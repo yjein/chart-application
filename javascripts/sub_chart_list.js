@@ -5,6 +5,8 @@ const Wrap = () => {
   root.id = "root"
   const wrap = document.createElement("div")
   wrap.classList.add("wrap")
+
+  const header = document.createElement("header")
 }
 Wrap()
 
