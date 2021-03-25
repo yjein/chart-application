@@ -160,6 +160,10 @@ fieldset {
   text-align: left;
 }
 
+#chartOption .box > div {
+  margin: 5px 0;
+}
+
 .color-chart {
   margin-bottom: 15px;
   height: 150px;
