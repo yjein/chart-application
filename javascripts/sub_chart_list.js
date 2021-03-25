@@ -103,6 +103,8 @@ const Wrap = () => {
   // sidebar태그에 side_ul자식 요소 추가
   sidebar.appendChild(side_ul)
 
+  const main = document.createElement("main")
+
   // header에 상단에 들어갈 자식요소 추가
   header.appendChild(left_box)
   header.appendChild(nav_var)
