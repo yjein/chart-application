@@ -131,6 +131,11 @@ const Wrap = () => {
   option.classList.add("option")
   option.textContent = "Option"
 
+  const font = document.createElement("form")
+  font.action = "#"
+  font.id = "font"
+  font.method = "GET"
+
   // header에 상단에 들어갈 자식요소 추가
   header.appendChild(left_box)
   header.appendChild(nav_var)
