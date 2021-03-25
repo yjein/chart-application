@@ -88,6 +88,7 @@ li {
   width: 200px;
   height: calc(100vh - 45px);
   overflow-y: auto;
+  transition: all 150ms;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -133,6 +134,7 @@ main {
   height: calc(100vh - 45px);
   overflow-y: auto;
   background-color: #505050;
+  transition: all 150ms;
 }
 
 .chartOption::-webkit-scrollbar {
@@ -168,4 +170,8 @@ fieldset {
   margin-bottom: 15px;
   height: 150px;
   background-color: #686767;
+}
+
+.--close {
+  width: 0;
 }
