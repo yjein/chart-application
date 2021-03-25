@@ -125,6 +125,11 @@ const Wrap = () => {
 
   // chartOption 컴포넌트 추가
   const chartOption = document.createElement("div")
+  chartOption.classList.add("chartOption")
+
+  const option = document.createElement("p")
+  option.classList.add("option")
+  option.textContent = "Option"
 
   // header에 상단에 들어갈 자식요소 추가
   header.appendChild(left_box)
