@@ -1,22 +1,76 @@
 "use strict"
 
 const Wrap = () => {
+  // root, wrap 컴포넌트
   const root = document.querySelector("div")
   root.id = "root"
   const wrap = document.createElement("div")
   wrap.classList.add("wrap")
 
+  // header, div 컴포넌트
   const header = document.createElement("header")
   const left_box = document.createElement("div")
   left_box.classList.add("box-left")
   
+  // side_button 컴포넌트
   const side_btn = document.createElement("button")
   side_btn.classList.add("sideBtn")
   side_btn.textContent = "="
 
+  // left_box태그에 side_button자식요소 추가
+  left_box.appendChild(side_btn)
+
+  // nav바, div 컴포넌트
+  const nav_var = document.createElement("nav")
+  nav_var.classList.add("navbar")
+  const div = document.createElement("div")
+
+  // 로고 컴포넌트
+  const logo = document.createElement("div")
+  logo.classList.add("logo")
+  logo.textContent = "RaonChart"
+  
+  // nav_ul 컴포넌트
+  const nav_ul = document.createElement("ul")
+  nav_ul.classList.add("nav-ul")
+
+  // nav_list 컴포넌트
+  const nav_li_home = document.createElement("li")
+  nav_li_home.classList.add("nav-list")
+  nav_li_home.textContent = "Home"
+
+  const nav_li_chart = document.createElement("li")
+  nav_li_chart.classList.add("nav-list")
+  nav_li_chart.classList.add("cur_display")
+  nav_li_chart.textContent = "Chart"
+
+  const nav_li_docs = document.createElement("li")
+  nav_li_docs.classList.add("nav-list")
+  nav_li_docs.textContent = "Docs"
+
+  const nav_li_contact = document.createElement("li")
+  nav_li_contact.classList.add("nav-list")
+  nav_li_contact.textContent = "Contact"
+
+  // nav ul태그에 li자식요소 추가
+  nav_ul.appendChild(nav_li_home)
+  nav_ul.appendChild(nav_li_chart)
+  nav_ul.appendChild(nav_li_docs)
+  nav_ul.appendChild(nav_li_contact)
+
+  // div태그에 로고, nav ul 자식요소 추가
+  div.appendChild(logo)
+  div.appendChild(nav_ul)
+
+  // nav bar에 div 자식요소 추가
+  nav_var.appendChild(div)
+
+  // header에 상단에 들어갈 자식요소 추가
   header.appendChild(left_box)
-  header.appendChild(side_btn)
-  root.appendChild(header)
+  header.appendChild(nav_var)
+
+  wrap.appendChild(header)
+  root.appendChild(wrap)
 }
 Wrap()
 
