@@ -73,33 +73,44 @@ const Wrap = () => {
   opt_button.textContent = "="
   right_box.appendChild(opt_button)
 
+  // sidebar 컴포넌트 추가
+  const sidebar = document.createElement("nav")
+  sidebar.classList.add("sidebar")
+  const side_ul = document.createElement("ul")
+  side_ul.classList.add("side-ul")
+
+  // chart_list 생성 함수
+  const CreateList = (li_num) => {
+    const num = li_num || 1 // 보지 않는다
+
+    const chartList = document.createElement("li")
+    chartList.classList.add("side-list")
+    chartList.textContent = `Chart ${num}`
+    chartList.addEventListener("click", () => {
+      history.pushState({}, "Chart-Style", "#")
+    })
+    chartList.style.cursor = "pointer"
+
+    side_ul.appendChild(chartList)
+  }
+  // CreateList함수를 tempData의 배열크기만큼 호출
+  const tempData = []
+  for (let i = 1; i <= 30; i++) tempData.push(i)
+
+  const func = (item) => CreateList(item)
+  tempData.forEach(func)
+
+  // sidebar태그에 side_ul자식 요소 추가
+  sidebar.appendChild(side_ul)
+
   // header에 상단에 들어갈 자식요소 추가
   header.appendChild(left_box)
   header.appendChild(nav_var)
   header.appendChild(right_box)
 
   wrap.appendChild(header)
+  wrap.appendChild(sidebar)
+
   root.appendChild(wrap)
 }
 Wrap()
-
-const CreateList = (li_num) => {
-  const num = li_num || 1 // 보지 않는다
-
-  const chartList = document.createElement("li")
-  chartList.classList.add("side-list")
-  chartList.textContent = `Chart ${num}`
-  chartList.addEventListener("click", () => {
-    history.pushState({}, "Chart-Style", "#")
-  })
-  chartList.style.cursor = "pointer"
-
-  const element = document.querySelector(".side-ul")
-  element.appendChild(chartList)
-}
-
-const tempData = []
-for (let i = 1; i <= 30; i++) tempData.push(i)
-
-const func = (item) => CreateList(item)
-tempData.forEach(func)
