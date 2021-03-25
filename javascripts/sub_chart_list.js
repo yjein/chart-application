@@ -1,5 +1,13 @@
 "use strict"
 
+const Wrap = () => {
+  const root = document.querySelector("div")
+  root.id = "root"
+  const wrap = document.createElement("div")
+  wrap.classList.add("wrap")
+}
+Wrap()
+
 const CreateList = (li_num) => {
   const num = li_num || 1 // 보지 않는다
 
