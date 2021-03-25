@@ -123,6 +123,9 @@ const Wrap = () => {
   // main태그에 chart자식요소 추가
   main.appendChild(chart)
 
+  // chartOption 컴포넌트 추가
+  const chartOption = document.createElement("div")
+
   // header에 상단에 들어갈 자식요소 추가
   header.appendChild(left_box)
   header.appendChild(nav_var)
