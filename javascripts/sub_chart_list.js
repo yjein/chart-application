@@ -103,8 +103,25 @@ const Wrap = () => {
   // sidebar태그에 side_ul자식 요소 추가
   sidebar.appendChild(side_ul)
 
+  // main 컴포넌트 추가
   const main = document.createElement("main")
-  const chart = document.createElement("p")
+  
+  const chart = document.createElement("div")
+  chart.classList.add("chart")
+
+  const chart_ex = document.createElement("p")
+  chart_ex.classList.add("chart-ex")
+  chart_ex.textContent = "TEXT~~~~~~"
+
+  const chart_source = document.createElement("div")
+  chart_source.classList.add("chart-source")
+  chart_source.textContent = "Chart"
+
+  chart.appendChild(chart_ex)
+  chart.appendChild(chart_source)
+
+  // main태그에 chart자식요소 추가
+  main.appendChild(chart)
 
   // header에 상단에 들어갈 자식요소 추가
   header.appendChild(left_box)
@@ -113,6 +130,7 @@ const Wrap = () => {
 
   wrap.appendChild(header)
   wrap.appendChild(sidebar)
+  wrap.appendChild(main)
 
   root.appendChild(wrap)
 }
