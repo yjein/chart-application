@@ -1,40 +1,39 @@
 "use strict"
 
 const Wrap = () => {
-  // root, wrap 컴포넌트
+  // root, wrap 컴포넌트 추가
   const root = document.querySelector("div")
   root.id = "root"
   const wrap = document.createElement("div")
   wrap.classList.add("wrap")
 
-  // header, div 컴포넌트
+  // header 컴포넌트 추가
   const header = document.createElement("header")
+
+  // left_box 컴포넌트 추가
   const left_box = document.createElement("div")
   left_box.classList.add("box-left")
-  
-  // side_button 컴포넌트
+
   const side_btn = document.createElement("button")
   side_btn.classList.add("sideBtn")
   side_btn.textContent = "="
-
-  // left_box태그에 side_button자식요소 추가
   left_box.appendChild(side_btn)
 
-  // nav바, div 컴포넌트
+  // nav바 컴포넌트 추가
   const nav_var = document.createElement("nav")
   nav_var.classList.add("navbar")
   const div = document.createElement("div")
 
-  // 로고 컴포넌트
+  // 로고 컴포넌트 추가
   const logo = document.createElement("div")
   logo.classList.add("logo")
   logo.textContent = "RaonChart"
-  
-  // nav_ul 컴포넌트
+
+  // nav_ul 컴포넌트 추가
   const nav_ul = document.createElement("ul")
   nav_ul.classList.add("nav-ul")
 
-  // nav_list 컴포넌트
+  // nav_list 컴포넌트 추가
   const nav_li_home = document.createElement("li")
   nav_li_home.classList.add("nav-list")
   nav_li_home.textContent = "Home"
@@ -65,9 +64,19 @@ const Wrap = () => {
   // nav bar에 div 자식요소 추가
   nav_var.appendChild(div)
 
+  // right box 컴포넌트 추가
+  const right_box = document.createElement("div")
+  right_box.classList.add("box-right")
+
+  const opt_button = document.createElement("button")
+  opt_button.classList.add("optBtn")
+  opt_button.textContent = "="
+  right_box.appendChild(opt_button)
+
   // header에 상단에 들어갈 자식요소 추가
   header.appendChild(left_box)
   header.appendChild(nav_var)
+  header.appendChild(right_box)
 
   wrap.appendChild(header)
   root.appendChild(wrap)
