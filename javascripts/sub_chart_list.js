@@ -1,5 +1,6 @@
 "use strict"
 
+//side-start1
 const Create_div = (str) => {
   const div = document.createElement("div")
   div.textContent = str
@@ -118,7 +119,9 @@ const chartOption = () => {
 
   return chartOption
 }
+//side-end1
 
+//main-start
 const chart_ex = () => {
   const chart_ex = document.createElement("p")
   chart_ex.classList.add("chart-ex")
@@ -150,7 +153,9 @@ const main = () => {
 
   return main
 }
+//main-end
 
+//side-start2
 const CreateList = (li_num) => {
   const num = li_num || 1 // 보지 않는다
 
@@ -186,7 +191,9 @@ const sidebar = () => {
   sidebar.appendChild(side_ul())
   return sidebar
 }
+//side-end2
 
+//header-start
 const optBtn = () => {
   const opt_button = document.createElement("button")
   opt_button.classList.add("optBtn")
@@ -277,6 +284,7 @@ const header = () => {
 
   return header
 }
+//header-end
 
 const wrap = () => {
   const wrap = document.createElement("div")
