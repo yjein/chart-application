@@ -174,7 +174,6 @@ const side_ul = () => {
   for (let i = 1; i <= 30; i++) tempData.push(i)
 
   tempData.forEach((item) => {
-    CreateList(item) ///????
     side_ul.appendChild(CreateList(item))
   })
 
