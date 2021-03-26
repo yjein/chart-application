@@ -13,60 +13,68 @@ const Create_input = (type, name) => {
   return input
 }
 
-const Create_box = (id) => {
-  const Create_box = document.createElement("div")
-  Create_box.classList.add("box")
+const Create_fontbox = () => {
+  const Create_fontbox = document.createElement("div")
+  Create_fontbox.classList.add("box")
 
-  switch (id) {
-    case "font": {
-      Create_box.appendChild(Create_div("Font Style"))
-      Create_box.appendChild(Create_input("text", "style"))
+  Create_fontbox.appendChild(Create_div("Font Style"))
+  Create_fontbox.appendChild(Create_input("text", "style"))
 
-      Create_box.appendChild(Create_div("Font Size"))
-      Create_box.appendChild(Create_input("number", "size"))
+  Create_fontbox.appendChild(Create_div("Font Size"))
+  Create_fontbox.appendChild(Create_input("number", "size"))
 
-      Create_box.appendChild(Create_div("Weight"))
-      Create_box.appendChild(Create_input("text", "weight"))
-      break
-    }
+  Create_fontbox.appendChild(Create_div("Weight"))
+  Create_fontbox.appendChild(Create_input("text", "weight"))
 
-    case "data": {
-      Create_box.appendChild(Create_div("Data 1"))
-      Create_box.appendChild(Create_input("text", "data"))
-
-      Create_box.appendChild(Create_div("Data 2"))
-      Create_box.appendChild(Create_input("text", "data"))
-
-      Create_box.appendChild(Create_div("Data 3"))
-      Create_box.appendChild(Create_input("text", "data"))
-
-      Create_box.appendChild(Create_div("Data 4"))
-      Create_box.appendChild(Create_input("text", "data"))
-      break
-    }
-
-    case "color": {
-      const chart_color = document.createElement("div")
-      chart_color.classList.add("color-chart")
-      Create_box.appendChild(chart_color)
-
-      Create_box.appendChild(Create_div("Chart Color 1"))
-      Create_box.appendChild(Create_input("text", "data"))
-
-      Create_box.appendChild(Create_div("Chart Color 2"))
-      Create_box.appendChild(Create_input("text", "data"))
-
-      Create_box.appendChild(Create_div("Chart Color 3"))
-      Create_box.appendChild(Create_input("text", "data"))
-      break
-    }
-  }
-  return Create_box
+  return Create_fontbox
 }
 
-const fieldset = (id) => {
+const Create_databox = () => {
+  const Create_databox = document.createElement("div")
+  Create_databox.classList.add("box")
+
+  Create_databox.appendChild(Create_div("Data 1"))
+  Create_databox.appendChild(Create_input("text", "data"))
+
+  Create_databox.appendChild(Create_div("Data 2"))
+  Create_databox.appendChild(Create_input("text", "data"))
+
+  Create_databox.appendChild(Create_div("Data 3"))
+  Create_databox.appendChild(Create_input("text", "data"))
+
+  Create_databox.appendChild(Create_div("Data 4"))
+  Create_databox.appendChild(Create_input("text", "data"))
+
+  return Create_databox
+}
+
+const Create_colorbox = () => {
+  const Create_colorbox = document.createElement("div")
+  Create_colorbox.classList.add("box")
+
+  const chart_color = document.createElement("div")
+  chart_color.classList.add("color-chart")
+  Create_colorbox.appendChild(chart_color)
+
+  Create_colorbox.appendChild(Create_div("Chart Color 1"))
+  Create_colorbox.appendChild(Create_input("text", "data"))
+
+  Create_colorbox.appendChild(Create_div("Chart Color 2"))
+  Create_colorbox.appendChild(Create_input("text", "data"))
+
+  Create_colorbox.appendChild(Create_div("Chart Color 3"))
+  Create_colorbox.appendChild(Create_input("text", "data"))
+
+  return Create_colorbox
+}
+
+const fieldset = () => {
   const fieldset = document.createElement("fieldset")
-  fieldset.appendChild(Create_box(id))
+
+  fieldset.appendChild(Create_fontbox())
+  fieldset.appendChild(Create_databox())
+  fieldset.appendChild(Create_colorbox())
+
   return fieldset
 }
 
@@ -76,7 +84,7 @@ const Create_form = (action, id, method) => {
   Create_form.id = id
   Create_form.method = method
 
-  Create_form.appendChild(fieldset(id))
+  Create_form.appendChild(fieldset())
   return Create_form
 }
 
@@ -154,8 +162,8 @@ const side_ul = () => {
   const tempData = []
   for (let i = 1; i <= 30; i++) tempData.push(i)
 
-  tempData.forEach(item => {
-    CreateList(item)
+  tempData.forEach((item) => {
+    CreateList(item) ///????
     side_ul.appendChild(CreateList(item))
   })
 
@@ -199,10 +207,12 @@ const nav_li = (title) => {
 const nav_ul = () => {
   const nav_ul = document.createElement("ul")
   nav_ul.classList.add("nav-ul")
+
   nav_ul.appendChild(nav_li("home"))
   nav_ul.appendChild(nav_li("chart"))
   nav_ul.appendChild(nav_li("docs"))
   nav_ul.appendChild(nav_li("contact"))
+
   return nav_ul
 }
 
@@ -259,10 +269,10 @@ const wrap = () => {
   return wrap
 }
 
-const root = () => {
+const run = () => {
   const root = document.querySelector("#root")
   root.appendChild(wrap())
   return root
 }
 
-root()
+run()
