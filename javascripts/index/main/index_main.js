@@ -1,7 +1,7 @@
-const Main = () => {
+const main = () => {
   const main = document.createElement("main")
 
-  main.appendChild(DashBoard())
+  main.appendChild(dashboard())
 
-  return Main
+  return main
 }

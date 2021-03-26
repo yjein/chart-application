@@ -1,8 +1,8 @@
-const DashBoard = () => {
+const dashboard = () => {
   const dashboard = document.createElement("div")
   dashboard.classList.add("dashboard")
 
-  dashboard.appendChild(Img())
+  dashboard.appendChild(img())
 
-  return DashBoard
+  return dashboard
 }

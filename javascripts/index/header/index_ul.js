@@ -1,10 +1,10 @@
-const Ul = () => {
+const ul = () => {
   const ul = document.createElement("ul")
 
-  ul.appendChild(List("home"))
-  ul.appendChild(List("chart"))
-  ul.appendChild(List("docs"))
-  ul.appendChild(List("contact"))
+  ul.appendChild(list("home"))
+  ul.appendChild(list("chart"))
+  ul.appendChild(list("docs"))
+  ul.appendChild(list("contact"))
 
-  return Ul
+  return ul
 }

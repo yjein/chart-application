@@ -1,7 +1,7 @@
-const Nav = () => {
+const nav = () => {
   const nav = document.createElement("nav")
 
-  nav.appendChild(Ul())
+  nav.appendChild(ul())
 
-  return Nav
+  return nav
 }

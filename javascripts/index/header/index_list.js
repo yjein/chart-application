@@ -1,4 +1,4 @@
-const List = (title) => {
+const list = (title) => {
   const list = document.createElement("li")
   list.classList.add("list")
   list.textContent = title
@@ -8,5 +8,5 @@ const List = (title) => {
   })
   list.style.cursor = "pointer"
 
-  return List
+  return list
 }

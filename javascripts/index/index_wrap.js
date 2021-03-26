@@ -1,9 +1,9 @@
-const Wrap = () => {
+const wrap = () => {
   const wrap = document.createElement("div")
   wrap.classList.add("wrap")
 
-  wrap.appendChild(Header())
-  wrap.appendChild(Main())
+  wrap.appendChild(header())
+  wrap.appendChild(main())
 
-  return Wrap
+  return wrap
 }

@@ -1,8 +1,8 @@
-const Header = () => {
+const header = () => {
   const header = document.createElement("header")
 
-  header.appendChild(Logo_wrap())
-  header.appendChild(Nav())
+  header.appendChild(logo_wrap())
+  header.appendChild(nav())
 
-  return Header
+  return header
 }

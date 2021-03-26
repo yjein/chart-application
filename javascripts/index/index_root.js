@@ -1,7 +1,7 @@
-const Run = () => {
+const run = () => {
   const root = document.querySelector("#root")
 
-  root.appendChild(Wrap())
+  root.appendChild(wrap())
 }
 
-Run()
+run()
