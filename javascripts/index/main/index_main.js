@@ -1,7 +1,7 @@
 const Main = () => {
-    const main = document.createElement("main")
+  const main = document.createElement("main")
 
-    main.appendChild(DashBoard())
+  main.appendChild(DashBoard())
 
-    return Main
+  return Main
 }

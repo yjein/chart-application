@@ -3,6 +3,7 @@ const Wrap = () => {
   wrap.classList.add("wrap")
 
   wrap.appendChild(Header())
+  wrap.appendChild(Main())
 
   return Wrap
 }
