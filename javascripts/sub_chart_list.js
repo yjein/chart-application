@@ -68,31 +68,36 @@ const Create_colorbox = () => {
   return Create_colorbox
 }
 
-const fieldset = () => {
+const fieldset = (id) => {
   const fieldset = document.createElement("fieldset")
 
-  fieldset.appendChild(Create_fontbox())
-  fieldset.appendChild(Create_databox())
-  fieldset.appendChild(Create_colorbox())
-
+  switch(id){
+    case "font": {fieldset.appendChild(Create_fontbox()); break}
+    case "data": {fieldset.appendChild(Create_databox()); break}
+    case "color": {fieldset.appendChild(Create_colorbox()); break}
+    default: {break}
+  }
   return fieldset
 }
 
 const Create_form = (action, id, method) => {
   const Create_form = document.createElement("form")
+
   Create_form.action = action
   Create_form.id = id
   Create_form.method = method
 
-  Create_form.appendChild(fieldset())
+  Create_form.appendChild(fieldset(id))
   return Create_form
 }
 
 const form = () => {
   const form = document.createElement("form")
+
   form.appendChild(Create_form("#", "font", "GET"))
   form.appendChild(Create_form("#", "data", "GET"))
   form.appendChild(Create_form("#", "color", "GET"))
+
   return form
 }
 
@@ -100,6 +105,7 @@ const option = () => {
   const option = document.createElement("p")
   option.classList.add("option")
   option.textContent = "Option"
+
   return option
 }
 
@@ -109,6 +115,7 @@ const chartOption = () => {
 
   chartOption.appendChild(option())
   chartOption.appendChild(form())
+
   return chartOption
 }
 
@@ -116,6 +123,7 @@ const chart_ex = () => {
   const chart_ex = document.createElement("p")
   chart_ex.classList.add("chart-ex")
   chart_ex.textContent = "TEXT~~~~~~"
+
   return chart_ex
 }
 
@@ -123,6 +131,7 @@ const chart_source = () => {
   const chart_source = document.createElement("div")
   chart_source.classList.add("chart-source")
   chart_source.textContent = "Chart"
+
   return chart_source
 }
 
@@ -131,12 +140,14 @@ const chart = () => {
   chart.classList.add("chart")
   chart.appendChild(chart_ex())
   chart.appendChild(chart_source())
+
   return chart
 }
 
 const main = () => {
   const main = document.createElement("main")
   main.appendChild(chart())
+
   return main
 }
 
@@ -220,20 +231,25 @@ const logo = () => {
   const logo = document.createElement("div")
   logo.classList.add("logo")
   logo.textContent = "RaonChart"
+
   return logo
 }
 
 const div = () => {
   const div = document.createElement("div")
+
   div.appendChild(logo())
   div.appendChild(nav_ul())
+
   return div
 }
 
 const nav_bar = () => {
   const nav_bar = document.createElement("nav")
   nav_bar.classList.add("navbar")
+
   nav_bar.appendChild(div())
+
   return nav_bar
 }
 
@@ -241,6 +257,7 @@ const side_btn = () => {
   const side_btn = document.createElement("button")
   side_btn.classList.add("sideBtn")
   side_btn.textContent = "="
+
   return side_btn
 }
 
@@ -248,24 +265,29 @@ const left_box = () => {
   const left_box = document.createElement("div")
   left_box.classList.add("box-left")
   left_box.appendChild(side_btn())
+
   return left_box
 }
 
 const header = () => {
   const header = document.createElement("header")
+
   header.appendChild(left_box())
   header.appendChild(nav_bar())
   header.appendChild(right_box())
+
   return header
 }
 
 const wrap = () => {
   const wrap = document.createElement("div")
   wrap.classList.add("wrap")
+
   wrap.appendChild(header())
   wrap.appendChild(sidebar())
   wrap.appendChild(main())
   wrap.appendChild(chartOption())
+
   return wrap
 }
 
