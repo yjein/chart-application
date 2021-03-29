@@ -1,10 +1,10 @@
 const ul = () => {
   const ul = document.createElement("ul")
 
-  ul.appendChild(list("home"))
-  ul.appendChild(list("chart"))
-  ul.appendChild(list("docs"))
-  ul.appendChild(list("contact"))
+  ul.appendChild(list("home", "main"))
+  ul.appendChild(list("chart", "chart"))
+  ul.appendChild(list("docs", "docs"))
+  ul.appendChild(list("contact", "contact"))
 
   return ul
 }
