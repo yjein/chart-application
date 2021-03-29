@@ -10,7 +10,7 @@ a:active {
   color: inherit;
 }
 
-.wrap {
+.chartWrap {
   display: grid;
   grid-template-columns: max-content auto max-content;
   height: 100%;
