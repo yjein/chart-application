@@ -1,6 +1,6 @@
 "use strict"
 
-const header = () => {
+const chartHeader = () => {
   const header = document.createElement("header")
   header.classList.add("chartHeader")
 

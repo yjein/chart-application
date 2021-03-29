@@ -1,4 +1,4 @@
-const header = () => {
+const mainHeader = () => {
   const header = document.createElement("header")
   header.classList.add("mainHeader")
 
