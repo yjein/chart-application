@@ -3,7 +3,7 @@ const mainWrapper = () => {
   wrap.classList.add("wrap")
 
   wrap.appendChild(header())
-  wrap.appendChild(main())
+  wrap.appendChild(indexMain())
 
   return wrap
 }

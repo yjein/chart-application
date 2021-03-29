@@ -6,7 +6,7 @@ const chartWrapper = () => {
 
   wrap.appendChild(header())
   wrap.appendChild(sidebar())
-  wrap.appendChild(main())
+  wrap.appendChild(chartMain())
   wrap.appendChild(chartOption())
 
   return wrap
