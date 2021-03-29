@@ -3,7 +3,7 @@ const mainHeader = () => {
   header.classList.add("mainHeader")
 
   header.appendChild(logo_wrap())
-  header.appendChild(nav())
+  header.appendChild(mainNav())
 
   return header
 }

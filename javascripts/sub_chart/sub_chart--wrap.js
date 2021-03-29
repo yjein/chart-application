@@ -2,11 +2,11 @@
 
 const chartWrapper = () => {
   const wrap = document.createElement("div")
-  wrap.classList.add("wrap")
+  wrap.classList.add("chartWrap")
 
   wrap.appendChild(chartHeader())
   wrap.appendChild(sidebar())
-  wrap.appendChild(main())
+  wrap.appendChild(chartMain())
   wrap.appendChild(chartOption())
 
   return wrap

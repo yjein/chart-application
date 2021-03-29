@@ -1,6 +1,6 @@
 "use strict"
 
-const main = () => {
+const chartMain = () => {
   const main = document.createElement("main")
   main.appendChild(chart())
 
