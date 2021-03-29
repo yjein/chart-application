@@ -1,5 +1,6 @@
 const ul = () => {
   const ul = document.createElement("ul")
+  ul.classList.add("main-ul")
 
   ul.appendChild(list("home", "main"))
   ul.appendChild(list("chart", "chart"))
