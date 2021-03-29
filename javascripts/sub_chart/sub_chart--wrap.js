@@ -1,6 +1,6 @@
 "use strict"
 
-const wrap = () => {
+const chartWrapper = () => {
   const wrap = document.createElement("div")
   wrap.classList.add("wrap")
 

@@ -1,4 +1,4 @@
-const wrap = () => {
+const mainWrapper = () => {
   const wrap = document.createElement("div")
   wrap.classList.add("wrap")
 
