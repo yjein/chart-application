@@ -53,10 +53,13 @@ a:active {
   background-color: #4e4e4e;
 }
 
+nav {
+  background-color: #cfcfcf;
+}
+
 .mainNav {
   display: flex;
   justify-content: space-between;
-  background-color: #cfcfcf;
 }
 
 .navbar > div {
@@ -90,7 +93,7 @@ ul {
   color: #686767;
 }
 
-nav .main-ul {
+.mainNav .main-ul {
   padding: 0.3em 0;
 }
 
