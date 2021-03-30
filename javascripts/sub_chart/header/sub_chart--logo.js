@@ -1,8 +1,8 @@
 "use strict"
 
-const logo = () => {
+const chartLogo = () => {
   const logo = document.createElement("div")
-  logo.classList.add("logo")
+  logo.classList.add("chartLogo")
   logo.textContent = "RaonChart"
 
   return logo

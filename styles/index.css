@@ -46,7 +46,7 @@ a:active {
   background: linear-gradient(to right, #cfcfcf 50%, #6e6e6e 50%);
 }
 
-.logo {
+.logo-wrapper .mainLogo {
   padding: 1rem;
   font-size: 2rem;
   color: #ffffff;
@@ -63,7 +63,7 @@ a:active {
   display: flex;
 }
 
-.navbar > div > .logo {
+.navbar > div .chartLogo {
   margin-right: 10px;
   padding: 0.25rem;
   font-size: 1rem;
