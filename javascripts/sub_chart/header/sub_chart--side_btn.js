@@ -5,5 +5,11 @@ const side_btn = () => {
   side_btn.classList.add("sideBtn")
   side_btn.textContent = "="
 
+  const toggleTheBar = () => {
+    document.querySelector(".sidebar").classList.toggle("--close")
+  }
+
+  side_btn.addEventListener("click", () => toggleTheBar())
+
   return side_btn
 }
