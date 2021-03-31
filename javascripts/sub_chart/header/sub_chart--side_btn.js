@@ -5,12 +5,9 @@ const side_btn = () => {
   side_btn.classList.add("sideBtn")
   side_btn.textContent = "="
 
-    //TODO: 의존성 수정 필요
-  const toggleTheBar = () => {
+  side_btn.addEventListener("click", function toggleTheBar() {
     document.querySelector(".sidebar").classList.toggle("--close")
-  }
-
-  side_btn.addEventListener("click", () => toggleTheBar())
+  })
 
   return side_btn
 }
