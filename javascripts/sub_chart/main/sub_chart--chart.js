@@ -6,6 +6,7 @@ const chart = () => {
 
 class TempClass {
   constructor() {
+    this.curState = "bar"
     this.chart = document.createElement("div")
     this.chart.classList.add("chart")
 
@@ -16,6 +17,7 @@ class TempClass {
   }
 
   setChart(chartName) {
+    this.curState = chartName
     this.chart.removeChild(this.chart_content)
     this.chart.removeChild(this.chart_body)
 
@@ -27,7 +29,7 @@ class TempClass {
   }
 
   render() {
-    this.setChart("bar")
+    this.setChart(this.curState)
     return this.chart
   }
 }
