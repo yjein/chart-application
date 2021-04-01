@@ -40,4 +40,10 @@ const options = {
     contents: "블라 블라 블라",
     option: sankey,
   },
+
+  funnel: {
+    title: "Funnel Chart",
+    contents: "블라 블라 블라",
+    option: funnel,
+  },
 }
