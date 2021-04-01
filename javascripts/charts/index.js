@@ -16,4 +16,10 @@ const options = {
     contents: "블라 블라 블라",
     option: pie,
   },
+
+  scatter: {
+    title: "Scatter Chart",
+    contents: "블라 블라 블라",
+    option: scatter,
+  },
 }
