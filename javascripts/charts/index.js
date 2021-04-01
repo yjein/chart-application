@@ -46,4 +46,10 @@ const options = {
     contents: "블라 블라 블라",
     option: funnel,
   },
+
+  candlestick: {
+    title: "Candlestick Chart",
+    contents: "블라 블라 블라",
+    option: candlestick,
+  },
 }
