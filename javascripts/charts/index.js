@@ -34,4 +34,10 @@ const options = {
     contents: "블라 블라 블라",
     option: radar,
   },
+
+  sankey: {
+    title: "Sankey Chart",
+    contents: "블라 블라 블라",
+    option: sankey,
+  },
 }
