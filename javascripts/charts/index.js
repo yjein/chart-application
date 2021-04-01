@@ -22,4 +22,10 @@ const options = {
     contents: "블라 블라 블라",
     option: scatter,
   },
+
+  gauge: {
+    title: "Gauge Chart",
+    contents: "블라 블라 블라",
+    option: gauge,
+  },
 }
