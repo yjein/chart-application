@@ -1,4 +1,5 @@
 let instance
+const chartClass = new TempClass()
 
 class ChartProject {
   constructor(rootSeletor) {

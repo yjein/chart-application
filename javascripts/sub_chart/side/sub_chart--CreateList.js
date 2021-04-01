@@ -1,14 +1,12 @@
 "use strict"
 
-const CreateList = (li_num) => {
-  const num = li_num || 1 // 보지 않는다
-
+const CreateList = (chartName) => {
   const chartList = document.createElement("li")
   chartList.classList.add("side-list")
-  chartList.textContent = `Chart ${num}`
+  chartList.textContent = chartName
 
   chartList.addEventListener("click", () => {
-    history.pushState({}, "Chart-Style", "#")
+    chartClass.setChart(chartName)
   })
   chartList.style.cursor = "pointer"
 

@@ -233,6 +233,10 @@ fieldset {
   margin: 5px 0;
 }
 
+.createChart {
+  background-color: #ffffff;
+}
+
 .color-chart {
   margin-bottom: 15px;
   height: 150px;
