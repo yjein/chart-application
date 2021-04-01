@@ -9,21 +9,21 @@ class TempClass {
     this.chart = document.createElement("div")
     this.chart.classList.add("chart")
 
-    this.con = document.createElement("div")
-    this.bo = document.createElement("div")
-    this.chart.appendChild(this.con)
-    this.chart.appendChild(this.bo)
+    this.chart_content = document.createElement("div")
+    this.chart_body = document.createElement("div")
+    this.chart.appendChild(this.chart_content)
+    this.chart.appendChild(this.chart_body)
   }
 
   setChart(chartName) {
-    this.chart.removeChild(this.con)
-    this.chart.removeChild(this.bo)
+    this.chart.removeChild(this.chart_content)
+    this.chart.removeChild(this.chart_body)
 
-    this.con = chart_ex(options[chartName].contents)
-    this.bo = CreateChart(options[chartName].option)
+    this.chart_content = chart_ex(options[chartName].contents)
+    this.chart_body = CreateChart(options[chartName].option)
 
-    this.chart.appendChild(this.con)
-    this.chart.appendChild(this.bo)
+    this.chart.appendChild(this.chart_content)
+    this.chart.appendChild(this.chart_body)
   }
 
   render() {

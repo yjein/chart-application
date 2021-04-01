@@ -4,9 +4,16 @@ const options = {
     contents: "블라 블라 블라",
     option: bar,
   },
+
   line: {
-    title: "line Chart",
+    title: "Line Chart",
     contents: "블라 블라 블라",
     option: line,
+  },
+
+  pie: {
+    title: "Pie Chart",
+    contents: "블라 블라 블라",
+    option: pie,
   },
 }
