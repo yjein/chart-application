@@ -52,4 +52,10 @@ const options = {
     contents: "블라 블라 블라",
     option: candlestick,
   },
+
+  sunburst: {
+    title: "Sunburst Chart",
+    contents: "블라 블라 블라",
+    option: sunburst,
+  },
 }
