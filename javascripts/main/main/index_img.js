@@ -1,7 +1,9 @@
-const img = (chartName) => {
-  const img = document.createElement("div")
+const img = (chartName, url) => {
+  const img = document.createElement("img")
   img.textContent = chartName
-  // img.src = ""
+  img.classList.add("image")
+  img.src = url
+
   img.addEventListener("click", () => {
     chartProject.setPage("chart")
     chartClass.setChart(chartName)
