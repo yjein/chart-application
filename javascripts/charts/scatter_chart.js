@@ -1,4 +1,13 @@
 const scatter = {
+  tooltip: {},
+  toolbox: {
+    show: true,
+    feature: {
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true },
+    },
+  },
   xAxis: {},
   yAxis: {},
   series: [

@@ -1,3 +1,31 @@
+const sunburst = {
+  tooltip: {},
+  toolbox: {
+    show: true,
+    feature: {
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true },
+    },
+  },
+  visualMap: {
+    type: "continuous",
+    min: 0,
+    max: 10,
+    inRange: {
+      color: ["#2F93C8", "#AEC48F", "#FFDB5C", "#F98862"],
+    },
+  },
+  series: {
+    type: "sunburst",
+    data: data,
+    radius: [0, "90%"],
+    label: {
+      rotate: "radial",
+    },
+  },
+}
+
 var data = [
   {
     name: "Grandpa",
@@ -97,22 +125,3 @@ var data = [
     ],
   },
 ]
-
-const sunburst = {
-  visualMap: {
-    type: "continuous",
-    min: 0,
-    max: 10,
-    inRange: {
-      color: ["#2F93C8", "#AEC48F", "#FFDB5C", "#F98862"],
-    },
-  },
-  series: {
-    type: "sunburst",
-    data: data,
-    radius: [0, "90%"],
-    label: {
-      rotate: "radial",
-    },
-  },
-}

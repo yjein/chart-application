@@ -1,7 +1,5 @@
 const pie = {
-  legend: {
-    top: "bottom",
-  },
+  tooltip: {},
   toolbox: {
     show: true,
     feature: {
@@ -10,6 +8,9 @@ const pie = {
       restore: { show: true },
       saveAsImage: { show: true },
     },
+  },
+  legend: {
+    top: "bottom",
   },
   series: [
     {

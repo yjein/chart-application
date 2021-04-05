@@ -1,6 +1,14 @@
 const bar = {
-  legend: {},
   tooltip: {},
+  toolbox: {
+    show: true,
+    feature: {
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true },
+    },
+  },
+  legend: {},
   dataset: {
     source: [
       ["product", "2012", "2013", "2014", "2015"],

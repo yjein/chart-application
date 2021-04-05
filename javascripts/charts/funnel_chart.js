@@ -9,9 +9,9 @@ const funnel = {
   },
   toolbox: {
     feature: {
-      dataView: { readOnly: false },
-      restore: {},
-      saveAsImage: {},
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true },
     },
   },
   legend: {
