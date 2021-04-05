@@ -68,4 +68,11 @@ const options = {
     image_url: "../assets/charts/sunburst.png",
     option: sunburst,
   },
+
+  pictorialbar: {
+    title: "PictorialBar Chart",
+    contents: "블라 블라 블라",
+    image_url: "../assets/charts/pictorialbar.png",
+    option: pictorialbar,
+  },
 }
