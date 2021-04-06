@@ -1,4 +1,4 @@
-const columnDefs = [{ field: "name" }, { field: "model" }, { field: "price" }]
+const columnDefs = [{ field: "make" }, { field: "model" }, { field: "price" }]
 
 const rowData = [
   { make: "Toyota", model: "Celica", price: 35000 },
