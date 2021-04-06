@@ -3,6 +3,7 @@ const options = {
     title: "Bar Chart",
     contents: "블라 블라 블라",
     image_url: "../assets/charts/bar.png",
+    gridOption: bar_grid_opt,
     option: bar,
   },
 
