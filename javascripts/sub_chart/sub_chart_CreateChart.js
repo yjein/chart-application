@@ -7,7 +7,7 @@ const CreateChart = (option) => {
   setTimeout(() => {
     const myChart = echarts.init(
       create_chart,
-      {},
+      'vintage',
       {
         renderer: "svg",
       }
