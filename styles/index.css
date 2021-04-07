@@ -232,6 +232,8 @@ fieldset {
 
 .chart_ex {
   height: 10%;
+  background-color: #ffffff;
+  padding: 0.5rem;
 }
 
 .ag_grid {
