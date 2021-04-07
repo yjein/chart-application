@@ -20,7 +20,9 @@ const options = {
 
   pie: {
     title: "Pie Chart",
-    contents: "블라 블라 블라",
+    contents: `원그래프는 전체에 대한 각 부분의 비율을 부채꼴 모양으로 나타낸 그래프이다.
+    각 부채꼴의 중심각이 전체에서 차지하는 비율을 나타내며,
+    비율을 한눈에 볼 수 있다는 장점이 있다.`,
     image_url: "../assets/charts/pie.png",
     option: pie,
   },
