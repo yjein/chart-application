@@ -11,7 +11,9 @@ const options = {
 
   line: {
     title: "Line Chart",
-    contents: "블라 블라 블라",
+    contents: `선 그래프 또는 꺾은 선 그래프는 수량을 점으로 표시하고 그 점들을 선분으로 이어 그린 그래프를 말한다.
+    시간에 따라 뭔가가 지속적으로 변화하는 것을 기록할때 굉장히 유용하다.
+    조사하지 않은 중간의 값도 대략 예측할 수 있다는 장점이 있다.`,
     image_url: "../assets/charts/line.png",
     option: line,
   },
