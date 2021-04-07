@@ -1,7 +1,7 @@
 const line = {
   title: {
     left: "center",
-    text: "일별 신규 코로나 바이러스 확진자수",
+    text: "주간 신규 코로나 바이러스 확진자수",
   },
   tooltip: {},
   toolbox: {
