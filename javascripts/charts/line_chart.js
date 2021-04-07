@@ -25,6 +25,7 @@ const line = {
     ],
   },
   yAxis: {
+    name: "확진자 수",
     type: "value",
   },
   series: [
