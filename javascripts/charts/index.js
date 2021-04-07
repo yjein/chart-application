@@ -1,7 +1,9 @@
 const options = {
   bar: {
     title: "Bar Chart",
-    contents: "블라 블라 블라",
+    contents: `표현 값에 비례하여 높이와 길이를 지는 직사각형 막대로 범주형 데이터를 표현하는 차트이다.
+    막대는 수직이나 수평으로 그릴 수 있다.
+    히스토그램은 공업 분야에서 품질 관리(QC)를 위한 도구 중 하나이다.`,
     image_url: "../assets/charts/bar.png",
     gridOption: bar_grid_opt,
     option: bar,
