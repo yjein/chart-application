@@ -7,6 +7,7 @@ const chart = () => {
 class TempClass {
   constructor() {
     this.curState = "bar"
+    this.curTheme = "vintage"
     this.chart = document.createElement("div")
     this.chart.classList.add("chart")
 
@@ -22,14 +23,19 @@ class TempClass {
     this.chart.removeChild(this.chart_body)
 
     this.chart_content = chart_ex(options[chartName].contents)
-    this.chart_body = CreateChart(options[chartName].option)
+    this.chart_body = CreateChart(options[chartName].option, this.curTheme)
 
     this.chart.appendChild(this.chart_content)
     this.chart.appendChild(this.chart_body)
   }
 
+  setTheme(themeName) {
+    this.curTheme = themeName
+  }
+
   render() {
     this.setChart(this.curState)
+    this.setTheme(this.curTheme)
     return this.chart
   }
 }
