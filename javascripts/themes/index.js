@@ -5,4 +5,5 @@ const themeOption = {
   essos: essos,
   wonderland: wonderland,
   walden: walden,
+  chalk: chalk,
 }
