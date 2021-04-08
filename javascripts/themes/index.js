@@ -7,4 +7,5 @@ const themeOption = {
   walden: walden,
   chalk: chalk,
   infographic: infographic,
+  macarons: macarons,
 }
