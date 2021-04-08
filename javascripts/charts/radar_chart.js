@@ -32,12 +32,17 @@ const radar = {
       { name: "研发（Development）", max: 52000 },
       { name: "市场（Marketing）", max: 25000 },
     ],
+    splitLine: {
+      lineStyle: {
+        color: "rgba(116, 116, 116, 1)",
+      },
+    },
   },
   series: [
     {
       name: "预算 vs 开销（Budget vs spending）",
       type: "radar",
-      // areaStyle: {normal: {}},
+      areaStyle: {},
       data: [
         {
           value: [4300, 10000, 28000, 35000, 50000, 19000],
