@@ -38,6 +38,17 @@ const scatter = {
         [5.02, 5.68],
       ],
       type: "scatter",
+      symbol: "triangle",
+      itemStyle: {
+        shadowBlur: 10,
+        shadowColor: "rgba(12, 0, 255, 1)",
+      },
+      markLine: {
+        data: [{ type: "average" }],
+      },
+      markPoint: {
+        data: [{ type: "max" }],
+      },
     },
   ],
 }
