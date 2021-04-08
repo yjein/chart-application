@@ -10,4 +10,5 @@ const themeOption = {
   macarons: macarons,
   roma: roma,
   shine: shine,
+  purple_passion: purple_passion,
 }
