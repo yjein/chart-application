@@ -29,12 +29,10 @@ a:active {
   display: grid;
   grid-template-columns: 200px auto 50px;
   position: sticky;
-  grid-column: 1 / 4;
-  grid-template-columns: 200px auto 50px;
   top: 0;
+  margin: 0;
   width: 100vw;
   height: 45px;
-  margin: 0;
 }
 
 .logo-wrapper {
