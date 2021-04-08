@@ -8,4 +8,5 @@ const themeOption = {
   chalk: chalk,
   infographic: infographic,
   macarons: macarons,
+  roma: roma,
 }
