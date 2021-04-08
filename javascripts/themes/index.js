@@ -12,4 +12,5 @@ const themeOption = {
   shine: shine,
   purple_passion: purple_passion,
   halloween: halloween,
+  customed: customed,
 }
