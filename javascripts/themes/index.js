@@ -1,4 +1,5 @@
 const themeOption = {
+  customed: customed,
   vintage: vintage,
   dark: dark,
   westeros: westeros,
@@ -12,5 +13,4 @@ const themeOption = {
   shine: shine,
   purple_passion: purple_passion,
   halloween: halloween,
-  customed: customed,
 }
