@@ -315,7 +315,7 @@ const halloween = {
   },
   legend: {
     textStyle: {
-      color: "#999999",
+      color: "#4e4e4e",
     },
   },
   tooltip: {
