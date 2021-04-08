@@ -11,4 +11,5 @@ const themeOption = {
   roma: roma,
   shine: shine,
   purple_passion: purple_passion,
+  halloween: halloween,
 }
