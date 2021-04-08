@@ -7,7 +7,7 @@ const chart = () => {
 class TempClass {
   constructor() {
     this.curState = "bar"
-    this.curTheme = "vintage"
+    this.curTheme = "customed"
     this.chart = document.createElement("div")
     this.chart.classList.add("chart")
 
