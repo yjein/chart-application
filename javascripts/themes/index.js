@@ -3,4 +3,5 @@ const themeOption = {
   dark: dark,
   westeros: westeros,
   essos: essos,
+  wonderland: wonderland,
 }
