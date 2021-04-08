@@ -27,7 +27,7 @@ class TempClass {
 
     this.chart_content = chart_ex(options[chartName].contents)
     this.chart_ag = chart_grid(options[chartName].gridOption)
-    this.chart_body = CreateChart(options[chartName].option)
+    this.chart_body = CreateChart(options[chartName].option, this.curTheme)
 
     this.chart.appendChild(this.chart_content)
     this.chart.appendChild(this.chart_ag)
