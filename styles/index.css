@@ -187,9 +187,8 @@ main .dashboard > img:nth-child(2) {
 }
 
 .chart {
-  display: grid;
-  grid-template-rows: 1fr 7fr;
   height: 100%;
+  width: 99%;
 }
 
 .chartOption {
@@ -231,10 +230,31 @@ fieldset {
   margin: 5px 0;
 }
 
-.createChart {
+.chart_ex {
+  height: 10%;
   background-color: #ffffff;
-  width: 100%;
-  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.ag_grid {
+  margin-bottom: 1em;
+  height: 20%;
+  background-color: #ffffff;
+  transition: all 150ms;
+}
+
+.ag_grid_off {
+  height: 0;
+}
+
+.createChart {
+  height: 65%;
+  background-color: #ffffff;
+  transition: all 150ms;
+}
+
+.createChart_up {
+  height: 85%;
 }
 
 .color-chart {

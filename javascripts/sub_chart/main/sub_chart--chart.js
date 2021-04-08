@@ -12,20 +12,25 @@ class TempClass {
     this.chart.classList.add("chart")
 
     this.chart_content = document.createElement("div")
+    this.chart_ag = document.createElement("div")
     this.chart_body = document.createElement("div")
     this.chart.appendChild(this.chart_content)
+    this.chart.appendChild(this.chart_ag)
     this.chart.appendChild(this.chart_body)
   }
 
   setChart(chartName) {
     this.curState = chartName
     this.chart.removeChild(this.chart_content)
+    this.chart.removeChild(this.chart_ag)
     this.chart.removeChild(this.chart_body)
 
     this.chart_content = chart_ex(options[chartName].contents)
-    this.chart_body = CreateChart(options[chartName].option, this.curTheme)
+    this.chart_ag = chart_grid(options[chartName].gridOption)
+    this.chart_body = CreateChart(options[chartName].option)
 
     this.chart.appendChild(this.chart_content)
+    this.chart.appendChild(this.chart_ag)
     this.chart.appendChild(this.chart_body)
   }
 
