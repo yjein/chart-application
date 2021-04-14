@@ -1,35 +1,57 @@
 import React from "react"
 import styled from "styled-components"
-import {} from "../style/chart"
+import {
+  Wrapper,
+  Header,
+  LeftBox,
+  SideBtn,
+  NavBar,
+  Logo,
+  NavUl,
+  NavLi,
+  SideBar,
+  SideUl,
+  SideLi,
+  Main,
+  Chart,
+  GridToggle,
+  ChartEx,
+  CreateChart,
+} from "../style/chart"
 
-const Chart = () => {
+const ChartPage = () => {
   return (
-    <div className="wrap">
-      <header>
-        <div className="leftBox">
-          <button className="sideBtn">=</button>
-        </div>
-        <nav className="navBar">
-          <div className="logo"></div>
-          <ul className="navUl">
-            <li className="navLi">a</li>
-            <li className="navLi">b</li>
-            <li className="navLi">c</li>
-          </ul>
-        </nav>
-      </header>
-      <div className="sideBar">
-        <ul className="sideUl">
-          <li className="sideLi"></li>
-        </ul>
-      </div>
-      <main>
-        <div className="chart"></div>
-        <div className="gridToggle"></div>
-        <div className="chartEx"></div>
-      </main>
-    </div>
+    <Wrapper>
+      <Header>
+        <LeftBox>
+          <SideBtn>=</SideBtn>
+        </LeftBox>
+        <NavBar>
+          <Logo>RaonChart</Logo>
+          <NavUl>
+            <NavLi>home</NavLi>
+            <NavLi>chart</NavLi>
+            <NavLi>docs</NavLi>
+            <NavLi>contect</NavLi>
+          </NavUl>
+        </NavBar>
+      </Header>
+      <SideBar>
+        <SideUl>
+          <SideLi>a</SideLi>
+          <SideLi>b</SideLi>
+          <SideLi>c</SideLi>
+        </SideUl>
+      </SideBar>
+      <Main>
+        <Chart>
+          <ChartEx>Text</ChartEx>
+          <GridToggle></GridToggle>
+          <CreateChart></CreateChart>
+        </Chart>
+      </Main>
+    </Wrapper>
   )
 }
 
-export default Chart
+export default ChartPage
