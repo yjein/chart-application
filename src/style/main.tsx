@@ -2,7 +2,11 @@ import styled from "styled-components"
 
 export const Li = styled.li`
   display: inline;
-  padding-right: 2rem;
+  margin-right: 2rem;
+
+  &:hover {
+    border-bottom: solid 0.2rem #444444;
+  }
 `
 
 export const Ul = styled.ul`
