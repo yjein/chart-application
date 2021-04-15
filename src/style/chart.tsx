@@ -6,9 +6,12 @@ export const Wrapper = styled.div`
   height: 100%;
 `
 export const Header = styled.header`
-  grid-column: 1 / 3;
   display: grid;
+  position: sticky;
+  grid-column: 1 / 3;
   grid-template-columns: 200px auto;
+  top: 0;
+  z-index: 1;
   background-color: #cccccc;
   /* height: 100px; */
 `
@@ -50,7 +53,10 @@ export const NavLi = styled.li`
 `
 
 export const SideBar = styled.div`
+  position: sticky;
+  top: 0;
   width: 200px;
+  height: 100vh;
   background-color: #c9c9c9;
 `
 
