@@ -11,7 +11,7 @@ import {
   Ul,
   Li,
   Div,
-} from "../style/main"
+} from "../../style/main"
 
 const MainPage = () => {
   return (
