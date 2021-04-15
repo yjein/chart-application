@@ -37,11 +37,16 @@ export const NavUl = styled.ul`
 
 export const NavLi = styled.li`
   display: inline;
-  padding-right: 1.5rem;
+  margin: 0 1.5rem;
+  padding-bottom: 0.25rem;
   list-style: none;
   color: #333333;
   font-weight: 700;
   background-color: #c9c9c9;
+
+  &:hover {
+    border-bottom: 5px solid #666666;
+  }
 `
 
 export const SideBar = styled.div`
