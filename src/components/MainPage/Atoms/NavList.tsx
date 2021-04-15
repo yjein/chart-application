@@ -5,8 +5,9 @@ const LiStyle = styled.li`
   padding-right: 2rem;
 `
 
-const NavList = () => {
-  return <LiStyle />
+const NavList: React.FC<{}> = (props) => {
+  const { children } = props
+  return <LiStyle>{children}</LiStyle>
 }
 
 export default NavList

@@ -6,8 +6,9 @@ const DashBordStyle = styled.div`
   gap: 0.5rem;
 `
 
-const DashBord = () => {
-  return <DashBordStyle />
+const DashBord: React.FC<{}> = (props) => {
+  const { children } = props
+  return <DashBordStyle>{children}</DashBordStyle>
 }
 
 export default DashBord
