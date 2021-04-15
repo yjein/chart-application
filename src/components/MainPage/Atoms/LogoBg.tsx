@@ -5,8 +5,9 @@ const LogoBgStyle = styled.div`
   background: linear-gradient(to right, #dbdbdb 50%, #606060 50%);
 `
 
-const LogoBg = () => {
-  return <LogoBgStyle />
+const LogoBg: React.FC<{}> = (props) => {
+  const { children } = props
+  return <LogoBgStyle>{children}</LogoBgStyle>
 }
 
 export default LogoBg
