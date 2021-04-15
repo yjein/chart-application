@@ -1,7 +1,14 @@
-import { Logo } from "../../../style/main"
+import styled from "styled-components"
 
-const AtomsMainLogo = () => {
-  return <Logo />
+const LogoStyle = styled.div`
+  width: 200px;
+  height: 60px;
+  margin: 4rem auto;
+  background-color: #444444;
+`
+
+const Logo = () => {
+  return <LogoStyle />
 }
 
-export default AtomsMainLogo
+export default Logo

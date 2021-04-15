@@ -1,7 +1,13 @@
-import { Header } from "../../../style/main"
+import styled from "styled-components"
 
-const AtomsMainHeader = () => {
-  return <Header />
+const HeaderStyle = styled.header`
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: #606060;
+`
+
+const Header = () => {
+  return <HeaderStyle />
 }
 
-export default AtomsMainHeader
+export default Header

@@ -1,7 +1,14 @@
-import { Main } from "../../../style/main"
+import styled from "styled-components"
 
-const AtomsMainMain = () => {
-  return <Main />
+const MainStyle = styled.div`
+  display: grid;
+  height: 70vh;
+  padding: 2rem;
+  background-color: #909090;
+`
+
+const Main = () => {
+  return <MainStyle />
 }
 
-export default AtomsMainMain
+export default Main

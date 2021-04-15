@@ -1,7 +1,11 @@
-import { Ul } from "../../../style/main"
+import styled from "styled-components"
 
-const AtomsMainNavUl = () => {
-  return <Ul />
+const UlStyle = styled.ul`
+  margin-top: 0.3rem;
+`
+
+const NavUl = () => {
+  return <UlStyle />
 }
 
-export default AtomsMainNavUl
+export default NavUl

@@ -1,7 +1,12 @@
-import { Nav } from "../../../style/main"
+import styled from "styled-components"
 
-const AtomsMainNavBar = () => {
-  return <Nav />
+const NavStyle = styled.nav`
+  height: 2rem;
+  background-color: #dbdbdb;
+`
+
+const NavBar = () => {
+  return <NavStyle />
 }
 
-export default AtomsMainNavBar
+export default NavBar
