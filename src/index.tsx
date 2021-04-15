@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components"
 import { theme } from "./theme"
 import GlobalStyle from "./theme/GlobalStyle"
 //my-app
-import App from "./components/App"
+import App from "./components/ChartPage/Pages/App"
 
 ReactDOM.render(
   <React.StrictMode>
