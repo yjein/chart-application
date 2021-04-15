@@ -55,9 +55,14 @@ export const NavLi = styled.li`
 export const SideBar = styled.div`
   position: sticky;
   top: 0;
+  overflow-x: auto;
   width: 200px;
   height: 100vh;
   background-color: #c9c9c9;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 export const SideUl = styled.ul`
