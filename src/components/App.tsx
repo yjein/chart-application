@@ -1,11 +1,8 @@
 import React from "react"
-import styled from "styled-components"
+import MainPage from "./MainPage"
 
-const Wrapper = styled.div`
-  background-color: red;
-`
 const App = () => {
-  return <Wrapper></Wrapper>
+  return <MainPage />
 }
 
 export default App
