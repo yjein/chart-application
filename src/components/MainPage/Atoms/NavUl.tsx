@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const UlStyle = styled.ul`
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
 `
 
 const NavUl: React.FC<{}> = (props) => {
