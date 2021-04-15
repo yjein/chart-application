@@ -5,8 +5,9 @@ const WrapperStyle = styled.div`
   grid-template-rows: 1fr 4fr;
 `
 
-const Wrapper = () => {
-  return <WrapperStyle />
+const Wrapper: React.FC<{}> = (props) => {
+  const { children } = props
+  return <WrapperStyle>{children}</WrapperStyle>
 }
 
 export default Wrapper
