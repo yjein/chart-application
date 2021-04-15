@@ -6,8 +6,9 @@ const HeaderStyle = styled.header`
   background-color: #606060;
 `
 
-const Header = () => {
-  return <HeaderStyle />
+const Header: React.FC<{}> = (props) => {
+  const { children } = props
+  return <HeaderStyle>{children}</HeaderStyle>
 }
 
 export default Header
