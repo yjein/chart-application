@@ -5,8 +5,9 @@ const NavStyle = styled.nav`
   background-color: #dbdbdb;
 `
 
-const NavBar = () => {
-  return <NavStyle />
+const NavBar: React.FC<{}> = (props) => {
+  const { children } = props
+  return <NavStyle>{children}</NavStyle>
 }
 
 export default NavBar
