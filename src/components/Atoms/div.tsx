@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const ImageStyle = styled.img`
+const DivStyle = styled.div`
   background-color: #ffffff;
 
   &:nth-child(1) {
@@ -13,8 +13,8 @@ const ImageStyle = styled.img`
   }
 `
 
-const Image = () => {
-  return <ImageStyle />
+const Div = () => {
+  return <DivStyle />
 }
 
-export default Image
+export default Div

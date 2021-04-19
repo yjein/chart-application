@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Image from "../Atoms/img"
+import Div from "../Atoms/div"
 
 const DashBordStyle = styled.div`
   display: grid;
@@ -10,18 +10,18 @@ const DashBordStyle = styled.div`
 const DashBord = () => {
   return (
     <DashBordStyle>
-      <Image />
-      <Image />
-      <Image />
-      <Image />
-      <Image />
-      <Image />
-      <Image />
-      <Image />
-      <Image />
-      <Image />
-      <Image />
-      <Image />
+      <Div/>
+      <Div/>
+      <Div/>
+      <Div/>
+      <Div/>
+      <Div/>
+      <Div/>
+      <Div/>
+      <Div/>
+      <Div/>
+      <Div/>
+      <Div/>
     </DashBordStyle>
   )
 }
