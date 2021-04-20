@@ -1,26 +1,24 @@
 import React from "react"
 import styled from "styled-components"
 
-const Button: React.FC<{}> = (props) => {
+interface Props {
+  border?: string
+  onClick: React.MouseEventHandler<HTMLDivElement>
+}
+
+const Button: React.FC<{}> = (props, { border }) => {
   const { children } = props
-  return (
-    <StyleButton>
-      <Line></Line>
-      <Line></Line>
-      <Line></Line>
-    </StyleButton>
-  )
+  return <StyleButton border={border}>{children}</StyleButton>
 }
 
 const StyleButton = styled.div`
   margin: 0.5rem;
-  width: 20px;
-  height: 20px;
-  border: 0.25rem solid #333333;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: ${(props: Props) =>
+    props.border === "none" ? "none" : `0.25rem solid #333333`};
   border-radius: 0.5rem;
   cursor: pointer;
 `
-
-const Line = styled.div``
 
 export default Button
