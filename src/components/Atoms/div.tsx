@@ -1,3 +1,4 @@
+import React from "react"
 import styled from "styled-components"
 
 const DivStyle = styled.div`
@@ -13,8 +14,9 @@ const DivStyle = styled.div`
   }
 `
 
-const Div = () => {
-  return <DivStyle />
+const Div: React.FC<{}> = (props) => {
+  const { children } = props
+  return <DivStyle>{children}</DivStyle>
 }
 
 export default Div

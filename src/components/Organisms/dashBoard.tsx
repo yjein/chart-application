@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Div from "../Atoms/div"
+import DashBordImg from "../Molecules/dashBordImg"
 
 const DashBordStyle = styled.div`
   display: grid;
@@ -8,22 +8,7 @@ const DashBordStyle = styled.div`
 `
 
 const DashBord = () => {
-  return (
-    <DashBordStyle>
-      <Div/>
-      <Div/>
-      <Div/>
-      <Div/>
-      <Div/>
-      <Div/>
-      <Div/>
-      <Div/>
-      <Div/>
-      <Div/>
-      <Div/>
-      <Div/>
-    </DashBordStyle>
-  )
+  return <DashBordStyle>{DashBordImg()}</DashBordStyle>
 }
 
 export default DashBord

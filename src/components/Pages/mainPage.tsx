@@ -7,7 +7,7 @@ const WrapperStyle = styled.div`
   grid-template-rows: 1fr 4fr;
 `
 
-const ChartPage = () => {
+const MainPage = () => {
   return (
     <WrapperStyle>
       <MainHeader />
@@ -16,4 +16,4 @@ const ChartPage = () => {
   )
 }
 
-export default ChartPage
+export default MainPage
