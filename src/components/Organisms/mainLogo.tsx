@@ -4,15 +4,16 @@ const LogoBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
   min-width: 500px;
-  background: linear-gradient(to right, #dbdbdb 50%, #606060 50%);
+  background: linear-gradient(to right, #cccccc 50%, #666666 50%);
 `
 
 const LogoStyle = styled.div`
+  padding: 1rem;
   text-align: center;
-  font-size: 3rem;
-  background-color: #444444;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #333333;
 `
 
 const Logo = () => {

@@ -5,7 +5,7 @@ import Nav from "../Organisms/mainNav"
 const Header = styled.header`
   display: grid;
   grid-template-columns: 1fr 4fr;
-  background-color: #606060;
+  background-color: #666666;
 `
 
 const MainHeader = () => {

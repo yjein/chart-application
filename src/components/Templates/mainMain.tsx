@@ -4,7 +4,7 @@ import DashBord from "../Organisms/dashBoard"
 const MainStyle = styled.div`
   display: grid;
   padding: 2rem;
-  background-color: #909090;
+  background-color: #999999;
 `
 
 const Main = () => {
