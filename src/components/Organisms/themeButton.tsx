@@ -2,17 +2,6 @@ import React from "react"
 import styled from "styled-components"
 // import Button from "../Atoms/button"
 
-const ThemeBtn = () => {
-  return (
-    <StyleThemeBtn>
-      <Btn />
-      <Btn />
-      <Btn />
-      <Btn />
-    </StyleThemeBtn>
-  )
-}
-
 const StyleThemeBtn = styled.nav`
   display: flex;
   border-radius: 0.25rem;
@@ -27,5 +16,16 @@ const Btn = styled.div`
   background-color: #666666;
   cursor: pointer;
 `
+
+const ThemeBtn = () => {
+  return (
+    <StyleThemeBtn>
+      <Btn />
+      <Btn />
+      <Btn />
+      <Btn />
+    </StyleThemeBtn>
+  )
+}
 
 export default ThemeBtn
