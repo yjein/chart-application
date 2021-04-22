@@ -23,7 +23,7 @@ const Li = styled.li`
   }
 `
 
-const mainNav = () => {
+const MainNav = () => {
   return (
     <Nav>
       <Ul>
@@ -36,4 +36,4 @@ const mainNav = () => {
   )
 }
 
-export default mainNav
+export default MainNav

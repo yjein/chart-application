@@ -5,13 +5,13 @@ interface Url {
   url: string
 }
 
-const ImageStyle = styled.img`
+const Img = styled.img`
   width: 100%;
   height: 100%;
 `
 
 const Image: React.FC<Url> = ({ url }) => {
-  return <ImageStyle src={url} />
+  return <Img src={url} />
 }
 
 export default Image
