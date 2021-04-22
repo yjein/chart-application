@@ -14,6 +14,21 @@ import sankeyUrl from "../../assets/charts/sankey.png"
 import scatterUrl from "../../assets/charts/scatter.png"
 import sunburstUrl from "../../assets/charts/sunburst.png"
 
+const Urls = [
+  barUrl,
+  lineUrl,
+  candlestickUrl,
+  gaugeUrl,
+  funnelUrl,
+  parallelUrl,
+  pictorialbarUrl,
+  pieUrl,
+  radarUrl,
+  sankeyUrl,
+  scatterUrl,
+  sunburstUrl,
+]
+
 const DashBordStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -33,23 +48,16 @@ const Div = styled.div`
   }
 `
 
+const CreateDiv = () => {
+  return Urls.map((item) => (
+    <Div>
+      <Image Url={item} />
+    </Div>
+  ))
+}
+
 const DashBord = () => {
-  return (
-    <DashBordStyle>
-      <Div><Image Url={barUrl}/></Div>
-      <Div><Image Url={lineUrl}/></Div>
-      <Div><Image Url={candlestickUrl}/></Div>
-      <Div><Image Url={gaugeUrl}/></Div>
-      <Div><Image Url={funnelUrl}/></Div>
-      <Div><Image Url={parallelUrl}/></Div>
-      <Div><Image Url={pictorialbarUrl}/></Div>
-      <Div><Image Url={pieUrl}/></Div>
-      <Div><Image Url={radarUrl}/></Div>
-      <Div><Image Url={sankeyUrl}/></Div>
-      <Div><Image Url={scatterUrl}/></Div>
-      <Div><Image Url={sunburstUrl}/></Div>
-    </DashBordStyle>
-  )
+  return <DashBordStyle>{CreateDiv()}</DashBordStyle>
 }
 
 export default DashBord
