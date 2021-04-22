@@ -36,8 +36,6 @@ const DashBordStyle = styled.div`
 `
 
 const Div = styled.div`
-  background-color: #ffffff;
-
   &:nth-child(1) {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
