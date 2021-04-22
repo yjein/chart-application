@@ -6,12 +6,14 @@ const NavStyle = styled.nav`
 `
 
 const UlStyle = styled.ul`
-  margin-top: 0.2rem;
+  display: flex;
+  margin: auto 0;
 `
 
 const LiStyle = styled.li`
-  display: inline;
-  margin-right: 2rem;
+  list-style: none;
+  margin: 0 1.2rem;
+  padding-bottom: 0.25rem;
   font-size: 1.2rem;
   font-weight: 700;
   color: #444444;
