@@ -4,7 +4,7 @@ import MainMain from "../Templates/mainMain"
 
 const WrapperStyle = styled.div`
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 2fr;
 `
 
 const MainPage = () => {
