@@ -3,12 +3,12 @@ import styled from "styled-components"
 
 interface Props {
   border?: string
-  onClick: React.MouseEventHandler<HTMLDivElement>
+  onClick?: React.MouseEventHandler<HTMLDivElement>
 }
 
-const Button: React.FC<{}> = (props, { border }) => {
+const Button: React.FC<{}> = (props, { border, onClick }) => {
   const { children } = props
-  return <StyleButton border={border}>{children}</StyleButton>
+  return <StyleButton border={border} onClick={onClick}>{children}</StyleButton>
 }
 
 const StyleButton = styled.div`
