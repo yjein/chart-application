@@ -4,7 +4,7 @@ import styled from "styled-components"
 const ChartNav = () => {
   return (
     <StyleChartNav>
-      <Logo />
+      <Logo>RaonChart</Logo>
       <Ul>
         <Li>home</Li>
         <Li>chart</Li>
