@@ -1,0 +1,26 @@
+import React from "react"
+import styled from "styled-components"
+import ChartList from "../Organisms/chartList"
+
+const ChartAside = () => {
+  return (
+    <StyleChartAside>
+      <ChartList />
+    </StyleChartAside>
+  )
+}
+
+const StyleChartAside = styled.div`
+  position: sticky;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  overflow-x: auto;
+  background-color: #c9c9c9;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`
+
+export default ChartAside

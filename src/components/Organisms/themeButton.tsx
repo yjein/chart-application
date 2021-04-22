@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Button from "../Atoms/button"
 
 const ThemeBtn = () => {
   return (
@@ -14,15 +15,15 @@ const ThemeBtn = () => {
 
 const StyleThemeBtn = styled.nav`
   display: flex;
-  border-radius: 0.75rem;
+  border-radius: 0.25rem;
   background-color: #ffffff;
 `
 
 const Btn = styled.div`
-  margin: 0.75rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  border-radius: 0.75rem;
+  margin: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
   background-color: #666666;
   cursor: pointer;
 `
