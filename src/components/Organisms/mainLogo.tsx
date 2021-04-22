@@ -1,3 +1,4 @@
+import React from "react"
 import styled from "styled-components"
 
 const LogoBackground = styled.div`
@@ -16,10 +17,11 @@ const Logo = styled.div`
   background-color: #333333;
 `
 
-const MainLogo = () => {
+const MainLogo: React.FC<{}> = (props) => {
+  const { children } = props
   return (
     <LogoBackground>
-      <Logo>RaonChart</Logo>
+      <Logo>{children}</Logo>
     </LogoBackground>
   )
 }
