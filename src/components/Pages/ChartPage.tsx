@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import Header from "../Templates/chartHeader"
-import Aside from "../Templates/chartAside"
-import Main from "../Templates/chartMain"
+import ChartHeader from "../Templates/ChartHeader"
+import ChartAside from "../Templates/ChartAside"
+import ChartMain from "../Templates/ChartMain"
 
 const Wrapper = styled.div`
   display: grid;
@@ -13,9 +13,9 @@ const Wrapper = styled.div`
 const ChartPage = () => {
   return (
     <Wrapper>
-      <Header />
-      <Aside />
-      <Main />
+      <ChartHeader />
+      <ChartAside />
+      <ChartMain />
     </Wrapper>
   )
 }
