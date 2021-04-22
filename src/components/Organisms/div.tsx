@@ -1,7 +1,9 @@
+import React from "react"
 import styled from "styled-components"
 
 const DivStyle = styled.div`
   background-color: #ffffff;
+
   &:nth-child(1) {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
@@ -12,8 +14,9 @@ const DivStyle = styled.div`
   }
 `
 
-const Div = () => {
-  return <DivStyle />
+const Div: React.FC<{}> = (props) => {
+  const { children } = props
+  return <DivStyle>{children}</DivStyle>
 }
 
 export default Div
