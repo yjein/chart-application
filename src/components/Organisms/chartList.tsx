@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const ChartList: React.FC<{}> = (props) => {
-  const { children } = props
+  // const { children } = props
   return (
     <div>
       <Ul>

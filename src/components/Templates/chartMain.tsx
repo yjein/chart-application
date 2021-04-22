@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Chart from "./chartChart"
 
 const ChartMain: React.FC<{}> = (props) => {
-  const { children } = props
+  // const { children } = props
   return (
     <Main>
       <Chart />

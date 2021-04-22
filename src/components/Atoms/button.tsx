@@ -1,14 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 
-interface Props {
+// interface Props {
   // border?: string
   // onClick?: React.MouseEventHandler<HTMLDivElement>
-}
+// }
 
 const Button: React.FC<{}> = (props) => {
   const { children } = props
-  return <StyleButton></StyleButton>
+  return <StyleButton>{ children }</StyleButton>
 }
 
 const StyleButton = styled.div`
