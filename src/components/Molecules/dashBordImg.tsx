@@ -1,4 +1,4 @@
-import Div from "../Atoms/div"
+import Div from "../Organisms/div"
 import Image from "../Atoms/img"
 
 import barUrl from "../../assets/charts/bar.png"
