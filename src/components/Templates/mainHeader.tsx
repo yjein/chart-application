@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import Logo from "../Organisms/mainLogo"
-import Nav from "../Organisms/mainNav"
+import MainLogo from "../Organisms/mainLogo"
+import MainNav from "../Organisms/mainNav"
 
 const Header = styled.header`
   display: grid;
@@ -11,8 +11,8 @@ const Header = styled.header`
 const MainHeader = () => {
   return (
     <Header>
-      <Logo />
-      <Nav />
+      <MainLogo />
+      <MainNav />
     </Header>
   )
 }

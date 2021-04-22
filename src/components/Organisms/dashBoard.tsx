@@ -29,7 +29,7 @@ const Urls = [
   sunburstUrl,
 ]
 
-const DashBordStyle = styled.div`
+const DashBord = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 0.5rem;
@@ -46,16 +46,16 @@ const Div = styled.div`
   }
 `
 
-const DashBord = () => {
+const MainDashBord = () => {
   return (
-    <DashBordStyle>
+    <DashBord>
       {Urls.map((item) => (
         <Div>
           <Image url={item} />
         </Div>
       ))}
-    </DashBordStyle>
+    </DashBord>
   )
 }
 
-export default DashBord
+export default MainDashBord

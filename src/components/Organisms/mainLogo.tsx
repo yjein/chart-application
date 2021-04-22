@@ -8,7 +8,7 @@ const LogoBackground = styled.div`
   background: linear-gradient(to right, #cccccc 50%, #666666 50%);
 `
 
-const LogoStyle = styled.div`
+const Logo = styled.div`
   padding: 1rem;
   text-align: center;
   font-size: 2rem;
@@ -16,12 +16,12 @@ const LogoStyle = styled.div`
   background-color: #333333;
 `
 
-const Logo = () => {
+const MainLogo = () => {
   return (
     <LogoBackground>
-      <LogoStyle>RaonChart</LogoStyle>
+      <Logo>RaonChart</Logo>
     </LogoBackground>
   )
 }
 
-export default Logo
+export default MainLogo

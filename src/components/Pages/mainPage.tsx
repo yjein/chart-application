@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import Header from "../Templates/mainHeader"
-import Main from "../Templates/mainMain"
+import MainHeader from "../Templates/mainHeader"
+import MainMain from "../Templates/mainMain"
 
 const Wrapper = styled.div`
   display: grid;
@@ -10,8 +10,8 @@ const Wrapper = styled.div`
 const MainPage = () => {
   return (
     <Wrapper>
-      <Header />
-      <Main />
+      <MainHeader />
+      <MainMain />
     </Wrapper>
   )
 }

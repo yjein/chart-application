@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import DashBord from "../Organisms/dashBoard"
+import MainDashBord from "../Organisms/dashBoard"
 
 const MainStyle = styled.div`
   display: grid;
@@ -10,7 +10,7 @@ const MainStyle = styled.div`
 const Main = () => {
   return (
     <MainStyle>
-      <DashBord />
+      <MainDashBord />
     </MainStyle>
   )
 }
