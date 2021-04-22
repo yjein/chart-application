@@ -48,16 +48,16 @@ const Div = styled.div`
   }
 `
 
-const CreateDiv = () => {
-  return Urls.map((item) => (
-    <Div>
-      <Image Url={item} />
-    </Div>
-  ))
-}
-
 const DashBord = () => {
-  return <DashBordStyle>{CreateDiv()}</DashBordStyle>
+  return (
+    <DashBordStyle>
+      {Urls.map((item) => (
+        <Div>
+          <Image url={item} />
+        </Div>
+      ))}
+    </DashBordStyle>
+  )
 }
 
 export default DashBord

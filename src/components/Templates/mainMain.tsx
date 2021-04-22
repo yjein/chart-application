@@ -7,7 +7,7 @@ const MainStyle = styled.div`
   background-color: #909090;
 `
 
-const MainMain = () => {
+const Main = () => {
   return (
     <MainStyle>
       <DashBord />
@@ -15,4 +15,4 @@ const MainMain = () => {
   )
 }
 
-export default MainMain
+export default Main

@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import MainLogo from "../Organisms/mainLogo"
-import MainNav from "../Organisms/mainNav"
+import Logo from "../Organisms/mainLogo"
+import Nav from "../Organisms/mainNav"
 
-const HeaderStyle = styled.header`
+const Header = styled.header`
   display: grid;
   grid-template-columns: 1fr 4fr;
   background-color: #606060;
@@ -10,10 +10,10 @@ const HeaderStyle = styled.header`
 
 const MainHeader = () => {
   return (
-    <HeaderStyle>
-      <MainLogo />
-      <MainNav />
-    </HeaderStyle>
+    <Header>
+      <Logo />
+      <Nav />
+    </Header>
   )
 }
 

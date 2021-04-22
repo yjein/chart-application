@@ -1,21 +1,25 @@
 import styled from "styled-components"
 
-const LogoBgStyle = styled.div`
+const LogoBackground = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   min-width: 500px;
   background: linear-gradient(to right, #dbdbdb 50%, #606060 50%);
 `
 
 const LogoStyle = styled.div`
-  margin: 6rem;
   text-align: center;
+  font-size: 3rem;
   background-color: #444444;
 `
 
 const Logo = () => {
   return (
-    <LogoBgStyle>
+    <LogoBackground>
       <LogoStyle>RaonChart</LogoStyle>
-    </LogoBgStyle>
+    </LogoBackground>
   )
 }
 

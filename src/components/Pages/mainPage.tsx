@@ -2,17 +2,17 @@ import styled from "styled-components"
 import MainHeader from "../Templates/mainHeader"
 import MainMain from "../Templates/mainMain"
 
-const WrapperStyle = styled.div`
+const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr 2fr;
 `
 
 const MainPage = () => {
   return (
-    <WrapperStyle>
+    <Wrapper>
       <MainHeader />
       <MainMain />
-    </WrapperStyle>
+    </Wrapper>
   )
 }
 
