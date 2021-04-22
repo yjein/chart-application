@@ -1,20 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-const ChartNav = () => {
-  return (
-    <StyleChartNav>
-      <Logo>RaonChart</Logo>
-      <Ul>
-        <Li>home</Li>
-        <Li>chart</Li>
-        <Li>docs</Li>
-        <Li>contects</Li>
-      </Ul>
-    </StyleChartNav>
-  )
-}
-
 const StyleChartNav = styled.nav`
   display: flex;
   background-color: #c9c9c9;
@@ -44,5 +30,19 @@ const Li = styled.li`
     border-bottom: 5px solid #666666;
   }
 `
+
+const ChartNav = () => {
+  return (
+    <StyleChartNav>
+      <Logo>RaonChart</Logo>
+      <Ul>
+        <Li>home</Li>
+        <Li>chart</Li>
+        <Li>docs</Li>
+        <Li>contects</Li>
+      </Ul>
+    </StyleChartNav>
+  )
+}
 
 export default ChartNav
