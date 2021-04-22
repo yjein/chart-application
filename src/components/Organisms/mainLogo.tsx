@@ -7,8 +7,10 @@ const LogoBgStyle = styled.div`
 
 const LogoStyle = styled.div`
   width: 200px;
-  height: 60px;
+  height: 80px;
   margin: 4rem auto;
+  text-align: center;
+  align-self: center;
   background-color: #444444;
 `
 
