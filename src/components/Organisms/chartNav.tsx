@@ -22,12 +22,12 @@ const Li = styled.li`
   margin: 0 1.5rem;
   padding-bottom: 0.25rem;
   list-style: none;
-  color: #333333;
+  color: #444444;
   font-weight: 700;
   background-color: #c9c9c9;
 
   &:hover {
-    border-bottom: 5px solid #666666;
+    border-bottom: 5px solid #444444;
   }
 `
 
