@@ -4,29 +4,15 @@ import styled from "styled-components"
 const ChartList: React.FC<{}> = (props) => {
   const { children } = props
   return (
-    
-    <StyleChartList>
+    <div>
       <Ul>
         <Li>a</Li>
         <Li>b</Li>
         <Li>c</Li>
       </Ul>
-    </StyleChartList>
+    </div>
   )
 }
-
-const StyleChartList = styled.div`
-  position: sticky;
-  top: 0;
-  overflow-x: auto;
-  width: 200px;
-  height: 100vh;
-  background-color: #c9c9c9;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-`
 
 const Ul = styled.ul`
   margin: 0;
