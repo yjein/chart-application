@@ -1,5 +1,5 @@
+import React from "react"
 import styled from "styled-components"
-import MainDashBord from "../Organisms/dashBoard"
 
 const MainStyle = styled.div`
   display: grid;
@@ -7,12 +7,9 @@ const MainStyle = styled.div`
   background-color: #999999;
 `
 
-const Main = () => {
-  return (
-    <MainStyle>
-      <MainDashBord />
-    </MainStyle>
-  )
+const Main: React.FC<{}> = (props) => {
+  const { children } = props
+  return <MainStyle>{children}</MainStyle>
 }
 
 export default Main

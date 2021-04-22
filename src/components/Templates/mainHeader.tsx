@@ -1,20 +1,16 @@
+import React from "react"
 import styled from "styled-components"
-import MainLogo from "../Organisms/mainLogo"
-import MainNav from "../Organisms/mainNav"
 
 const Header = styled.header`
   display: grid;
   grid-template-columns: 1fr 4fr;
+  height: 300px;
   background-color: #666666;
 `
 
-const MainHeader = () => {
-  return (
-    <Header>
-      <MainLogo />
-      <MainNav />
-    </Header>
-  )
+const MainHeader: React.FC<{}> = (props) => {
+  const { children } = props
+  return <Header>{children}</Header>
 }
 
 export default MainHeader
