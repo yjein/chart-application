@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Chart from "./ChartChart"
+import ChartChart from "./ChartChart"
 
 const Main = styled.main`
   padding: 2.25rem;
@@ -11,7 +11,7 @@ const ChartMain: React.FC<{}> = (props) => {
   // const { children } = props
   return (
     <Main>
-      <Chart />
+      <ChartChart />
     </Main>
   )
 }
