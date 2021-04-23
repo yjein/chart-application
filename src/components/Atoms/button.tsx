@@ -18,5 +18,4 @@ const Button: React.FC<{}> = (props) => {
   const { children } = props
   return <StyleButton>{children}</StyleButton>
 }
-
-export default Button
+

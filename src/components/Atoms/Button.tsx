@@ -15,8 +15,7 @@ const StyleButton = styled.div`
 `
 
 const Button: React.FC<{}> = (props) => {
-  const { children } = props
-  return <StyleButton>{children}</StyleButton>
+  return <StyleButton>{props.children}</StyleButton>
 }
 
 export default Button
