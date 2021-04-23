@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import ChartList from "../Organisms/ChartList"
 
 const StyleChartAside = styled.div`
   position: sticky;
@@ -15,12 +14,8 @@ const StyleChartAside = styled.div`
   }
 `
 
-const ChartAside = () => {
-  return (
-    <StyleChartAside>
-      <ChartList />
-    </StyleChartAside>
-  )
+const ChartAside: React.FC<{}> = (props) => {
+  return <StyleChartAside>{props.children}</StyleChartAside>
 }
 
 export default ChartAside

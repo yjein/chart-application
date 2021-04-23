@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import ChartChart from "./ChartChart"
 
 const Main = styled.main`
   padding: 2.25rem;
@@ -8,12 +7,7 @@ const Main = styled.main`
 `
 
 const ChartMain: React.FC<{}> = (props) => {
-  // const { children } = props
-  return (
-    <Main>
-      <ChartChart />
-    </Main>
-  )
+  return <Main>{props.children}</Main>
 }
 
 export default ChartMain

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import InfoItem from "../Molecules/infoItem"
-import ThemeButton from "../Organisms/themeButton"
+import InfoItem from "../Molecules/InfoItem"
+import ThemeButton from "../Organisms/ThemeButton"
 
 const GridToggle = styled.div`
   margin-bottom: 1rem;
@@ -18,7 +18,7 @@ const ChartChart = () => {
   return (
     <div>
       <ThemeButton />
-      <InfoItem />
+      <InfoItem name="Chart Name" explanation="Chart Explanation" />
       <GridToggle />
       <CreateChart />
     </div>

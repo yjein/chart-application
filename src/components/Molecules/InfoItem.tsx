@@ -3,15 +3,20 @@ import styled from "styled-components"
 import H1 from "../Atoms/H1"
 import P from "../Atoms/P"
 
+interface Props {
+  name: string
+  explanation: string
+}
+
 const StyleInfoItem = styled.div`
   margin-bottom: 1rem;
 `
 
-const InfoItem = () => {
+const InfoItem: React.FC<Props> = ({ name, explanation }) => {
   return (
     <StyleInfoItem>
-      <H1>Chart Name</H1>
-      <P>Chart Explanation</P>
+      <H1>{name}</H1>
+      <P>{explanation}</P>
     </StyleInfoItem>
   )
 }
