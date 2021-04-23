@@ -7,7 +7,8 @@ const Main = styled.main`
 `
 
 const ChartMain: React.FC<{}> = (props) => {
-  return <Main>{props.children}</Main>
+  const { children } = props
+  return <Main>{children}</Main>
 }
 
 export default ChartMain

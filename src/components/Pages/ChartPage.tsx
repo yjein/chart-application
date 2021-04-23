@@ -9,6 +9,10 @@ import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
 
+interface Prop {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+}
+
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: max-content auto;
@@ -28,10 +32,6 @@ const Logo = styled.div`
   font-weight: 700;
   background-color: #444444;
 `
-
-interface Prop {
-  setPageState: React.Dispatch<React.SetStateAction<PageType>>
-}
 
 const ChartPage: React.FC<Prop> = ({ setPageState }) => {
   return (

@@ -4,7 +4,8 @@ import React from "react"
 // const StyleP = styled.p``
 
 const P: React.FC<{}> = (props) => {
-  return <p>{props.children}</p>
+  const { children } = props
+  return <p>{children}</p>
 }
 
 export default P

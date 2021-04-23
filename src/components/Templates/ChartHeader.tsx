@@ -12,7 +12,8 @@ const Header = styled.header`
 `
 
 const ChartHeader: React.FC<{}> = (props) => {
-  return <Header>{props.children}</Header>
+  const { children } = props
+  return <Header>{children}</Header>
 }
 
 export default ChartHeader

@@ -1,20 +1,22 @@
 import React from "react"
 import styled from "styled-components"
 
-const StyleChartAside = styled.div`
-  position: sticky;
-  top: 0;
-  height: calc(100vh - 2.75rem);
-  overflow-x: auto;
-  background-color: #c9c9c9;
+// interface Props {
+// border?: string
+// onClick?: React.MouseEventHandler<HTMLDivElement>
+// }
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+const StyleButton = styled.div`
+  padding: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 `
 
-const ChartAside: React.FC<{}> = (props) => {
-  return <StyleChartAside>{props.children}</StyleChartAside>
+const Button: React.FC<{}> = (props) => {
+  const { children } = props
+  return <StyleButton>{children}</StyleButton>
 }
 
-export default ChartAside
+export default Button

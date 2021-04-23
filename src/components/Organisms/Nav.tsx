@@ -2,6 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import { PageType } from "../../App"
 
+interface Props {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+}
+
 const Nav = styled.nav`
   display: flex;
   height: 2.75rem;
@@ -25,10 +29,6 @@ const Li = styled.li`
     border-bottom: 5px solid #444444;
   }
 `
-
-interface Props {
-  setPageState: React.Dispatch<React.SetStateAction<PageType>>
-}
 
 const MainNav: React.FC<Props> = (props) => {
   const { children, setPageState } = props

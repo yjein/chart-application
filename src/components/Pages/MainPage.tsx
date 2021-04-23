@@ -7,13 +7,14 @@ import MainDashBord from "../Organisms/DashBord"
 import React from "react"
 import { PageType } from "../../App"
 
+interface Props {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+}
+
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr;
 `
-interface Props {
-  setPageState: React.Dispatch<React.SetStateAction<PageType>>
-}
 
 const MainPage: React.FC<Props> = (props) => {
   const { setPageState } = props
