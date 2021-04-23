@@ -26,7 +26,7 @@ const Logo = styled.div`
   color: #ffffff;
   font-size: 1.25rem;
   font-weight: 700;
-  background-color: #666666;
+  background-color: #444444;
 `
 
 interface Prop {
