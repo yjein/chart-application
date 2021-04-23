@@ -23,9 +23,9 @@ const PictorialBarOption = {
     axisPointer: {
       type: "none",
     },
-    formatter: function (params) {
-      return params[0].name + ": " + params[0].value
-    },
+    // formatter: function (params) {
+    //   return params[0].name + ": " + params[0].value
+    // },
   },
   xAxis: {
     data: ["驯鹿", "火箭", "飞机", "高铁", "轮船", "汽车", "跑步", "步行"],
