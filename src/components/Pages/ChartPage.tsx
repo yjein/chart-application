@@ -11,7 +11,13 @@ import ChartChart from "../Organisms/ChartChart"
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: max-content auto;
-  height: 100%;
+`
+
+const Line = styled.div`
+  margin: 0.25rem auto;
+  height: 0.25rem;
+  border-radius: 0.25rem;
+  background: #666666;
 `
 
 const ChartPage = () => {
@@ -19,7 +25,11 @@ const ChartPage = () => {
     <Wrapper>
       <ChartHeader>
         <div>
-          <Button>=</Button>
+          <Button>
+            <Line />
+            <Line />
+            <Line />
+          </Button>
         </div>
         <ChartNav />
       </ChartHeader>
