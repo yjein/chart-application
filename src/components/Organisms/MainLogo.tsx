@@ -6,7 +6,7 @@ const LogoBackground = styled.div`
   justify-content: center;
   align-items: center;
   min-width: 500px;
-  background: linear-gradient(to right, #cccccc 50%, #666666 50%);
+  background: linear-gradient(to right, #c9c9c9 50%, #666666 50%);
 `
 
 const Logo = styled.div`
@@ -14,7 +14,7 @@ const Logo = styled.div`
   text-align: center;
   font-size: 2rem;
   color: #ffffff;
-  background-color: #333333;
+  background-color: #444444;
 `
 
 const MainLogo: React.FC<{}> = (props) => {
