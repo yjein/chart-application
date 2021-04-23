@@ -1,7 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Button from "../Atoms/Button"
-import ChartNav from "../Organisms/ChartNav"
 
 const Header = styled.header`
   display: grid;
@@ -13,15 +11,8 @@ const Header = styled.header`
   background-color: #cccccc;
 `
 
-const ChartHeader = () => {
-  return (
-    <Header>
-      <div>
-        <Button>=</Button>
-      </div>
-      <ChartNav />
-    </Header>
-  )
+const ChartHeader: React.FC<{}> = (props) => {
+  return <Header>{props.children}</Header>
 }
 
 export default ChartHeader
