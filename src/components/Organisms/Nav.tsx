@@ -1,4 +1,6 @@
+import React from "react"
 import styled from "styled-components"
+import { PageType } from "../../App"
 
 const Nav = styled.nav`
   display: flex;
@@ -24,15 +26,19 @@ const Li = styled.li`
   }
 `
 
-const MainNav: React.FC<{}> = (props) => {
-  const { children } = props
+interface Props {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+}
+
+const MainNav: React.FC<Props> = (props) => {
+  const { children, setPageState } = props
 
   return (
     <Nav>
       {children}
       <Ul>
-        <Li>Home</Li>
-        <Li>Charts</Li>
+        <Li onClick={() => setPageState("MainPage")}>Home</Li>
+        <Li onClick={() => setPageState("ChartPage")}>Charts</Li>
         <Li>Docs</Li>
         <Li>Contact</Li>
       </Ul>

@@ -21,7 +21,7 @@ const MainPage: React.FC<Props> = (props) => {
     <Wrapper>
       <MainHeader>
         <MainLogo>RaonChart</MainLogo>
-        <Nav />
+        <Nav setPageState={setPageState} />
       </MainHeader>
       <MainMain>
         <MainDashBord />

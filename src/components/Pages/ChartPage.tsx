@@ -44,7 +44,7 @@ const ChartPage: React.FC<Prop> = ({ setPageState }) => {
             <Line />
           </Button>
         </div>
-        <Nav>
+        <Nav setPageState={setPageState}>
           <Logo>Raon Chart</Logo>
         </Nav>
       </ChartHeader>
