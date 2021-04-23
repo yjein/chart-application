@@ -23,7 +23,7 @@ const MainDashBord = () => {
   return (
     <DashBord>
       {ChartData.map((item) => (
-        <Div>
+        <Div key={item}>
           <Image url={item} />
         </Div>
       ))}
