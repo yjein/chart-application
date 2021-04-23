@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Image from "../Atoms/img"
+import Image from "../Atoms/Img"
 import ChartData from "../../assets/ChartData"
 
 const DashBord = styled.div`

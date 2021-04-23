@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import MainHeader from "../Templates/mainHeader"
-import MainLogo from "../Organisms/mainLogo"
-import MainNav from "../Organisms/mainNav"
-import MainMain from "../Templates/mainMain"
-import MainDashBord from "../Organisms/dashBoard"
+import MainHeader from "../Templates/MainHeader"
+import MainLogo from "../Organisms/MainLogo"
+import MainNav from "../Organisms/MainNav"
+import MainMain from "../Templates/MainMain"
+import MainDashBord from "../Organisms/DashBord"
 
 const Wrapper = styled.div`
   display: grid;
