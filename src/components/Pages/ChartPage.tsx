@@ -5,7 +5,7 @@ import ChartAside from "../Templates/ChartAside"
 import ChartMain from "../Templates/ChartMain"
 import ChartList from "../Organisms/ChartList"
 import Button from "../Atoms/Button"
-import ChartNav from "../Organisms/ChartNav"
+import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 
 const Wrapper = styled.div`
@@ -20,6 +20,14 @@ const Line = styled.div`
   background: #666666;
 `
 
+const Logo = styled.div`
+  padding: 0.5rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #666666;
+`
+
 const ChartPage = () => {
   return (
     <Wrapper>
@@ -31,7 +39,9 @@ const ChartPage = () => {
             <Line />
           </Button>
         </div>
-        <ChartNav />
+        <Nav>
+          <Logo>Raon Chart</Logo>
+        </Nav>
       </ChartHeader>
 
       <ChartAside>

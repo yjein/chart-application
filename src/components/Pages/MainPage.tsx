@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import MainHeader from "../Templates/MainHeader"
 import MainLogo from "../Organisms/MainLogo"
-import MainNav from "../Organisms/MainNav"
+import Nav from "../Organisms/Nav"
 import MainMain from "../Templates/MainMain"
 import MainDashBord from "../Organisms/DashBord"
 
@@ -15,7 +15,7 @@ const MainPage = () => {
     <Wrapper>
       <MainHeader>
         <MainLogo>RaonChart</MainLogo>
-        <MainNav />
+        <Nav />
       </MainHeader>
       <MainMain>
         <MainDashBord />
