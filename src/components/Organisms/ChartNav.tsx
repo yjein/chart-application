@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { PageType } from "../../App"
 
 const StyleChartNav = styled.nav`
   display: flex;
@@ -31,12 +32,16 @@ const Li = styled.li`
   }
 `
 
-const ChartNav = () => {
+interface Prop {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+}
+
+const ChartNav: React.FC<Prop> = ({ setPageState }) => {
   return (
     <StyleChartNav>
       <Logo>RaonChart</Logo>
       <Ul>
-        <Li>home</Li>
+        <Li onClick={() => setPageState("MainPage")}>home</Li>
         <Li>chart</Li>
         <Li>docs</Li>
         <Li>contects</Li>

@@ -7,6 +7,7 @@ import ChartList from "../Organisms/ChartList"
 import Button from "../Atoms/Button"
 import ChartNav from "../Organisms/ChartNav"
 import ChartChart from "../Organisms/ChartChart"
+import { PageType } from "../../App"
 
 const Wrapper = styled.div`
   display: grid;
@@ -14,14 +15,18 @@ const Wrapper = styled.div`
   height: 100%;
 `
 
-const ChartPage = () => {
+interface Prop {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+}
+
+const ChartPage: React.FC<Prop> = ({ setPageState }) => {
   return (
     <Wrapper>
       <ChartHeader>
         <div>
           <Button>=</Button>
         </div>
-        <ChartNav />
+        <ChartNav setPageState={setPageState} />
       </ChartHeader>
 
       <ChartAside>
