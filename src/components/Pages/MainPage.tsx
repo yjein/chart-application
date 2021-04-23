@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import MainHeader from "../Templates/MainHeader"
 import MainLogo from "../Organisms/MainLogo"
-import MainNav from "../Organisms/MainNav"
+import Nav from "../Organisms/Nav"
 import MainMain from "../Templates/MainMain"
 import MainDashBord from "../Organisms/DashBord"
 import React from "react"
@@ -21,7 +21,7 @@ const MainPage: React.FC<Props> = (props) => {
     <Wrapper>
       <MainHeader>
         <MainLogo>RaonChart</MainLogo>
-        <MainNav setPageState={setPageState} />
+        <Nav />
       </MainHeader>
       <MainMain>
         <MainDashBord />
