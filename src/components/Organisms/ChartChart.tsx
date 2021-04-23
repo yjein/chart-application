@@ -18,7 +18,7 @@ const ChartChart = () => {
   return (
     <div>
       <ThemeButton />
-      <InfoItem />
+      <InfoItem name="Chart Name" explanation="Chart Explanation" />
       <GridToggle />
       <CreateChart />
     </div>
