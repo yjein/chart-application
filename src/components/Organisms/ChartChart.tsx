@@ -11,6 +11,7 @@ const GridToggle = styled.div`
 `
 
 const CreateChart = styled.div`
+  min-height: 500px;
   background-color: #ffffff;
 `
 
@@ -26,7 +27,11 @@ const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
       <InfoItem name={chartState} explanation="Chart Explanation" />
       <GridToggle />
       <CreateChart>
-        <ReactECharts option={chartOption} notMerge={true} />
+        <ReactECharts
+          option={chartOption}
+          notMerge={true}
+          style={{height: "59vh" }}
+        />
       </CreateChart>
     </div>
   )
