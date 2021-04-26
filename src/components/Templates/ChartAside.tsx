@@ -11,6 +11,7 @@ const StyleChartAside = styled.aside<{ toggleState: boolean }>`
   width: ${({ toggleState }) => (toggleState ? "200px" : 0)};
   height: calc(100vh - 2.75rem);
   overflow-x: auto;
+  transition: all 150ms;
   background-color: #c9c9c9;
 
   &::-webkit-scrollbar {
