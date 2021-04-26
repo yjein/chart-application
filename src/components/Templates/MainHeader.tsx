@@ -4,7 +4,7 @@ import styled from "styled-components"
 const Header = styled.header`
   display: grid;
   grid-template-columns: 1fr 4fr;
-  height: 300px;
+  height: 195px;
   background-color: #666666;
 `
 

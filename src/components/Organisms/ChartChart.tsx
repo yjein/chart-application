@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "../Organisms/ThemeButton"
+import ReactECharts from "echarts-for-react"
 
 const GridToggle = styled.div`
   margin-bottom: 1rem;
@@ -10,17 +11,28 @@ const GridToggle = styled.div`
 `
 
 const CreateChart = styled.div`
-  height: 100px;
+  min-height: 500px;
   background-color: #ffffff;
 `
 
-const ChartChart = () => {
+interface Prop {
+  chartState: string
+  chartOption: Object
+}
+
+const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
   return (
     <div>
       <ThemeButton />
-      <InfoItem name="Chart Name" explanation="Chart Explanation" />
+      <InfoItem name={chartState} explanation="Chart Explanation" />
       <GridToggle />
-      <CreateChart />
+      <CreateChart>
+        <ReactECharts
+          option={chartOption}
+          notMerge={true}
+          style={{height: "59vh" }}
+        />
+      </CreateChart>
     </div>
   )
 }

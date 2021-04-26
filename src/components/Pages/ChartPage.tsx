@@ -8,11 +8,7 @@ import Button from "../Atoms/Button"
 import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
-import ChartData from "../../assets/ChartData"
-
-interface Props {
-  setPageState: React.Dispatch<React.SetStateAction<PageType>>
-}
+import ChartData, { ChartDataType } from "../../assets/ChartData"
 
 const Wrapper = styled.div`
   display: grid;
@@ -36,9 +32,21 @@ const Logo = styled.div`
   background-color: #444444;
 `
 
-const ChartPage: React.FC<Props> = ({ setPageState }) => {
-  const [toggleState, setToggleState] = useState<boolean>(true)
+interface Prop {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+  chartState: ChartDataType
+  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
+  toggleState: boolean
+  setToggleState: React.Dispatch<React.SetStateAction<boolean>>
+}
 
+const ChartPage: React.FC<Prop> = ({
+  setPageState,
+  chartState,
+  setChartState,
+  toggleState,
+  setToggleState,
+}) => {
   return (
     <Wrapper>
       <ChartHeader>
@@ -55,11 +63,17 @@ const ChartPage: React.FC<Props> = ({ setPageState }) => {
       </ChartHeader>
 
       <ChartAside toggleState={toggleState}>
-        <ChartList chartName={Object.keys(ChartData)} />
+        <ChartList
+          chartName={Object.keys(ChartData) as ChartDataType[]}
+          setChartState={setChartState}
+        />
       </ChartAside>
 
       <ChartMain>
-        <ChartChart />
+        <ChartChart
+          chartState={chartState}
+          chartOption={ChartData[chartState].Option}
+        />
       </ChartMain>
     </Wrapper>
   )

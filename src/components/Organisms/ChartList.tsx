@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { ChartDataType } from "../../assets/ChartData"
 
 const Ul = styled.ul`
   margin: 0;
@@ -18,16 +19,18 @@ const Li = styled.li`
 `
 
 interface Props {
-  chartName: string[]
+  chartName: ChartDataType[]
+  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
 }
 
-const ChartList: React.FC<Props> = ({ chartName }) => {
-  // const { children } = props
+const ChartList: React.FC<Props> = ({ chartName, setChartState }) => {
   return (
     <div>
       <Ul>
         {chartName.map((item) => (
-          <Li>{item}</Li>
+          <Li key={item} onClick={() => setChartState(item)}>
+            {item}
+          </Li>
         ))}
       </Ul>
     </div>
