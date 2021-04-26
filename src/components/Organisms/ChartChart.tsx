@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "../Organisms/ThemeButton"
-import * as Echart from "echarts"
+import ReactECharts from "echarts-for-react"
 
 const GridToggle = styled.div`
   margin-bottom: 1rem;
@@ -11,7 +11,6 @@ const GridToggle = styled.div`
 `
 
 const CreateChart = styled.div`
-  height: 100px;
   background-color: #ffffff;
 `
 
@@ -20,13 +19,15 @@ interface Prop {
   chartOption: Object
 }
 
-const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
+const ChartChart: React.FC<Prop> = ({ chartState,chartOption }) => {
   return (
     <div>
       <ThemeButton />
       <InfoItem name={chartState} explanation="Chart Explanation" />
       <GridToggle />
-      <CreateChart />
+      <CreateChart>
+        <ReactECharts option={chartOption} />
+      </CreateChart>
     </div>
   )
 }
