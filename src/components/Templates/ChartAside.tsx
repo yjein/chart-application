@@ -8,7 +8,7 @@ interface Props {
 const StyleChartAside = styled.aside<{ toggleState: boolean }>`
   position: sticky;
   top: 0;
-  width: ${({ toggleState }) => (toggleState ? "200px" : 0)};
+  width: ${({ toggleState }) => (toggleState ? "12.5rem" : 0)};
   height: calc(100vh - 2.75rem);
   overflow-x: auto;
   transition: all 150ms;
