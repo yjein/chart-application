@@ -14,11 +14,15 @@ const CreateChart = styled.div`
   background-color: #ffffff;
 `
 
-const ChartChart = () => {
+interface Prop {
+  chartState: string
+}
+
+const ChartChart: React.FC<Prop> = ({ chartState }) => {
   return (
     <div>
       <ThemeButton />
-      <InfoItem name="Chart Name" explanation="Chart Explanation" />
+      <InfoItem name={chartState} explanation="Chart Explanation" />
       <GridToggle />
       <CreateChart />
     </div>

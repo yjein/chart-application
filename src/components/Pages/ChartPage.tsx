@@ -12,6 +12,8 @@ import ChartData from "../../assets/ChartData"
 
 interface Prop {
   setPageState: React.Dispatch<React.SetStateAction<PageType>>
+  chartState: string
+  setChartState: React.Dispatch<React.SetStateAction<string>>
 }
 
 const Wrapper = styled.div`
@@ -34,7 +36,11 @@ const Logo = styled.div`
   background-color: #444444;
 `
 
-const ChartPage: React.FC<Prop> = ({ setPageState }) => {
+const ChartPage: React.FC<Prop> = ({
+  setPageState,
+  chartState,
+  setChartState,
+}) => {
   return (
     <Wrapper>
       <ChartHeader>
@@ -51,11 +57,11 @@ const ChartPage: React.FC<Prop> = ({ setPageState }) => {
       </ChartHeader>
 
       <ChartAside>
-        <ChartList chartName={Object.keys(ChartData)}/>
+        <ChartList chartName={Object.keys(ChartData)} />
       </ChartAside>
 
       <ChartMain>
-        <ChartChart />
+        <ChartChart chartState={chartState} />
       </ChartMain>
     </Wrapper>
   )
