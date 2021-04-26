@@ -394,3 +394,5 @@ const simple = {
     },
   },
 }
+
+export default simple

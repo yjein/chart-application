@@ -387,3 +387,5 @@ const essos = {
     },
   },
 }
+
+export default essos

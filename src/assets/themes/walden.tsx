@@ -380,3 +380,5 @@ const walden = {
     },
   },
 }
+
+export default walden

@@ -380,3 +380,5 @@ const westeros = {
     },
   },
 }
+
+export default westeros

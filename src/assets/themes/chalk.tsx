@@ -398,3 +398,5 @@ const chalk = {
     },
   },
 }
+
+export default chalk

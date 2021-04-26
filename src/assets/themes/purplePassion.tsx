@@ -380,3 +380,5 @@ const purplePassion = {
     },
   },
 }
+
+export default purplePassion

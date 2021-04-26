@@ -380,3 +380,5 @@ const wonderland = {
     },
   },
 }
+
+export default wonderland

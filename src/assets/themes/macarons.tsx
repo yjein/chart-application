@@ -422,3 +422,5 @@ const macarons = {
     },
   },
 }
+
+export default macarons

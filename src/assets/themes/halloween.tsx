@@ -397,3 +397,5 @@ const halloween = {
     },
   },
 }
+
+export default halloween

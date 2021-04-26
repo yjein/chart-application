@@ -412,3 +412,5 @@ const infographic = {
     },
   },
 }
+
+export default infographic

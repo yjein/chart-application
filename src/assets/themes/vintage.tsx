@@ -402,3 +402,5 @@ const vintage = {
     },
   },
 }
+
+export default vintage
