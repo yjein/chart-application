@@ -22,7 +22,6 @@ interface Props {
 }
 
 const ChartList: React.FC<Props> = ({ chartName }) => {
-  // const { children } = props
   return (
     <div>
       <Ul>

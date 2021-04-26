@@ -24,7 +24,7 @@ import sankeyOption from "./Options/sankeyOption"
 import scatterOption from "./Options/scatterOption"
 import sunburstOption from "./Options/sunburstOption"
 
-const Options = {
+const ChartData = {
   Bar: {
     Option: barOption,
     Url: barUrl,
@@ -75,4 +75,4 @@ const Options = {
   },
 }
 
-export default Options
+export default ChartData
