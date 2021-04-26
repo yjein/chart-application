@@ -27,6 +27,7 @@ const Line = styled.div`
 
 const Logo = styled.div`
   padding: 0.5rem;
+  width: 7rem;
   color: #ffffff;
   font-size: 1.25rem;
   font-weight: 700;
