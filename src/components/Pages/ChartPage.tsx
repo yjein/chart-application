@@ -10,12 +10,6 @@ import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
 import ChartData from "../../assets/ChartData"
 
-interface Prop {
-  setPageState: React.Dispatch<React.SetStateAction<PageType>>
-  chartState: string
-  setChartState: React.Dispatch<React.SetStateAction<string>>
-}
-
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: max-content auto;
@@ -35,6 +29,12 @@ const Logo = styled.div`
   font-weight: 700;
   background-color: #444444;
 `
+
+interface Prop {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+  chartState: string
+  setChartState: React.Dispatch<React.SetStateAction<string>>
+}
 
 const ChartPage: React.FC<Prop> = ({
   setPageState,
@@ -58,13 +58,16 @@ const ChartPage: React.FC<Prop> = ({
 
       <ChartAside>
         <ChartList
-          setChartState={setChartState}
           chartName={Object.keys(ChartData)}
+          setChartState={setChartState}
         />
       </ChartAside>
 
       <ChartMain>
-        <ChartChart chartState={chartState} />
+        <ChartChart
+          chartState={chartState}
+          chartOption={ChartData[chartState].Option}
+        />
       </ChartMain>
     </Wrapper>
   )

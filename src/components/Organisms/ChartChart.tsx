@@ -16,9 +16,10 @@ const CreateChart = styled.div`
 
 interface Prop {
   chartState: string
+  chartOption: Object
 }
 
-const ChartChart: React.FC<Prop> = ({ chartState }) => {
+const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
   return (
     <div>
       <ThemeButton />
