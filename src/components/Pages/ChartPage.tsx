@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import ChartHeader from "../Templates/ChartHeader"
 import ChartAside from "../Templates/ChartAside"
@@ -9,7 +9,7 @@ import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
 
-interface Prop {
+interface Props {
   setPageState: React.Dispatch<React.SetStateAction<PageType>>
 }
 
@@ -34,12 +34,14 @@ const Logo = styled.div`
   background-color: #444444;
 `
 
-const ChartPage: React.FC<Prop> = ({ setPageState }) => {
+const ChartPage: React.FC<Props> = ({ setPageState }) => {
+  const [toggleState, setToggleState] = useState<boolean>(true)
+
   return (
     <Wrapper>
       <ChartHeader>
         <div>
-          <Button>
+          <Button toggleState={toggleState} setToggleState={setToggleState}>
             <Line />
             <Line />
             <Line />
@@ -50,7 +52,7 @@ const ChartPage: React.FC<Prop> = ({ setPageState }) => {
         </Nav>
       </ChartHeader>
 
-      <ChartAside>
+      <ChartAside toggleState={toggleState}>
         <ChartList />
       </ChartAside>
 

@@ -1,10 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 
-const StyleChartAside = styled.div`
+interface Props {
+  toggleState: boolean
+}
+
+const StyleChartAside = styled.aside<{ toggleState: boolean }>`
   position: sticky;
   top: 0;
-  width: 200px;
+  width: ${({ toggleState }) => (toggleState ? "200px" : 0)};
   height: calc(100vh - 2.75rem);
   overflow-x: auto;
   background-color: #c9c9c9;
@@ -14,9 +18,9 @@ const StyleChartAside = styled.div`
   }
 `
 
-const ChartAside: React.FC<{}> = (props) => {
-  const { children } = props
-  return <StyleChartAside>{children}</StyleChartAside>
+const ChartAside: React.FC<Props> = (props) => {
+  const { children, toggleState } = props
+  return <StyleChartAside toggleState={toggleState}>{children}</StyleChartAside>
 }
 
 export default ChartAside
