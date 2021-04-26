@@ -5,12 +5,12 @@ import ChartPage from "./components/Pages/ChartPage"
 export type PageType = "MainPage" | "ChartPage"
 
 const App = () => {
-  const [PageState, setPageState] = useState<PageType>("MainPage")
+  const [pageState, setPageState] = useState<PageType>("MainPage")
 
   return (
     <>
-      {PageState === "MainPage" && <MainPage setPageState={setPageState} />}
-      {PageState === "ChartPage" && <ChartPage setPageState={setPageState} />}
+      {pageState === "MainPage" && <MainPage setPageState={setPageState} />}
+      {pageState === "ChartPage" && <ChartPage setPageState={setPageState} />}
     </>
   )
 }
