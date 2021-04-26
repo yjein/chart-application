@@ -8,7 +8,7 @@ import Button from "../Atoms/Button"
 import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
-import ChartData from "../../assets/ChartData"
+import ChartData, { ChartDataType } from "../../assets/ChartData"
 
 const Wrapper = styled.div`
   display: grid;
@@ -32,8 +32,8 @@ const Logo = styled.div`
 
 interface Prop {
   setPageState: React.Dispatch<React.SetStateAction<PageType>>
-  chartState: string
-  setChartState: React.Dispatch<React.SetStateAction<string>>
+  chartState: ChartDataType
+  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
 }
 
 const ChartPage: React.FC<Prop> = ({
@@ -58,7 +58,7 @@ const ChartPage: React.FC<Prop> = ({
 
       <ChartAside>
         <ChartList
-          chartName={Object.keys(ChartData)}
+          chartName={Object.keys(ChartData) as ChartDataType[]}
           setChartState={setChartState}
         />
       </ChartAside>

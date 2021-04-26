@@ -19,7 +19,7 @@ interface Prop {
   chartOption: Object
 }
 
-const ChartChart: React.FC<Prop> = ({ chartState,chartOption }) => {
+const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
   return (
     <div>
       <ThemeButton />
