@@ -57,7 +57,10 @@ const ChartPage: React.FC<Prop> = ({
       </ChartHeader>
 
       <ChartAside>
-        <ChartList chartName={Object.keys(ChartData)} />
+        <ChartList
+          setChartState={setChartState}
+          chartName={Object.keys(ChartData)}
+        />
       </ChartAside>
 
       <ChartMain>

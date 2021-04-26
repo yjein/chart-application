@@ -19,14 +19,15 @@ const Li = styled.li`
 
 interface Props {
   chartName: string[]
+  setChartState: React.Dispatch<React.SetStateAction<string>>
 }
 
-const ChartList: React.FC<Props> = ({ chartName }) => {
+const ChartList: React.FC<Props> = ({ chartName, setChartState }) => {
   return (
     <div>
       <Ul>
         {chartName.map((item) => (
-          <Li>{item}</Li>
+          <Li onClick={() => setChartState(item)}>{item}</Li>
         ))}
       </Ul>
     </div>
