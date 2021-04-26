@@ -17,23 +17,18 @@ const Li = styled.li`
   cursor: pointer;
 `
 
-const ChartList: React.FC<{}> = (props) => {
+interface Props {
+  chartName: string[]
+}
+
+const ChartList: React.FC<Props> = ({ chartName }) => {
   // const { children } = props
   return (
     <div>
       <Ul>
-        <Li>Bar Chart</Li>
-        <Li>Line Chart</Li>
-        <Li>Pie Chart</Li>
-        <Li>Candiestick Chart</Li>
-        <Li>Funnel Chart</Li>
-        <Li>Scatter Chart</Li>
-        <Li>Gauge Chart</Li>
-        <Li>Parallel Chart</Li>
-        <Li>Radar Chart</Li>
-        <Li>Sankey Chart</Li>
-        <Li>Pictorialbar Chart</Li>
-        <Li>Sunburst Chart</Li>
+        {chartName.map((item) => (
+          <Li>{item}</Li>
+        ))}
       </Ul>
     </div>
   )
