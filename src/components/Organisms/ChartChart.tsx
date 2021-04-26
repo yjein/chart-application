@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "../Organisms/ThemeButton"
+import * as Echart from "echarts"
 
 const GridToggle = styled.div`
   margin-bottom: 1rem;
