@@ -28,7 +28,9 @@ const ChartList: React.FC<Props> = ({ chartName, setChartState }) => {
     <div>
       <Ul>
         {chartName.map((item) => (
-          <Li onClick={() => setChartState(item)}>{item}</Li>
+          <Li key={item} onClick={() => setChartState(item)}>
+            {item}
+          </Li>
         ))}
       </Ul>
     </div>
