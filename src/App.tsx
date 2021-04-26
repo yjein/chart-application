@@ -5,13 +5,13 @@ import { ChartDataType } from "./assets/ChartData"
 export type PageType = "MainPage" | "ChartPage"
 
 const App = () => {
-  const [PageState, setPageState] = useState<PageType>("MainPage")
+  const [pageState, setPageState] = useState<PageType>("MainPage")
   const [chartState, setChartState] = useState<ChartDataType>("Bar")
 
   return (
     <>
-      {PageState === "MainPage" && <MainPage setPageState={setPageState} />}
-      {PageState === "ChartPage" && (
+      {pageState === "MainPage" && <MainPage setPageState={setPageState} />}
+      {pageState === "ChartPage" && (
         <ChartPage
           setPageState={setPageState}
           chartState={chartState}

@@ -1,22 +1,27 @@
 import React from "react"
 import styled from "styled-components"
 
-// interface Props {
-// border?: string
-// onClick?: React.MouseEventHandler<HTMLDivElement>
-// }
-
-const StyleButton = styled.div`
-  padding: 0.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-`
-
-const Button: React.FC<{}> = (props) => {
-  const { children } = props
-  return <StyleButton>{children}</StyleButton>
+interface Props {
+  toggleState: boolean
 }
 
-export default Button
+const StyleChartAside = styled.aside<{ toggleState: boolean }>`
+  position: sticky;
+  top: 0;
+  width: ${({ toggleState }) => (toggleState ? "200px" : 0)};
+  height: calc(100vh - 2.75rem);
+  overflow-x: auto;
+  transition: all 150ms;
+  background-color: #c9c9c9;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`
+
+const ChartAside: React.FC<Props> = (props) => {
+  const { children, toggleState } = props
+  return <StyleChartAside toggleState={toggleState}>{children}</StyleChartAside>
+}
+
+export default ChartAside

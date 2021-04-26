@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
-// interface Props {
-// border?: string
-// onClick?: React.MouseEventHandler<HTMLDivElement>
-// }
+interface Props {
+  toggleState: boolean
+  setToggleState: React.Dispatch<React.SetStateAction<boolean>>
+}
 
 const StyleButton = styled.div`
   padding: 0.5rem;
@@ -14,9 +14,14 @@ const StyleButton = styled.div`
   cursor: pointer;
 `
 
-const Button: React.FC<{}> = (props) => {
-  const { children } = props
-  return <StyleButton>{children}</StyleButton>
+const Button: React.FC<Props> = (props) => {
+  const { children, toggleState, setToggleState } = props
+
+  return (
+    <StyleButton onClick={() => setToggleState(!toggleState)}>
+      {children}
+    </StyleButton>
+  )
 }
 
 export default Button

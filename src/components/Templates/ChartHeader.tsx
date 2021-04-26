@@ -7,6 +7,7 @@ const Header = styled.header`
   grid-column: 1 / 3;
   grid-template-columns: 200px auto;
   top: 0;
+  height: 2.75rem;
   z-index: 1;
   background-color: #cccccc;
 `
