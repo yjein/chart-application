@@ -76,4 +76,3 @@ const Options = {
 }
 
 export default Options
-// export default Urls
