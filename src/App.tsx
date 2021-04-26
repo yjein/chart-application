@@ -7,6 +7,7 @@ export type PageType = "MainPage" | "ChartPage"
 const App = () => {
   const [pageState, setPageState] = useState<PageType>("MainPage")
   const [chartState, setChartState] = useState<ChartDataType>("Bar")
+  const [toggleState, setToggleState] = useState<boolean>(true)
 
   return (
     <>
@@ -16,6 +17,8 @@ const App = () => {
           setPageState={setPageState}
           chartState={chartState}
           setChartState={setChartState}
+          toggleState={toggleState}
+          setToggleState={setToggleState}
         />
       )}
     </>
