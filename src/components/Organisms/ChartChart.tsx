@@ -26,7 +26,7 @@ const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
       <InfoItem name={chartState} explanation="Chart Explanation" />
       <GridToggle />
       <CreateChart>
-        <ReactECharts option={chartOption} />
+        <ReactECharts option={chartOption} notMerge={true} />
       </CreateChart>
     </div>
   )
