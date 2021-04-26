@@ -1,30 +1,40 @@
 import React from "react"
 import styled from "styled-components"
-// import Button from "../Atoms/button"
+// import Button from "../Atoms/Button"
 
-const StyleThemeBtn = styled.nav`
+const Container = styled.div`
   display: flex;
+`
+
+const ThemeContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 9rem;
+  border: 1px solid #eeeeee;
   border-radius: 0.25rem;
   background-color: #ffffff;
+  cursor: pointer;
 `
 
 const Btn = styled.div`
-  margin: 0.5rem;
+  margin: 0 2px;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 0.25rem;
   background-color: #666666;
-  cursor: pointer;
 `
 
 const ThemeBtn = () => {
   return (
-    <StyleThemeBtn>
-      <Btn />
-      <Btn />
-      <Btn />
-      <Btn />
-    </StyleThemeBtn>
+    <Container>
+      <ThemeContainer>
+        <Btn />
+        <Btn />
+        <Btn />
+        <Btn />
+      </ThemeContainer>
+    </Container>
   )
 }
 
