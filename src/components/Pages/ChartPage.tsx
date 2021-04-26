@@ -8,6 +8,7 @@ import Button from "../Atoms/Button"
 import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
+import ChartData from "../../assets/ChartData"
 
 interface Props {
   setPageState: React.Dispatch<React.SetStateAction<PageType>>
@@ -53,7 +54,7 @@ const ChartPage: React.FC<Props> = ({ setPageState }) => {
       </ChartHeader>
 
       <ChartAside toggleState={toggleState}>
-        <ChartList />
+        <ChartList chartName={Object.keys(ChartData)}/>
       </ChartAside>
 
       <ChartMain>

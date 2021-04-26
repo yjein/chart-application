@@ -22,9 +22,9 @@ const Div = styled.div`
 const MainDashBord = () => {
   return (
     <DashBord>
-      {ChartData.map((item) => (
-        <Div key={item}>
-          <Image url={item} />
+      {Object.values(ChartData).map((item) => (
+        <Div key={item.Url}>
+          <Image url={item.Url} />
         </Div>
       ))}
     </DashBord>
