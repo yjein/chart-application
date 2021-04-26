@@ -30,6 +30,7 @@ const Logo = styled.div`
   padding: 0.5rem;
   width: 7rem;
   color: #ffffff;
+  text-align: center;
   font-size: 1.25rem;
   font-weight: 700;
   background-color: #444444;
@@ -54,7 +55,7 @@ const ChartPage: React.FC<Props> = ({ setPageState }) => {
       </ChartHeader>
 
       <ChartAside toggleState={toggleState}>
-        <ChartList chartName={Object.keys(ChartData)}/>
+        <ChartList chartName={Object.keys(ChartData)} />
       </ChartAside>
 
       <ChartMain>
