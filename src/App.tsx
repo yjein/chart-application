@@ -11,7 +11,9 @@ const App = () => {
 
   return (
     <>
-      {pageState === "MainPage" && <MainPage setPageState={setPageState} />}
+      {pageState === "MainPage" && (
+        <MainPage setPageState={setPageState} setChartState={setChartState} />
+      )}
       {pageState === "ChartPage" && (
         <ChartPage
           setPageState={setPageState}

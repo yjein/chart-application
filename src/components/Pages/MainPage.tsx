@@ -6,9 +6,11 @@ import MainMain from "../Templates/MainMain"
 import MainDashBord from "../Organisms/DashBord"
 import React from "react"
 import { PageType } from "../../App"
+import { ChartDataType } from "../../assets/ChartData"
 
 interface Props {
   setPageState: React.Dispatch<React.SetStateAction<PageType>>
+  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
 }
 
 const Wrapper = styled.div`
@@ -16,8 +18,7 @@ const Wrapper = styled.div`
   grid-template-rows: 1fr;
 `
 
-const MainPage: React.FC<Props> = (props) => {
-  const { setPageState } = props
+const MainPage: React.FC<Props> = ({ setPageState, setChartState }) => {
   return (
     <Wrapper>
       <MainHeader>
@@ -25,7 +26,10 @@ const MainPage: React.FC<Props> = (props) => {
         <Nav setPageState={setPageState} />
       </MainHeader>
       <MainMain>
-        <MainDashBord />
+        <MainDashBord
+          setPageState={setPageState}
+          setChartState={setChartState}
+        />
       </MainMain>
     </Wrapper>
   )

@@ -2,6 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import { ChartDataType } from "../../assets/ChartData"
 
+interface Props {
+  chartName: ChartDataType[]
+  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
+}
+
 const Ul = styled.ul`
   margin: 0;
   padding: 0;
@@ -17,11 +22,6 @@ const Li = styled.li`
   background-color: #ffffff;
   cursor: pointer;
 `
-
-interface Props {
-  chartName: ChartDataType[]
-  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
-}
 
 const ChartList: React.FC<Props> = ({ chartName, setChartState }) => {
   return (

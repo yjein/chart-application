@@ -76,5 +76,4 @@ const ChartData = {
 }
 
 export default ChartData
-
 export type ChartDataType = keyof typeof ChartData

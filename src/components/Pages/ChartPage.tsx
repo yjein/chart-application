@@ -1,4 +1,3 @@
-import React, { useState } from "react"
 import styled from "styled-components"
 import ChartHeader from "../Templates/ChartHeader"
 import ChartAside from "../Templates/ChartAside"
