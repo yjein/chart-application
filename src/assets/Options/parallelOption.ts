@@ -1,4 +1,14 @@
 const ParallelOption = {
+  tooltip: {},
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true },
+    },
+  },
   parallelAxis: [
     { dim: 0, name: "Price" },
     { dim: 1, name: "Net Weight" },
