@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import MainPage from "./components/Pages/MainPage"
 import ChartPage from "./components/Pages/ChartPage"
 import { ChartDataType } from "./assets/ChartData"
-import { ThemeDataType } from "./assets/themeData"
+import { ThemeDataType } from "./assets/ThemeData"
 export type PageType = "MainPage" | "ChartPage"
 
 const App = () => {

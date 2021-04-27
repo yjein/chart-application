@@ -3,7 +3,7 @@ import styled from "styled-components"
 import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "../Organisms/ThemeButton"
 import ReactECharts from "echarts-for-react"
-import ThemeData, { ThemeDataType } from "../../assets/themeData"
+import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
 
 interface Prop {
   chartState: string

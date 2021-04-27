@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { ThemeDataType } from "../../assets/themeData"
+import { ThemeDataType } from "../../assets/ThemeData"
 // import Button from "../Atoms/Button"
 
 interface Props {

@@ -8,7 +8,7 @@ import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
 import ChartData, { ChartDataType } from "../../assets/ChartData"
-import ThemeData, { ThemeDataType } from "../../assets/themeData"
+import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
 
 const Wrapper = styled.div`
   display: grid;
