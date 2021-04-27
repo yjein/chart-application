@@ -10,6 +10,16 @@ import { PageType } from "../../App"
 import ChartData, { ChartDataType } from "../../assets/ChartData"
 import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
 
+interface Prop {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+  chartState: ChartDataType
+  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
+  toggleState: boolean
+  setToggleState: React.Dispatch<React.SetStateAction<boolean>>
+  themeState: ThemeDataType
+  setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
+}
+
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: max-content minmax(calc(100vw - 13.75rem), auto);
@@ -31,16 +41,6 @@ const Logo = styled.div`
   font-weight: 700;
   background-color: #444444;
 `
-
-interface Prop {
-  setPageState: React.Dispatch<React.SetStateAction<PageType>>
-  chartState: ChartDataType
-  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
-  toggleState: boolean
-  setToggleState: React.Dispatch<React.SetStateAction<boolean>>
-  themeState: ThemeDataType
-  setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
-}
 
 const ChartPage: React.FC<Prop> = ({
   setPageState,
