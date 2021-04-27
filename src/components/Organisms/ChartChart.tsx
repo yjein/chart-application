@@ -4,6 +4,11 @@ import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "../Organisms/ThemeButton"
 import ReactECharts from "echarts-for-react"
 
+interface Prop {
+  chartState: string
+  chartOption: Object
+}
+
 const GridToggle = styled.div`
   margin-bottom: 1rem;
   height: 100px;
@@ -14,11 +19,6 @@ const CreateChart = styled.div`
   min-height: 500px;
   background-color: #ffffff;
 `
-
-interface Prop {
-  chartState: string
-  chartOption: Object
-}
 
 const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
   return (
