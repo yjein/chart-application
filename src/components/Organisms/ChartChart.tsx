@@ -30,7 +30,7 @@ const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
         <ReactECharts
           option={chartOption}
           notMerge={true}
-          style={{height: "59vh" }}
+          style={{ padding: "10px", height: "60vh" }}
         />
       </CreateChart>
     </div>
