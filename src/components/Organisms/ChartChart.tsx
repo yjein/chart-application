@@ -3,6 +3,14 @@ import styled from "styled-components"
 import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "../Organisms/ThemeButton"
 import ReactECharts from "echarts-for-react"
+import ThemeData, { ThemeDataType } from "../../assets/themeData"
+
+interface Prop {
+  chartState: string
+  chartOption: Object
+  themeOption: Object
+  setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
+}
 
 const GridToggle = styled.div`
   margin-bottom: 1rem;
@@ -11,26 +19,34 @@ const GridToggle = styled.div`
 `
 
 const CreateChart = styled.div`
-  min-height: 500px;
+  border-radius: 0.25rem;
   background-color: #ffffff;
 `
 
-interface Prop {
-  chartState: string
-  chartOption: Object
-}
-
-const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
+const ChartChart: React.FC<Prop> = ({
+  chartState,
+  chartOption,
+  themeOption,
+  setThemeState,
+}) => {
   return (
     <div>
-      <ThemeButton />
+      <ThemeButton
+        themeName={Object.keys(ThemeData) as ThemeDataType[]}
+        setThemeState={setThemeState}
+      />
       <InfoItem name={chartState} explanation="Chart Explanation" />
       <GridToggle />
       <CreateChart>
         <ReactECharts
+          opts={{ renderer: "svg" }}
           option={chartOption}
           notMerge={true}
-          style={{height: "59vh" }}
+          style={{
+            padding: "0.5rem",
+            height: "60vh",
+          }}
+          theme={themeOption}
         />
       </CreateChart>
     </div>
