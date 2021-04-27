@@ -3,6 +3,15 @@ const Radar = {
     text: "基础雷达图",
   },
   tooltip: {},
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true },
+    },
+  },
   legend: {
     data: ["预算分配（Allocated Budget）", "实际开销（Actual Spending）"],
   },
