@@ -99,6 +99,16 @@ let data = [
 ]
 
 const SunburstOption = {
+  tooltip: {},
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true },
+    },
+  },
   visualMap: {
     type: "continuous",
     min: 0,
