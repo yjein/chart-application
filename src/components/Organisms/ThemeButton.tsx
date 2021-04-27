@@ -1,6 +1,11 @@
 import React from "react"
 import styled from "styled-components"
+import { ThemeDataType } from "../../assets/themeData"
 // import Button from "../Atoms/Button"
+
+interface Props {
+  themeName: ThemeDataType[]
+}
 
 const Container = styled.div`
   display: flex;
@@ -25,15 +30,17 @@ const Btn = styled.div`
   background-color: #666666;
 `
 
-const ThemeBtn = () => {
+const ThemeBtn: React.FC<Props> = ({ themeName }) => {
   return (
     <Container>
-      <ThemeContainer>
-        <Btn />
-        <Btn />
-        <Btn />
-        <Btn />
-      </ThemeContainer>
+      {themeName.map((item) => (
+        <ThemeContainer key={item}>
+          <Btn />
+          <Btn />
+          <Btn />
+          <Btn />
+        </ThemeContainer>
+      ))}
     </Container>
   )
 }
