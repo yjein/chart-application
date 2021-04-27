@@ -19,6 +19,7 @@ const GridToggle = styled.div`
 `
 
 const CreateChart = styled.div`
+  border-radius: 0.25rem;
   background-color: #ffffff;
 `
 
@@ -38,10 +39,11 @@ const ChartChart: React.FC<Prop> = ({
       <GridToggle />
       <CreateChart>
         <ReactECharts
+          opts={{ renderer: "svg" }}
           option={chartOption}
           notMerge={true}
           style={{
-            padding: "10px",
+            padding: "0.5rem",
             height: "60vh",
           }}
           theme={themeOption}
