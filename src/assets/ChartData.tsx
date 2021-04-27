@@ -24,54 +24,79 @@ import sankeyOption from "./ChartOptions/sankeyOption"
 import scatterOption from "./ChartOptions/scatterOption"
 import sunburstOption from "./ChartOptions/sunburstOption"
 
+import { barGrid } from "./GridOptions/barGrid"
+import { lineGrid } from "./GridOptions/lineGrid"
+import { candlestickGrid } from "./GridOptions/candlestickGrid"
+import { gaugeGrid } from "./GridOptions/gaugeGrid"
+import { funnelGrid } from "./GridOptions/funnelGrid"
+import { parallelGrid } from "./GridOptions/parallelGrid"
+import { pictorialbarGrid } from "./GridOptions/pictorialbarGrid"
+import { pieGrid } from "./GridOptions/pieGrid"
+import { radarGrid } from "./GridOptions/radarGrid"
+import { sankeyGrid } from "./GridOptions/sankeyGrid"
+import { scatterGrid } from "./GridOptions/scatterGrid"
+import { sunburstGrid } from "./GridOptions/sunburstGrid"
+
 const ChartData = {
   Bar: {
     Option: barOption,
     Url: barUrl,
+    Grid: barGrid,
   },
   Line: {
     Option: lineOption,
     Url: lineUrl,
+    Grid: lineGrid,
   },
   Candlestick: {
     Option: candlestickOption,
     Url: candlestickUrl,
+    Grid: candlestickGrid,
   },
   Gauge: {
     Option: gaugeOption,
     Url: gaugeUrl,
+    Grid: gaugeGrid,
   },
   Funnel: {
     Option: funnelOption,
     Url: funnelUrl,
+    Grid: funnelGrid,
   },
   Parallel: {
     Option: parallelOption,
     Url: parallelUrl,
+    Grid: parallelGrid,
   },
   Pictorialbar: {
     Option: pictorialbarOption,
     Url: pictorialbarUrl,
+    Grid: pictorialbarGrid,
   },
   Pie: {
     Option: pieOption,
     Url: pieUrl,
+    Grid: pieGrid,
   },
   Radar: {
     Option: radarOption,
     Url: radarUrl,
+    Grid: radarGrid,
   },
   Sankey: {
     Option: sankeyOption,
     Url: sankeyUrl,
+    Grid: sankeyGrid,
   },
   Scatter: {
     Option: scatterOption,
     Url: scatterUrl,
+    Grid: scatterGrid,
   },
   Sunburst: {
     Option: sunburstOption,
     Url: sunburstUrl,
+    Grid: sunburstGrid,
   },
 }
 
