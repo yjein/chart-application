@@ -15,6 +15,7 @@ const Container = styled.div`
 const ThemeContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-right: 1rem;
   padding: 0.5rem;
   width: 9rem;
   border: 1px solid #eeeeee;
@@ -31,14 +32,11 @@ const Btn = styled.div`
   background-color: #666666;
 `
 
-const ThemeBtn: React.FC<Props> = ({
-  themeName,
-  setThemeState,
-}) => {
+const ThemeBtn: React.FC<Props> = ({ themeName, setThemeState }) => {
   return (
     <Container>
       {themeName.map((item) => (
-        <ThemeContainer key={item} onClick={() => setThemeState(item)} >
+        <ThemeContainer key={item} onClick={() => setThemeState(item)}>
           <Btn />
           <Btn />
           <Btn />
