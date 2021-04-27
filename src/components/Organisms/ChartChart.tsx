@@ -4,6 +4,7 @@ import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "../Organisms/ThemeButton"
 import ReactECharts from "echarts-for-react"
 import { AgGridReact } from "ag-grid-react"
+import 'ag-grid-community/dist/styles/ag-grid.css';
 import ThemeData, { ThemeDataType } from "../../assets/themeData"
 
 interface Prop {
@@ -24,6 +25,19 @@ const CreateChart = styled.div`
   background-color: #ffffff;
 `
 
+const GridOption = {
+  columnDefs: [
+    { headerName: "Make", field: "make" },
+    { headerName: "Model", field: "model" },
+    { headerName: "Price", field: "price" },
+  ],
+  rowData: [
+    { make: "Toyota", model: "Celica", price: 35000 },
+    { make: "Ford", model: "Mondeo", price: 32000 },
+    { make: "Porsche", model: "Boxter", price: 72000 },
+  ],
+}
+
 const ChartChart: React.FC<Prop> = ({
   chartState,
   chartOption,
@@ -37,7 +51,9 @@ const ChartChart: React.FC<Prop> = ({
         setThemeState={setThemeState}
       />
       <InfoItem name={chartState} explanation="Chart Explanation" />
-      <GridToggle />
+      <GridToggle>
+        <AgGridReact gridOptions={GridOption} />
+      </GridToggle>
       <CreateChart>
         <ReactECharts
           opts={{ renderer: "svg" }}
