@@ -37,7 +37,7 @@ const ChartChart: React.FC<Prop> = ({
         themeName={Object.keys(ThemeData) as ThemeDataType[]}
         setThemeState={setThemeState}
       />
-      <InfoItem name={chartState} explanation={chartExplanation} />
+      <InfoItem name={chartState + " Chart"} explanation={chartExplanation} />
       <GridToggle />
       <CreateChart>
         <ReactECharts
