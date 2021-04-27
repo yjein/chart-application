@@ -9,6 +9,7 @@ import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
 import ChartData, { ChartDataType } from "../../assets/ChartData"
+import ThemeData, { ThemeDataType } from "../../assets/themeData"
 
 const Wrapper = styled.div`
   display: grid;
@@ -38,6 +39,8 @@ interface Prop {
   setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
   toggleState: boolean
   setToggleState: React.Dispatch<React.SetStateAction<boolean>>
+  themeState: ThemeDataType
+  setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
 }
 
 const ChartPage: React.FC<Prop> = ({
@@ -46,6 +49,8 @@ const ChartPage: React.FC<Prop> = ({
   setChartState,
   toggleState,
   setToggleState,
+  themeState,
+  setThemeState,
 }) => {
   return (
     <Wrapper>
@@ -73,6 +78,8 @@ const ChartPage: React.FC<Prop> = ({
         <ChartChart
           chartState={chartState}
           chartOption={ChartData[chartState].Option}
+          themeOption={ThemeData[themeState]}
+          setThemeState={setThemeState}
         />
       </ChartMain>
     </Wrapper>

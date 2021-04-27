@@ -8,6 +8,8 @@ import ThemeData, { ThemeDataType } from "../../assets/themeData"
 interface Prop {
   chartState: string
   chartOption: Object
+  themeOption: Object
+  setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
 }
 
 const GridToggle = styled.div`
@@ -20,17 +22,29 @@ const CreateChart = styled.div`
   background-color: #ffffff;
 `
 
-const ChartChart: React.FC<Prop> = ({ chartState, chartOption }) => {
+const ChartChart: React.FC<Prop> = ({
+  chartState,
+  chartOption,
+  themeOption,
+  setThemeState,
+}) => {
   return (
     <div>
-      <ThemeButton />
+      <ThemeButton
+        themeName={Object.keys(ThemeData) as ThemeDataType[]}
+        setThemeState={setThemeState}
+      />
       <InfoItem name={chartState} explanation="Chart Explanation" />
       <GridToggle />
       <CreateChart>
         <ReactECharts
           option={chartOption}
           notMerge={true}
-          style={{ padding: "10px", height: "60vh" }}
+          style={{
+            padding: "10px",
+            height: "60vh",
+          }}
+          theme={themeOption}
         />
       </CreateChart>
     </div>

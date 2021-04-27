@@ -5,6 +5,7 @@ import { ThemeDataType } from "../../assets/themeData"
 
 interface Props {
   themeName: ThemeDataType[]
+  setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
 }
 
 const Container = styled.div`
@@ -30,11 +31,14 @@ const Btn = styled.div`
   background-color: #666666;
 `
 
-const ThemeBtn: React.FC<Props> = ({ themeName }) => {
+const ThemeBtn: React.FC<Props> = ({
+  themeName,
+  setThemeState,
+}) => {
   return (
     <Container>
       {themeName.map((item) => (
-        <ThemeContainer key={item}>
+        <ThemeContainer key={item} onClick={() => setThemeState(item)} >
           <Btn />
           <Btn />
           <Btn />

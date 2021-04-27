@@ -21,6 +21,8 @@ const App = () => {
           setChartState={setChartState}
           toggleState={toggleState}
           setToggleState={setToggleState}
+          themeState={themeState}
+          setThemeState={setThemeState}
         />
       )}
     </>
