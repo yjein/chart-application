@@ -12,7 +12,7 @@ import ChartData, { ChartDataType } from "../../assets/ChartData"
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: max-content minmax(calc(100vw - 13.75rem), auto);
 `
 
 const Line = styled.div`
