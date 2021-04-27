@@ -8,6 +8,7 @@ import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
 interface Prop {
   chartState: string
   chartOption: Object
+  chartExplanation: Object
   themeOption: Object
   setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
 }
@@ -26,6 +27,7 @@ const CreateChart = styled.div`
 const ChartChart: React.FC<Prop> = ({
   chartState,
   chartOption,
+  chartExplanation,
   themeOption,
   setThemeState,
 }) => {
@@ -35,7 +37,7 @@ const ChartChart: React.FC<Prop> = ({
         themeName={Object.keys(ThemeData) as ThemeDataType[]}
         setThemeState={setThemeState}
       />
-      <InfoItem name={chartState} explanation="Chart Explanation" />
+      <InfoItem name={chartState} explanation={chartExplanation} />
       <GridToggle />
       <CreateChart>
         <ReactECharts
