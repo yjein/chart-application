@@ -16,7 +16,6 @@ const GridToggle = styled.div`
 `
 
 const CreateChart = styled.div`
-  min-height: 500px;
   background-color: #ffffff;
 `
 
