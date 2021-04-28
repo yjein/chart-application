@@ -24,6 +24,7 @@ const Li = styled.li`
   color: #444444;
   font-size: 1.25rem;
   font-weight: 700;
+  cursor: pointer;
 
   &:hover {
     border-bottom: 5px solid #444444;

@@ -8,7 +8,17 @@ import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
 import ChartData, { ChartDataType } from "../../assets/ChartData"
-import ThemeData, { ThemeDataType } from "../../assets/themeData"
+import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
+
+interface Prop {
+  setPageState: React.Dispatch<React.SetStateAction<PageType>>
+  chartState: ChartDataType
+  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
+  toggleState: boolean
+  setToggleState: React.Dispatch<React.SetStateAction<boolean>>
+  themeState: ThemeDataType
+  setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
+}
 
 const Wrapper = styled.div`
   display: grid;
@@ -31,16 +41,6 @@ const Logo = styled.div`
   font-weight: 700;
   background-color: #444444;
 `
-
-interface Prop {
-  setPageState: React.Dispatch<React.SetStateAction<PageType>>
-  chartState: ChartDataType
-  setChartState: React.Dispatch<React.SetStateAction<ChartDataType>>
-  toggleState: boolean
-  setToggleState: React.Dispatch<React.SetStateAction<boolean>>
-  themeState: ThemeDataType
-  setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
-}
 
 const ChartPage: React.FC<Prop> = ({
   setPageState,
@@ -77,7 +77,11 @@ const ChartPage: React.FC<Prop> = ({
         <ChartChart
           chartState={chartState}
           chartOption={ChartData[chartState].Option}
+<<<<<<< HEAD
           gridOption={ChartData[chartState].Grid}
+=======
+          chartExplanation={ChartData[chartState].explanation}
+>>>>>>> b52ca85081631ae6711b77a1061bed4cbef8354e
           themeOption={ThemeData[themeState]}
           setThemeState={setThemeState}
         />

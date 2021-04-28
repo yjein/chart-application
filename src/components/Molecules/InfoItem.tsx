@@ -5,7 +5,7 @@ import P from "../Atoms/P"
 
 interface Props {
   name: string
-  explanation: string
+  explanation: Object
 }
 
 const StyleInfoItem = styled.div`
