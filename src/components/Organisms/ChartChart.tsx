@@ -4,12 +4,13 @@ import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "../Organisms/ThemeButton"
 import ReactECharts from "echarts-for-react"
 import { AgGridReact } from "ag-grid-react"
-import 'ag-grid-community/dist/styles/ag-grid.css';
+import "ag-grid-community/dist/styles/ag-grid.css"
 import ThemeData, { ThemeDataType } from "../../assets/themeData"
 
 interface Prop {
   chartState: string
   chartOption: Object
+  gridOption: Object
   themeOption: Object
   setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
 }
@@ -25,22 +26,10 @@ const CreateChart = styled.div`
   background-color: #ffffff;
 `
 
-const GridOption = {
-  columnDefs: [
-    { headerName: "Make", field: "make" },
-    { headerName: "Model", field: "model" },
-    { headerName: "Price", field: "price" },
-  ],
-  rowData: [
-    { make: "Toyota", model: "Celica", price: 35000 },
-    { make: "Ford", model: "Mondeo", price: 32000 },
-    { make: "Porsche", model: "Boxter", price: 72000 },
-  ],
-}
-
 const ChartChart: React.FC<Prop> = ({
   chartState,
   chartOption,
+  gridOption,
   themeOption,
   setThemeState,
 }) => {
@@ -52,7 +41,7 @@ const ChartChart: React.FC<Prop> = ({
       />
       <InfoItem name={chartState} explanation="Chart Explanation" />
       <GridToggle>
-        <AgGridReact gridOptions={GridOption} />
+        <AgGridReact gridOptions={gridOption} />
       </GridToggle>
       <CreateChart>
         <ReactECharts
