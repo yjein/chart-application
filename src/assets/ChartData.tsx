@@ -100,6 +100,7 @@ const ChartData = {
     Option: pieOption,
     Url: pieUrl,
     Grid: pieGrid,
+    explanation: ``,
   },
   Radar: {
     Option: radarOption,

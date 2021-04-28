@@ -77,11 +77,8 @@ const ChartPage: React.FC<Prop> = ({
         <ChartChart
           chartState={chartState}
           chartOption={ChartData[chartState].Option}
-<<<<<<< HEAD
           gridOption={ChartData[chartState].Grid}
-=======
           chartExplanation={ChartData[chartState].explanation}
->>>>>>> b52ca85081631ae6711b77a1061bed4cbef8354e
           themeOption={ThemeData[themeState]}
           setThemeState={setThemeState}
         />
