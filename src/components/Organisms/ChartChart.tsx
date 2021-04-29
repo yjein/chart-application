@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useCallback } from "react"
 import styled from "styled-components"
 import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "./ThemeButton"
 import ReactECharts from "echarts-for-react"
 import { AgGridReact } from "ag-grid-react"
-import 'ag-grid-community/dist/styles/ag-grid.css';
+import "ag-grid-community/dist/styles/ag-grid.css"
 import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
 
 interface Prop {
@@ -35,6 +35,11 @@ const ChartChart: React.FC<Prop> = ({
   themeOption,
   setThemeState,
 }) => {
+  const AgGridRender = useCallback(
+    () => <AgGridReact gridOptions={gridOption} />,
+    [gridOption]
+  )
+
   return (
     <div>
       <ThemeButton
@@ -43,7 +48,7 @@ const ChartChart: React.FC<Prop> = ({
       />
       <InfoItem name={chartState} explanation={chartExplanation} />
       <GridToggle>
-        <AgGridReact gridOptions={gridOption} />
+        <AgGridRender />
       </GridToggle>
       <CreateChart>
         <ReactECharts

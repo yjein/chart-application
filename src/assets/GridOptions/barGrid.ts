@@ -1,12 +1,14 @@
 export const barGrid = {
   columnDefs: [
-    { headerName: "Make", field: "make" },
-    { headerName: "Model", field: "model" },
-    { headerName: "Price", field: "price" },
+    { headerName: "Year", field: "year" },
+    { headerName: "제품A", field: "A" },
+    { headerName: "제품B", field: "B" },
+    { headerName: "제품C", field: "C" },
   ],
   rowData: [
-    { make: "Toyota", model: "Celica", price: 35000 },
-    { make: "Ford", model: "Mondeo", price: 32000 },
-    { make: "Porsche", model: "Boxter", price: 72000 },
+    { year: "2018", A: "41", B: "86", C: "24"},
+    { year: "2019", A: "30", B: "92", C: "67"},
+    { year: "2020", A: "65", B: "85", C: "79"},
+    { year: "2021", A: "53", B: "83", C: "86"},
   ],
 }

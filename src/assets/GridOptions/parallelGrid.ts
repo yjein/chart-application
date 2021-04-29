@@ -1,12 +1,13 @@
 export const parallelGrid = {
   columnDefs: [
-    { headerName: "Make", field: "make" },
-    { headerName: "Model", field: "model" },
     { headerName: "Price", field: "price" },
+    { headerName: "Net Weight", field: "netweight" },
+    { headerName: "Amount", field: "amount" },
+    { headerName: "Score", field: "score" },
   ],
   rowData: [
-    { make: "Toyota", model: "Celica", price: 35000 },
-    { make: "Ford", model: "Mondeo", price: 32000 },
-    { make: "Porsche", model: "Boxter", price: 72000 },
+    { price: "20", netweight: "120", amount: "60", score: "Excellent" },
+    { price: "12.99", netweight: "100", amount: "82", score: "Good" },
+    { price: "9.99", netweight: "80", amount: "77", score: "OK" },
   ],
 }

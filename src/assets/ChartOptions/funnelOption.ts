@@ -1,7 +1,7 @@
 const FunnelOption = {
   title: {
-    text: "漏斗图",
-    subtext: "纯属虚构",
+    text: "Marketing",
+    subtext: "Funnel",
   },
   tooltip: {
     trigger: "item",
@@ -15,16 +15,16 @@ const FunnelOption = {
     },
   },
   legend: {
-    data: ["展现", "点击", "访问", "咨询", "订单"],
+    data: ["인식", "관심", "고려", "의지", "평가", "구매"],
   },
   series: [
     {
-      name: "预期",
+      name: "예상",
       type: "funnel",
       left: "10%",
       width: "80%",
       label: {
-        formatter: "{b}预期",
+        formatter: "{b}",
       },
       labelLine: {
         show: false,
@@ -39,15 +39,15 @@ const FunnelOption = {
         },
       },
       data: [
-        { value: 60, name: "访问" },
-        { value: 40, name: "咨询" },
-        { value: 20, name: "订单" },
-        { value: 80, name: "点击" },
-        { value: 100, name: "展现" },
+        { value: 60, name: "고려" },
+        { value: 40, name: "의지" },
+        { value: 20, name: "구매" },
+        { value: 80, name: "관심" },
+        { value: 100, name: "인식" },
       ],
     },
     {
-      name: "实际",
+      name: "실제",
       type: "funnel",
       left: "10%",
       width: "80%",
@@ -65,15 +65,15 @@ const FunnelOption = {
       emphasis: {
         label: {
           position: "inside",
-          formatter: "{b}实际: {c}%",
+          formatter: "{c}%",
         },
       },
       data: [
-        { value: 30, name: "访问" },
-        { value: 10, name: "咨询" },
-        { value: 5, name: "订单" },
-        { value: 50, name: "点击" },
-        { value: 80, name: "展现" },
+        { value: 30, name: "고려" },
+        { value: 10, name: "의지" },
+        { value: 5, name: "구매" },
+        { value: 50, name: "관심" },
+        { value: 80, name: "인식" },
       ],
       // Ensure outer shape will not be over inner shape when hover.
       z: 100,
