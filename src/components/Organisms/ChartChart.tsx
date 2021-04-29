@@ -13,6 +13,7 @@ interface Prop {
   gridOption: Object
   chartExplanation: Object
   themeOption: Object
+  themeState: ThemeDataType
   setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
 }
 
@@ -22,9 +23,10 @@ const GridToggle = styled.div`
   background-color: #ffffff;
 `
 
-const CreateChart = styled.div`
+const CreateChart = styled.div<{ themeState: ThemeDataType }>`
   border-radius: 0.25rem;
-  background-color: #ffffff;
+  background-color: ${({ themeState }) =>
+    ThemeData[themeState].backgroundColor};
 `
 
 const ChartChart: React.FC<Prop> = ({
@@ -33,6 +35,7 @@ const ChartChart: React.FC<Prop> = ({
   gridOption,
   chartExplanation,
   themeOption,
+  themeState,
   setThemeState,
 }) => {
   return (
@@ -45,7 +48,7 @@ const ChartChart: React.FC<Prop> = ({
       <GridToggle>
         <AgGridReact gridOptions={gridOption} />
       </GridToggle>
-      <CreateChart>
+      <CreateChart themeState={themeState}>
         <ReactECharts
           opts={{ renderer: "svg" }}
           option={chartOption}
