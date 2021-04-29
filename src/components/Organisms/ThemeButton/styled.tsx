@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { ThemeData, ThemeDataType } from "../../../assets/ThemeData"
 
 export const Container = styled.div`
   display: flex;
