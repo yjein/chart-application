@@ -10,7 +10,7 @@ const simple = {
     "#9a60b4",
     "#ea7ccc",
   ],
-  backgroundColor: "rgba(0, 0, 0, 0)",
+  backgroundColor: "rgba(255,255,255,1)",
   textStyle: {},
   title: {
     textStyle: {

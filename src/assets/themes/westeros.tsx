@@ -1,6 +1,6 @@
 const westeros = {
   color: ["#516b91", "#59c4e6", "#edafda", "#93b7e3", "#a5e7f0", "#cbb0e3"],
-  backgroundColor: "rgba(0,0,0,0)",
+  backgroundColor: "rgba(255,255,255,1)",
   textStyle: {},
   title: {
     textStyle: {
