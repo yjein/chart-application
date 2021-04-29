@@ -2,10 +2,10 @@ import styled from "styled-components"
 import ChartHeader from "../Templates/ChartHeader"
 import ChartAside from "../Templates/ChartAside"
 import ChartMain from "../Templates/ChartMain"
-import ChartList from "../Organisms/ChartList"
+import { ChartList } from "../Organisms/ChartList"
 import Button from "../Atoms/Button"
-import Nav from "../Organisms/Nav"
-import ChartChart from "../Organisms/ChartChart"
+import { MainNav } from "../Organisms/Nav"
+import { ChartChart } from "../Organisms/ChartChart"
 import { PageType } from "../../App"
 import ChartData, { ChartDataType } from "../../assets/ChartData"
 import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
@@ -61,9 +61,9 @@ const ChartPage: React.FC<Prop> = ({
             <Line />
           </Button>
         </div>
-        <Nav setPageState={setPageState}>
+        <MainNav setPageState={setPageState}>
           <Logo>Raon Chart</Logo>
-        </Nav>
+        </MainNav>
       </ChartHeader>
 
       <ChartAside toggleState={toggleState}>
