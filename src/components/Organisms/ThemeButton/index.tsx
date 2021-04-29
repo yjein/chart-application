@@ -1,21 +1,23 @@
 import React from "react"
-import { ThemeDataType } from "../../../assets/ThemeData"
+import { ThemeData, ThemeDataType } from "../../../assets/ThemeData"
 import { Container, ThemeContainer, Btn } from "./styled"
 
 interface Props {
-  themeName: ThemeDataType[]
   setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
 }
 
-const ThemeBtn: React.FC<Props> = ({ themeName, setThemeState }) => {
+const ThemeBtn: React.FC<Props> = ({ setThemeState }) => {
   return (
     <Container>
-      {themeName.map((item) => (
-        <ThemeContainer key={item} onClick={() => setThemeState(item)}>
-          <Btn />
-          <Btn />
-          <Btn />
-          <Btn />
+      {Object.entries(ThemeData).map((item) => (
+        <ThemeContainer
+          key={item[0]}
+          onClick={() => setThemeState(item[0] as ThemeDataType)}
+          item={item[1].backgroundColor}
+        >
+          {item[1].color.map((item) => (
+            <Btn item={item} />
+          ))}
         </ThemeContainer>
       ))}
     </Container>

@@ -40,11 +40,8 @@ const ChartChart: React.FC<Prop> = ({
 }) => {
   return (
     <div>
-      <ThemeButton
-        themeName={Object.keys(ThemeData) as ThemeDataType[]}
-        setThemeState={setThemeState}
-      />
-      <InfoItem name={chartState} explanation={chartExplanation} />
+      <ThemeButton setThemeState={setThemeState} />
+      <InfoItem name={chartState + " Chart"} explanation={chartExplanation} />
       <GridToggle>
         <AgGridReact gridOptions={gridOption} />
       </GridToggle>

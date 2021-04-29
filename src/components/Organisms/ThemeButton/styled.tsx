@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
 `
 
-export const ThemeContainer = styled.div`
+export const ThemeContainer = styled.div<{ item: string }>`
   display: flex;
   justify-content: space-between;
   margin-right: 1rem;
@@ -15,14 +15,13 @@ export const ThemeContainer = styled.div`
   width: 9rem;
   border: 1px solid #eeeeee;
   border-radius: 0.25rem;
-  background-color: #ffffff;
+  background-color: ${({ item }) => item};
   cursor: pointer;
 `
 
-export const Btn = styled.div`
-  margin: 0 2px;
+export const Btn = styled.div<{ item: string }>`
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 0.25rem;
-  background-color: #666666;
+  background-color: ${({ item }) => item};
 `
