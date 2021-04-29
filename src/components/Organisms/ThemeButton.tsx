@@ -10,12 +10,14 @@ interface Props {
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `
 
 const ThemeContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-right: 1rem;
+  margin-bottom: 0.5rem;
   padding: 0.5rem;
   width: 9rem;
   border: 1px solid #eeeeee;
