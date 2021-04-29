@@ -9,7 +9,7 @@ interface Props {
 }
 
 const StyleInfoItem = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 `
 
 const InfoItem: React.FC<Props> = ({ name, explanation }) => {
