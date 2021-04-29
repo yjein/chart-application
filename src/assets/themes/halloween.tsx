@@ -191,7 +191,7 @@ const halloween = {
     axisLabel: {
       show: true,
       textStyle: {
-        color: "#999999",
+        color: "#333333",
       },
     },
     splitLine: {
@@ -217,13 +217,13 @@ const halloween = {
     axisTick: {
       show: false,
       lineStyle: {
-        color: "#333",
+        color: "#333333",
       },
     },
     axisLabel: {
       show: true,
       textStyle: {
-        color: "#999999",
+        color: "#333333",
       },
     },
     splitLine: {
@@ -315,7 +315,7 @@ const halloween = {
   },
   legend: {
     textStyle: {
-      color: "#999999",
+      color: "#333333",
     },
   },
   tooltip: {
