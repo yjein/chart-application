@@ -46,9 +46,7 @@ export const ChartChart: React.FC<Prop> = ({
 
   return (
     <div>
-      <ThemeButton
-        setThemeState={setThemeState}
-      />
+      <ThemeButton setThemeState={setThemeState} />
       <InfoItem name={chartState} explanation={chartExplanation} />
       <GridToggle className={"ag-theme-fresh"}>
         <AgGridRender />
