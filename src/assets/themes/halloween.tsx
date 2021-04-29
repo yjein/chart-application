@@ -1,6 +1,6 @@
 const halloween = {
   color: ["#ff715e", "#ffaf51", "#ffee51", "#8c6ac4", "#715c87"],
-  backgroundColor: "rgba(64,64,64,0.5)",
+  backgroundColor: "rgba(168, 168, 168, 0.945)",
   textStyle: {},
   title: {
     textStyle: {
