@@ -1,4 +1,4 @@
-const CandlestickOption = {
+export const CandlestickOption = {
   tooltip: {},
   toolbox: {
     show: true,
@@ -25,5 +25,3 @@ const CandlestickOption = {
     },
   ],
 }
-
-export default CandlestickOption

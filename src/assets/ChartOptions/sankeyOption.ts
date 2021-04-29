@@ -1,4 +1,4 @@
-const SankeyOption = {
+export const SankeyOption = {
   tooltip: {},
   toolbox: {
     show: true,
@@ -69,5 +69,3 @@ const SankeyOption = {
     ],
   },
 }
-
-export default SankeyOption

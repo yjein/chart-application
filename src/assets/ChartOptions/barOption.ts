@@ -1,4 +1,4 @@
-const BarOption = {
+export const BarOption = {
   tooltip: {},
   toolbox: {
     show: true,
@@ -35,5 +35,3 @@ const BarOption = {
     { type: "bar", xAxisIndex: 1, yAxisIndex: 1 },
   ],
 }
-
-export default BarOption

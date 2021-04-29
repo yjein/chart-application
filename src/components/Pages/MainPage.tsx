@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import MainHeader from "../Templates/MainHeader"
-import MainLogo from "../Organisms/MainLogo"
-import Nav from "../Organisms/Nav"
-import MainMain from "../Templates/MainMain"
-import MainDashBord from "../Organisms/DashBord"
+import { MainHeader } from "../Templates/MainHeader"
+import { MainLogo } from "../Organisms/MainLogo"
+import { MainNav } from "../Organisms/Nav"
+import { Main } from "../Templates/MainMain"
+import { MainDashBord } from "../Organisms/DashBord"
 import React from "react"
 import { PageType } from "../../App"
 import { ChartDataType } from "../../assets/ChartData"
@@ -23,14 +23,14 @@ const MainPage: React.FC<Props> = ({ setPageState, setChartState }) => {
     <Wrapper>
       <MainHeader>
         <MainLogo>RaonChart</MainLogo>
-        <Nav setPageState={setPageState} />
+        <MainNav setPageState={setPageState} />
       </MainHeader>
-      <MainMain>
+      <Main>
         <MainDashBord
           setPageState={setPageState}
           setChartState={setChartState}
         />
-      </MainMain>
+      </Main>
     </Wrapper>
   )
 }

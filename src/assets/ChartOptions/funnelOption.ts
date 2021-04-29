@@ -1,4 +1,4 @@
-const FunnelOption = {
+export const FunnelOption = {
   title: {
     text: "Marketing",
     subtext: "Funnel",
@@ -80,5 +80,3 @@ const FunnelOption = {
     },
   ],
 }
-
-export default FunnelOption

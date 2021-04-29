@@ -27,7 +27,7 @@ const CreateChart = styled.div`
   background-color: #ffffff;
 `
 
-const ChartChart: React.FC<Prop> = ({
+export const ChartChart: React.FC<Prop> = ({
   chartState,
   chartOption,
   gridOption,
@@ -65,5 +65,3 @@ const ChartChart: React.FC<Prop> = ({
     </div>
   )
 }
-
-export default ChartChart

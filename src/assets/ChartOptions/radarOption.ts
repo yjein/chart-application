@@ -1,4 +1,4 @@
-const Radar = {
+export const RadarOption = {
   tooltip: {},
   toolbox: {
     show: true,
@@ -49,5 +49,3 @@ const Radar = {
     },
   ],
 }
-
-export default Radar

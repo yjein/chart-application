@@ -17,7 +17,7 @@ const Logo = styled.div`
   background-color: #444444;
 `
 
-const MainLogo: React.FC<{}> = (props) => {
+export const MainLogo: React.FC<{}> = (props) => {
   const { children } = props
   return (
     <LogoBackground>
@@ -25,5 +25,3 @@ const MainLogo: React.FC<{}> = (props) => {
     </LogoBackground>
   )
 }
-
-export default MainLogo
