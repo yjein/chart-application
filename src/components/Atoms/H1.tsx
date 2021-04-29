@@ -3,7 +3,8 @@ import styled from "styled-components"
 
 const StyleH1 = styled.h1`
   margin-bottom: 0.5rem;
-  width: 7rem;
+  padding: 0 1rem;
+  width: fit-content;
   border-radius: 0 0.25rem 0 0;
   border-left: 0.75rem solid #5470c6;
   border-bottom: 0.25rem solid #828488;
