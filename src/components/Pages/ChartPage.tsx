@@ -22,7 +22,6 @@ interface Prop {
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: max-content minmax(calc(100vw - 13.75rem), auto);
 `
 
 const Line = styled.div`
