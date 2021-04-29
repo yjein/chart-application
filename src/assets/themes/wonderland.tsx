@@ -1,6 +1,6 @@
 const wonderland = {
   color: ["#4ea397", "#22c3aa", "#7bd9a5", "#d0648a", "#f58db2", "#f2b3c9"],
-  backgroundColor: "rgba(255,255,255,0)",
+  backgroundColor: "rgba(255,255,255,1)",
   textStyle: {},
   title: {
     textStyle: {

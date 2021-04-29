@@ -9,7 +9,7 @@ const shine = {
     "#cda819",
     "#32a487",
   ],
-  backgroundColor: "rgba(0,0,0,0)",
+  backgroundColor: "rgba(255,255,255,1)",
   textStyle: {},
   title: {
     textStyle: {

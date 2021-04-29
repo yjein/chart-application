@@ -8,7 +8,7 @@ import { MainNav } from "../Organisms/Nav"
 import { ChartChart } from "../Organisms/ChartChart"
 import { PageType } from "../../App"
 import ChartData, { ChartDataType } from "../../assets/ChartData"
-import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
+import { ThemeData, ThemeDataType } from "../../assets/ThemeData"
 
 interface Prop {
   setPageState: React.Dispatch<React.SetStateAction<PageType>>
@@ -80,6 +80,7 @@ const ChartPage: React.FC<Prop> = ({
           gridOption={ChartData[chartState].Grid}
           chartExplanation={ChartData[chartState].explanation}
           themeOption={ThemeData[themeState]}
+          themeState={themeState}
           setThemeState={setThemeState}
         />
       </ChartMain>

@@ -21,7 +21,7 @@ const macarons = {
     "#6f5553",
     "#c14089",
   ],
-  backgroundColor: "rgba(0,0,0,0)",
+  backgroundColor: "rgba(255,255,255,1)",
   textStyle: {},
   title: {
     textStyle: {

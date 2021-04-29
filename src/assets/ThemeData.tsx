@@ -13,7 +13,7 @@ import shine from "./themes/shine"
 import purplePassion from "./themes/purplePassion"
 import halloween from "./themes/halloween"
 
-const ThemeData = {
+export const ThemeData = {
   simple: simple,
   vintage: vintage,
   dark: dark,
@@ -30,5 +30,4 @@ const ThemeData = {
   halloween: halloween,
 }
 
-export default ThemeData
 export type ThemeDataType = keyof typeof ThemeData

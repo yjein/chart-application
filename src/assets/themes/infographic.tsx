@@ -16,7 +16,7 @@ const infographic = {
     "#f0805a",
     "#26c0c0",
   ],
-  backgroundColor: "rgba(0,0,0,0)",
+  backgroundColor: "rgba(255,255,255,1)",
   textStyle: {},
   title: {
     textStyle: {

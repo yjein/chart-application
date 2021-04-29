@@ -1,6 +1,6 @@
 const essos = {
   color: ["#893448", "#d95850", "#eb8146", "#ffb248", "#f2d643", "#ebdba4"],
-  backgroundColor: "rgba(242,234,191,0.15)",
+  backgroundColor: "rgba(253, 252, 245, 1)",
   textStyle: {},
   title: {
     textStyle: {
