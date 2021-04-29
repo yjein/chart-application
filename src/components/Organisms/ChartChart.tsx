@@ -4,8 +4,8 @@ import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "./ThemeButton"
 import ReactECharts from "echarts-for-react"
 import { AgGridReact } from "ag-grid-react"
-import 'ag-grid-community/dist/styles/ag-grid.css';
-import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
+import "ag-grid-community/dist/styles/ag-grid.css"
+import { ThemeData, ThemeDataType } from "../../assets/ThemeData"
 
 interface Prop {
   chartState: string

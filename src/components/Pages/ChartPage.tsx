@@ -8,7 +8,7 @@ import Nav from "../Organisms/Nav"
 import ChartChart from "../Organisms/ChartChart"
 import { PageType } from "../../App"
 import ChartData, { ChartDataType } from "../../assets/ChartData"
-import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
+import { ThemeData, ThemeDataType } from "../../assets/ThemeData"
 
 interface Prop {
   setPageState: React.Dispatch<React.SetStateAction<PageType>>
