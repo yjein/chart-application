@@ -37,7 +37,16 @@ const PictorialBarOption = {
     // },
   },
   xAxis: {
-    data: ["驯鹿", "火箭", "飞机", "高铁", "轮船", "汽车", "跑步", "步行"],
+    data: [
+      "순록",
+      "로켓",
+      "항공기",
+      "고속철도",
+      "기선",
+      "자동차",
+      "달리기",
+      "걷기",
+    ],
     axisTick: { show: false },
     axisLine: { show: false },
     axisLabel: {
