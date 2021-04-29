@@ -6,6 +6,7 @@ import ReactECharts from "echarts-for-react"
 import { AgGridReact } from "ag-grid-react"
 import "ag-grid-community/dist/styles/ag-grid.css"
 import ThemeData, { ThemeDataType } from "../../assets/ThemeData"
+import "ag-grid-community/dist/styles/ag-theme-fresh.css"
 
 interface Prop {
   chartState: string
@@ -18,7 +19,7 @@ interface Prop {
 
 const GridToggle = styled.div`
   margin-bottom: 1rem;
-  height: 100px;
+  height: 130px;
   background-color: #ffffff;
 `
 
@@ -47,7 +48,7 @@ export const ChartChart: React.FC<Prop> = ({
         setThemeState={setThemeState}
       />
       <InfoItem name={chartState} explanation={chartExplanation} />
-      <GridToggle>
+      <GridToggle className={"ag-theme-fresh"}>
         <AgGridRender />
       </GridToggle>
       <CreateChart>
