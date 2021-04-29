@@ -1,12 +1,12 @@
 export const gaugeGrid = {
   columnDefs: [
-    { headerName: "Make", field: "make" },
-    { headerName: "Model", field: "model" },
-    { headerName: "Price", field: "price" },
+    { headerName: "Level", field: "level" },
+    { headerName: "Percentage", field: "%" },
+    { headerName: "Color", field: "color" },
   ],
   rowData: [
-    { make: "Toyota", model: "Celica", price: 35000 },
-    { make: "Ford", model: "Mondeo", price: 32000 },
-    { make: "Porsche", model: "Boxter", price: 72000 },
+    { level: "Perfect", "%": "20%", color: "Blue" },
+    { level: "Good", "%": "40%", color: "Green" },
+    { level: "Commonly", "%": "60%", color: "Yellow" },
   ],
 }
