@@ -1,4 +1,4 @@
-const ScatterOption = {
+export const ScatterOption = {
   tooltip: {},
   toolbox: {
     show: true,
@@ -42,5 +42,3 @@ const ScatterOption = {
     },
   ],
 }
-
-export default ScatterOption

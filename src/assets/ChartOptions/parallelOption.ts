@@ -1,4 +1,4 @@
-const ParallelOption = {
+export const ParallelOption = {
   tooltip: {},
   toolbox: {
     show: true,
@@ -32,5 +32,3 @@ const ParallelOption = {
     ],
   },
 }
-
-export default ParallelOption

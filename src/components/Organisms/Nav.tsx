@@ -31,7 +31,7 @@ const Li = styled.li`
   }
 `
 
-const MainNav: React.FC<Props> = (props) => {
+export const MainNav: React.FC<Props> = (props) => {
   const { children, setPageState } = props
 
   return (
@@ -46,5 +46,3 @@ const MainNav: React.FC<Props> = (props) => {
     </Nav>
   )
 }
-
-export default MainNav

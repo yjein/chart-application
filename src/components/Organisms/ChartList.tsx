@@ -23,7 +23,7 @@ const Li = styled.li`
   cursor: pointer;
 `
 
-const ChartList: React.FC<Props> = ({ chartName, setChartState }) => {
+export const ChartList: React.FC<Props> = ({ chartName, setChartState }) => {
   return (
     <div>
       <Ul>
@@ -36,5 +36,3 @@ const ChartList: React.FC<Props> = ({ chartName, setChartState }) => {
     </div>
   )
 }
-
-export default ChartList

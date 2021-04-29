@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Image from "../Atoms/Img"
+import { Image } from "../Atoms/Img"
 import { PageType } from "../../App"
 import ChartData from "../../assets/ChartData"
 import { ChartDataType } from "../../assets/ChartData"
@@ -27,7 +27,10 @@ const Div = styled.div`
   }
 `
 
-const MainDashBord: React.FC<Prop> = ({ setChartState, setPageState }) => {
+export const MainDashBord: React.FC<Prop> = ({
+  setChartState,
+  setPageState,
+}) => {
   const handleOnclick = (key: string) => {
     setChartState(key as ChartDataType)
     setPageState("ChartPage")
@@ -43,5 +46,3 @@ const MainDashBord: React.FC<Prop> = ({ setChartState, setPageState }) => {
     </DashBord>
   )
 }
-
-export default MainDashBord

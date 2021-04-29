@@ -1,12 +1,9 @@
 export const pieGrid = {
   columnDefs: [
-    { headerName: "Make", field: "make" },
-    { headerName: "Model", field: "model" },
-    { headerName: "Price", field: "price" },
+    { headerName: "찬성", field: "찬성" },
+    { headerName: "반대", field: "반대" },
+    { headerName: "모르겠다", field: "모르겠다" },
+    { headerName: "무응답", field: "무응답" },
   ],
-  rowData: [
-    { make: "Toyota", model: "Celica", price: 35000 },
-    { make: "Ford", model: "Mondeo", price: 32000 },
-    { make: "Porsche", model: "Boxter", price: 72000 },
-  ],
+  rowData: [{ 찬성: "30", 반대: "20", 모르겠다: "15", 무응답: "10" }],
 }

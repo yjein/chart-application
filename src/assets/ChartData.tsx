@@ -11,18 +11,18 @@ import sankeyUrl from "./ChartImages/sankey.png"
 import scatterUrl from "./ChartImages/scatter.png"
 import sunburstUrl from "./ChartImages/sunburst.png"
 
-import barOption from "./ChartOptions/barOption"
-import lineOption from "./ChartOptions/lineOption"
-import candlestickOption from "./ChartOptions/candlestickOption"
-import gaugeOption from "./ChartOptions/gaugeOption"
-import funnelOption from "./ChartOptions/funnelOption"
-import parallelOption from "./ChartOptions/parallelOption"
-import pictorialbarOption from "./ChartOptions/pictorialBarOption"
-import pieOption from "./ChartOptions/pieOption"
-import radarOption from "./ChartOptions/radarOption"
-import sankeyOption from "./ChartOptions/sankeyOption"
-import scatterOption from "./ChartOptions/scatterOption"
-import sunburstOption from "./ChartOptions/sunburstOption"
+import { BarOption } from "./ChartOptions/barOption"
+import { LineOption } from "./ChartOptions/lineOption"
+import { CandlestickOption } from "./ChartOptions/candlestickOption"
+import { GaugeOption } from "./ChartOptions/gaugeOption"
+import { FunnelOption } from "./ChartOptions/funnelOption"
+import { ParallelOption } from "./ChartOptions/parallelOption"
+import { PictorialBarOption } from "./ChartOptions/pictorialBarOption"
+import { PieOption } from "./ChartOptions/pieOption"
+import { RadarOption } from "./ChartOptions/radarOption"
+import { SankeyOption } from "./ChartOptions/sankeyOption"
+import { ScatterOption } from "./ChartOptions/scatterOption"
+import { SunburstOption } from "./ChartOptions/sunburstOption"
 
 import { barGrid } from "./GridOptions/barGrid"
 import { lineGrid } from "./GridOptions/lineGrid"
@@ -39,7 +39,7 @@ import { sunburstGrid } from "./GridOptions/sunburstGrid"
 
 const ChartData = {
   Bar: {
-    Option: barOption,
+    Option: BarOption,
     Url: barUrl,
     Grid: barGrid,
     explanation: `Bar Chart는 표현 값에 비례하여 높이와 길이를 지는 직사각형 막대로 범주형 데이터를 표현하는 차트이다.
@@ -47,7 +47,7 @@ const ChartData = {
     히스토그램은 공업 분야에서 품질 관리(QC)를 위한 도구 중 하나이다.`,
   },
   Line: {
-    Option: lineOption,
+    Option: LineOption,
     Url: lineUrl,
     Grid: lineGrid,
     explanation: `Line Chart는 수량을 점으로 표시하고 그 점들을 선분으로 이어 그린 그래프를 말한다.
@@ -55,7 +55,7 @@ const ChartData = {
     조사하지 않은 중간의 값도 대략 예측할 수 있다는 장점이 있다.`,
   },
   Candlestick: {
-    Option: candlestickOption,
+    Option: CandlestickOption,
     Url: candlestickUrl,
     Grid: candlestickGrid,
     explanation: `캔들스틱 차트 또는 봉차트는
@@ -65,7 +65,7 @@ const ChartData = {
     따라서 20일간의 거래를 보여주는 차트에는 20개의 캔들스틱이 있다.`,
   },
   Gauge: {
-    Option: gaugeOption,
+    Option: GaugeOption,
     Url: gaugeUrl,
     Grid: gaugeGrid,
     explanation: `과학 및 공학에서 게이지는 측정을하거나 특정 치수 정보를 표시하는 데 사용되는 장치이다.
@@ -73,7 +73,7 @@ const ChartData = {
     특정 목표의 달성율을 표현하는 용도로 응용해서 사용할 수 있다.`,
   },
   Funnel: {
-    Option: funnelOption,
+    Option: FunnelOption,
     Url: funnelUrl,
     Grid: funnelGrid,
     explanation: `깔때기 형 차트는 판매 프로세스의 단계를 나타내고
@@ -81,7 +81,7 @@ const ChartData = {
     이 유형의 차트는 조직의 영업 프로세스에서 잠재적인 문제영역을 식별하는 데 유용 할 수 있다.`,
   },
   Parallel: {
-    Option: parallelOption,
+    Option: ParallelOption,
     Url: parallelUrl,
     Grid: parallelGrid,
     explanation: `평행차트는 고차원 데이터 세트를 시각화하고 분석하는 일반적인 방법이다.
@@ -90,20 +90,20 @@ const ChartData = {
     시계열 시각화와 밀접한 관련이 있어 다른 축 배열이 관심의 대상이 될 수 있다.`,
   },
   Pictorialbar: {
-    Option: pictorialbarOption,
+    Option: PictorialBarOption,
     Url: pictorialbarUrl,
     Grid: pictorialbarGrid,
     explanation: `그림 막대 차트는 디자이너가 인포그래픽에서 사용하는 막대 차트를 시각적으로 표현한 것이다.
     개체 길이를 늘리거나 크기를 조정하여 막대 대신 아이콘 또는 그림을 사용한다.`,
   },
   Pie: {
-    Option: pieOption,
+    Option: PieOption,
     Url: pieUrl,
     Grid: pieGrid,
     explanation: ``,
   },
   Radar: {
-    Option: radarOption,
+    Option: RadarOption,
     Url: radarUrl,
     Grid: radarGrid,
     explanation: `어떤 측정 목표에 대한 평가항목이 여러 개일 때 항목 수에 따라 원을 같은 간격으로 나누고,
@@ -112,7 +112,7 @@ const ChartData = {
     평가항목간 점을 이어 선으로 만들어 항목 간 균형을 한눈에 볼 수 있도록 해주는 도표이다.`,
   },
   Sankey: {
-    Option: sankeyOption,
+    Option: SankeyOption,
     Url: sankeyUrl,
     Grid: sankeyGrid,
     explanation: `흐름 다이어그램의 한 종류로서
@@ -120,7 +120,7 @@ const ChartData = {
     주로 어떤 프로세스에서 에너지, 연료, 비용의 움직임을 시각화하는 데에 사용된다.`,
   },
   Scatter: {
-    Option: scatterOption,
+    Option: ScatterOption,
     Url: scatterUrl,
     Grid: scatterGrid,
     explanation: `Scatter Chart는 2개의 연속형 변수 간의 관계를 보기 위하여
@@ -128,7 +128,7 @@ const ChartData = {
     이를 통해 두 변수 사이의 관계를 알 수 있다.`,
   },
   Sunburst: {
-    Option: sunburstOption,
+    Option: SunburstOption,
     Url: sunburstUrl,
     Grid: sunburstGrid,
     explanation: `선버스트 차트는 계층 구조 데이터를 표시하는 데 적합하다.

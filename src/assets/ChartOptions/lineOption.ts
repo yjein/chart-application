@@ -1,4 +1,4 @@
-const LineOption = {
+export const LineOption = {
   title: {
     left: "center",
     text: "주간 신규 코로나 바이러스 확진자수",
@@ -38,5 +38,3 @@ const LineOption = {
     },
   ],
 }
-
-export default LineOption

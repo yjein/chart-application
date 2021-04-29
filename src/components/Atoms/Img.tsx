@@ -10,8 +10,6 @@ const Img = styled.img`
   height: 100%;
 `
 
-const Image: React.FC<Url> = ({ url }) => {
+export const Image: React.FC<Url> = ({ url }) => {
   return <Img src={url} />
 }
-
-export default Image

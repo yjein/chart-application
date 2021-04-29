@@ -1,4 +1,4 @@
-const PieOption = {
+export const PieOption = {
   title: {
     left: "center",
     text: "투표 결과",
@@ -35,5 +35,3 @@ const PieOption = {
     },
   ],
 }
-
-export default PieOption

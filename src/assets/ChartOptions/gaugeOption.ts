@@ -1,4 +1,4 @@
-const GaugeOption = {
+export const GaugeOption = {
   tooltip: {},
   toolbox: {
     show: true,
@@ -92,5 +92,3 @@ const GaugeOption = {
     },
   ],
 }
-
-export default GaugeOption

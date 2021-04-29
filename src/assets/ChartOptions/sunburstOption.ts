@@ -98,7 +98,7 @@ let data = [
   },
 ]
 
-const SunburstOption = {
+export const SunburstOption = {
   tooltip: {},
   toolbox: {
     show: true,
@@ -126,5 +126,3 @@ const SunburstOption = {
     },
   },
 }
-
-export default SunburstOption

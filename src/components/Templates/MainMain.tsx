@@ -7,9 +7,7 @@ const MainStyle = styled.div`
   background-color: #999999;
 `
 
-const Main: React.FC<{}> = (props) => {
+export const Main: React.FC<{}> = (props) => {
   const { children } = props
   return <MainStyle>{children}</MainStyle>
 }
-
-export default Main

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useCallback } from "react"
 import styled from "styled-components"
 import InfoItem from "../Molecules/InfoItem"
 import ThemeButton from "./ThemeButton"
@@ -29,7 +29,7 @@ const CreateChart = styled.div<{ themeState: ThemeDataType }>`
     ThemeData[themeState].backgroundColor};
 `
 
-const ChartChart: React.FC<Prop> = ({
+export const ChartChart: React.FC<Prop> = ({
   chartState,
   chartOption,
   gridOption,
@@ -38,12 +38,17 @@ const ChartChart: React.FC<Prop> = ({
   themeState,
   setThemeState,
 }) => {
+  const AgGridRender = useCallback(
+    () => <AgGridReact gridOptions={gridOption} />,
+    [gridOption]
+  )
+
   return (
     <div>
       <ThemeButton setThemeState={setThemeState} />
       <InfoItem name={chartState + " Chart"} explanation={chartExplanation} />
       <GridToggle>
-        <AgGridReact gridOptions={gridOption} />
+        <AgGridRender />
       </GridToggle>
       <CreateChart themeState={themeState}>
         <ReactECharts
@@ -60,5 +65,3 @@ const ChartChart: React.FC<Prop> = ({
     </div>
   )
 }
-
-export default ChartChart
