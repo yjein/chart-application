@@ -10,7 +10,7 @@ interface type {
   }[]
 }
 
-const BarGrid = (input: type) => {
+const ChangeBarData = (input: type) => {
   const dataset = {
     source: [["product"]],
   }
@@ -29,4 +29,4 @@ const BarGrid = (input: type) => {
   return dataset
 }
 
-export const barGrid = BarGrid(barData)
+export const changeBarData = ChangeBarData(barData)

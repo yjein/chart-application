@@ -1,4 +1,4 @@
-import { barGrid } from "../../Util/barGrid"
+import { changeBarData } from "../../Util/ChangeBarData"
 
 export const BarOption = {
   tooltip: {},
@@ -11,7 +11,7 @@ export const BarOption = {
     },
   },
   legend: {},
-  dataset: barGrid,
+  dataset: changeBarData,
   xAxis: [
     { type: "category", gridIndex: 0 },
     { type: "category", gridIndex: 1 },
