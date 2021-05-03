@@ -1,4 +1,4 @@
-export const sankeyGrid = {
+export const sankeyData = {
   columnDefs: [
     { headerName: "Make", field: "make" },
     { headerName: "Model", field: "model" },

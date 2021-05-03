@@ -33,7 +33,7 @@ import { parallelData } from "./GridOptions/parallelData"
 import { pictorialbarData } from "./GridOptions/pictorialbarData"
 import { pieData } from "./GridOptions/pieData"
 import { radarData } from "./GridOptions/radarData"
-import { sankeyGrid } from "./GridOptions/sankeyGrid"
+import { sankeyData } from "./GridOptions/sankeyData"
 import { scatterGrid } from "./GridOptions/scatterGrid"
 import { sunburstGrid } from "./GridOptions/sunburstGrid"
 
@@ -114,7 +114,7 @@ const ChartData = {
   Sankey: {
     Option: SankeyOption,
     Url: sankeyUrl,
-    Grid: sankeyGrid,
+    Grid: sankeyData,
     explanation: `흐름 다이어그램의 한 종류로서
     그 화살표의 너비로 흐름의 양을 비율적으로 보여준다.
     주로 어떤 프로세스에서 에너지, 연료, 비용의 움직임을 시각화하는 데에 사용된다.`,
