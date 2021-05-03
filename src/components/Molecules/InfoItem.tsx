@@ -5,11 +5,11 @@ import P from "../Atoms/P"
 
 interface Props {
   name: string
-  explanation: Object
+  explanation: string
 }
 
 const StyleInfoItem = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 `
 
 const InfoItem: React.FC<Props> = ({ name, explanation }) => {

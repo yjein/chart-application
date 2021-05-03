@@ -12,8 +12,7 @@ interface Prop {
   chartState: string
   chartOption: Object
   gridOption: Object
-  chartExplanation: Object
-  themeOption: Object
+  chartExplanation: string
   themeState: ThemeDataType
   setThemeState: React.Dispatch<React.SetStateAction<ThemeDataType>>
 }
@@ -35,7 +34,6 @@ export const ChartChart: React.FC<Prop> = ({
   chartOption,
   gridOption,
   chartExplanation,
-  themeOption,
   themeState,
   setThemeState,
 }) => {
@@ -47,7 +45,7 @@ export const ChartChart: React.FC<Prop> = ({
   return (
     <div>
       <ThemeButton setThemeState={setThemeState} />
-      <InfoItem name={chartState} explanation={chartExplanation} />
+      <InfoItem name={chartState + " Chart"} explanation={chartExplanation} />
       <GridToggle className={"ag-theme-fresh"}>
         <AgGridRender />
       </GridToggle>
@@ -60,7 +58,7 @@ export const ChartChart: React.FC<Prop> = ({
             padding: "0.5rem",
             height: "60vh",
           }}
-          theme={themeOption}
+          theme={ThemeData[themeState]}
         />
       </CreateChart>
     </div>

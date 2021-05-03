@@ -22,7 +22,6 @@ interface Prop {
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: max-content minmax(calc(100vw - 13.75rem), auto);
 `
 
 const Line = styled.div`
@@ -79,7 +78,6 @@ const ChartPage: React.FC<Prop> = ({
           chartOption={ChartData[chartState].Option}
           gridOption={ChartData[chartState].Grid}
           chartExplanation={ChartData[chartState].explanation}
-          themeOption={ThemeData[themeState]}
           themeState={themeState}
           setThemeState={setThemeState}
         />
