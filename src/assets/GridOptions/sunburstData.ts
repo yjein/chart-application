@@ -1,4 +1,4 @@
-export const sunburstGrid = {
+export const sunburstData = {
   columnDefs: [
     { headerName: "Make", field: "make" },
     { headerName: "Model", field: "model" },

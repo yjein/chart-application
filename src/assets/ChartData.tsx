@@ -35,7 +35,7 @@ import { pieData } from "./GridOptions/pieData"
 import { radarData } from "./GridOptions/radarData"
 import { sankeyData } from "./GridOptions/sankeyData"
 import { scatterData } from "./GridOptions/scatterData"
-import { sunburstGrid } from "./GridOptions/sunburstGrid"
+import { sunburstData } from "./GridOptions/sunburstData"
 
 const ChartData = {
   Bar: {
@@ -130,7 +130,7 @@ const ChartData = {
   Sunburst: {
     Option: SunburstOption,
     Url: sunburstUrl,
-    Grid: sunburstGrid,
+    Grid: sunburstData,
     explanation: `선버스트 차트는 계층 구조 데이터를 표시하는 데 적합하다.
     하나의 고리 또는 원이 계층 구조의 각 수준을 나타내며
     가장 안쪽에 있는 원이 계층 구조의 가장 높은 수준을 나타낸다.
