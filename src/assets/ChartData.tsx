@@ -26,7 +26,7 @@ import { SunburstOption } from "./ChartOptions/sunburstOption"
 
 import { barData } from "./GridOptions/barData"
 import { lineGrid } from "./GridOptions/lineGrid"
-import { candlestickGrid } from "./GridOptions/candlestickGrid"
+import { candlestickData } from "./GridOptions/candlestickData"
 import { gaugeGrid } from "./GridOptions/gaugeGrid"
 import { funnelGrid } from "./GridOptions/funnelGrid"
 import { parallelGrid } from "./GridOptions/parallelGrid"
@@ -57,7 +57,7 @@ const ChartData = {
   Candlestick: {
     Option: CandlestickOption,
     Url: candlestickUrl,
-    Grid: candlestickGrid,
+    Grid: candlestickData,
     explanation: `캔들스틱 차트 또는 봉차트는
     주식을 비롯한 유가증권과 파생상품,
     환율의 가격 움직임을 보여주는 금융 차트이다.
