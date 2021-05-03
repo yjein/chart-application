@@ -1,4 +1,4 @@
-export const funnelGrid = {
+export const funnelData = {
   columnDefs: [
     { headerName: "인식", field: "인식" },
     { headerName: "관심", field: "관심" },

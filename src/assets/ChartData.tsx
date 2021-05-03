@@ -28,7 +28,7 @@ import { barData } from "./GridOptions/barData"
 import { lineGrid } from "./GridOptions/lineGrid"
 import { candlestickData } from "./GridOptions/candlestickData"
 import { gaugeGrid } from "./GridOptions/gaugeGrid"
-import { funnelGrid } from "./GridOptions/funnelGrid"
+import { funnelData } from "./GridOptions/funnelData"
 import { parallelGrid } from "./GridOptions/parallelGrid"
 import { pictorialbarGrid } from "./GridOptions/pictorialbarGrid"
 import { pieGrid } from "./GridOptions/pieGrid"
@@ -75,7 +75,7 @@ const ChartData = {
   Funnel: {
     Option: FunnelOption,
     Url: funnelUrl,
-    Grid: funnelGrid,
+    Grid: funnelData,
     explanation: `깔때기 형 차트는 판매 프로세스의 단계를 나타내고
     각 단계의 잠재적 수익을 나타내는 데 주로 사용되는 차트 유형이다.
     이 유형의 차트는 조직의 영업 프로세스에서 잠재적인 문제영역을 식별하는 데 유용 할 수 있다.`,
