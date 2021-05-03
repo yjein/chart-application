@@ -1,4 +1,4 @@
-import { barData } from "../assets/GridOptions/barData"
+import { barData } from "../assets/ChartDatas/barData"
 
 interface type {
   columnDefs: {
