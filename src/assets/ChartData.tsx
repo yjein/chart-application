@@ -34,7 +34,7 @@ import { pictorialbarData } from "./GridOptions/pictorialbarData"
 import { pieData } from "./GridOptions/pieData"
 import { radarData } from "./GridOptions/radarData"
 import { sankeyData } from "./GridOptions/sankeyData"
-import { scatterGrid } from "./GridOptions/scatterGrid"
+import { scatterData } from "./GridOptions/scatterData"
 import { sunburstGrid } from "./GridOptions/sunburstGrid"
 
 const ChartData = {
@@ -122,7 +122,7 @@ const ChartData = {
   Scatter: {
     Option: ScatterOption,
     Url: scatterUrl,
-    Grid: scatterGrid,
+    Grid: scatterData,
     explanation: `Scatter Chart는 2개의 연속형 변수 간의 관계를 보기 위하여
     직교좌표의 평면에 관측점을 직어 만든 통계 그래프이다.
     이를 통해 두 변수 사이의 관계를 알 수 있다.`,

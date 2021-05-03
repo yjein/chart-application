@@ -1,4 +1,4 @@
-export const scatterGrid = {
+export const scatterData = {
   columnDefs: [
     { headerName: "Make", field: "make" },
     { headerName: "Model", field: "model" },
