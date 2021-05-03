@@ -27,7 +27,7 @@ import { SunburstOption } from "./ChartOptions/sunburstOption"
 import { barData } from "./GridOptions/barData"
 import { lineGrid } from "./GridOptions/lineGrid"
 import { candlestickData } from "./GridOptions/candlestickData"
-import { gaugeGrid } from "./GridOptions/gaugeGrid"
+import { gaugeData } from "./GridOptions/gaugeData"
 import { funnelData } from "./GridOptions/funnelData"
 import { parallelGrid } from "./GridOptions/parallelGrid"
 import { pictorialbarGrid } from "./GridOptions/pictorialbarGrid"
@@ -67,7 +67,7 @@ const ChartData = {
   Gauge: {
     Option: GaugeOption,
     Url: gaugeUrl,
-    Grid: gaugeGrid,
+    Grid: gaugeData,
     explanation: `과학 및 공학에서 게이지는 측정을하거나 특정 치수 정보를 표시하는 데 사용되는 장치이다.
     본래의 목적대로 특정 치수 정보를 표시하거나
     특정 목표의 달성율을 표현하는 용도로 응용해서 사용할 수 있다.`,

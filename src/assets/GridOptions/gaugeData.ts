@@ -1,4 +1,4 @@
-export const gaugeGrid = {
+export const gaugeData = {
   columnDefs: [
     { headerName: "Level", field: "level" },
     { headerName: "Percentage", field: "%" },
