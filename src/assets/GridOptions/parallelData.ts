@@ -1,4 +1,4 @@
-export const parallelGrid = {
+export const parallelData = {
   columnDefs: [
     { headerName: "Price", field: "price" },
     { headerName: "Net Weight", field: "netweight" },

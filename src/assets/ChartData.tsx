@@ -29,7 +29,7 @@ import { lineData } from "./GridOptions/lineData"
 import { candlestickData } from "./GridOptions/candlestickData"
 import { gaugeData } from "./GridOptions/gaugeData"
 import { funnelData } from "./GridOptions/funnelData"
-import { parallelGrid } from "./GridOptions/parallelGrid"
+import { parallelData } from "./GridOptions/parallelData"
 import { pictorialbarGrid } from "./GridOptions/pictorialbarGrid"
 import { pieGrid } from "./GridOptions/pieGrid"
 import { radarGrid } from "./GridOptions/radarGrid"
@@ -83,7 +83,7 @@ const ChartData = {
   Parallel: {
     Option: ParallelOption,
     Url: parallelUrl,
-    Grid: parallelGrid,
+    Grid: parallelData,
     explanation: `평행차트는 고차원 데이터 세트를 시각화하고 분석하는 일반적인 방법이다.
     이 시각화는 축이 특정 시점에 대응하지 않기 때문에
     자연 순서가 없는 데이터에 적용된다는 점을 제외하고는
