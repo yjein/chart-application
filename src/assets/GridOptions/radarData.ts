@@ -1,4 +1,4 @@
-export const radarGrid = {
+export const radarData = {
   columnDefs: [
     { headerName: "비교", field: "비교" },
     { headerName: "매상", field: "매상" },

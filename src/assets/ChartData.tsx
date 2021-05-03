@@ -32,7 +32,7 @@ import { funnelData } from "./GridOptions/funnelData"
 import { parallelData } from "./GridOptions/parallelData"
 import { pictorialbarData } from "./GridOptions/pictorialbarData"
 import { pieData } from "./GridOptions/pieData"
-import { radarGrid } from "./GridOptions/radarGrid"
+import { radarData } from "./GridOptions/radarData"
 import { sankeyGrid } from "./GridOptions/sankeyGrid"
 import { scatterGrid } from "./GridOptions/scatterGrid"
 import { sunburstGrid } from "./GridOptions/sunburstGrid"
@@ -105,7 +105,7 @@ const ChartData = {
   Radar: {
     Option: RadarOption,
     Url: radarUrl,
-    Grid: radarGrid,
+    Grid: radarData,
     explanation: `어떤 측정 목표에 대한 평가항목이 여러 개일 때 항목 수에 따라 원을 같은 간격으로 나누고,
     중심으로부터 일정 간격으로 동심으로 척도를 재는 칸을 나누어
     각 평가항목의 정량화된 점수에 따라 그 위치에 점을 찍고
