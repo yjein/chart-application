@@ -37,6 +37,16 @@ import { sankeyData } from "./ChartDatas/sankeyData"
 import { scatterData } from "./ChartDatas/scatterData"
 import { sunburstData } from "./ChartDatas/sunburstData"
 
+export interface type {
+  columnDefs: {
+    headerName: string
+    field: string
+  }[]
+  rowData: {
+    [key: string]: string
+  }[]
+}
+
 const ChartData = {
   Bar: {
     Option: BarOption,

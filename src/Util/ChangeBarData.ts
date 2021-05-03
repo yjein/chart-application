@@ -1,14 +1,5 @@
 import { barData } from "../assets/ChartDatas/barData"
-
-interface type {
-  columnDefs: {
-    headerName: string
-    field: string
-  }[]
-  rowData: {
-    [key: string]: string
-  }[]
-}
+import { type } from "../assets/ChartData"
 
 const ChangeBarData = (input: type) => {
   const dataset = {
