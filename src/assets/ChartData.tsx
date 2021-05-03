@@ -25,7 +25,7 @@ import { ScatterOption } from "./ChartOptions/scatterOption"
 import { SunburstOption } from "./ChartOptions/sunburstOption"
 
 import { barData } from "./GridOptions/barData"
-import { lineGrid } from "./GridOptions/lineGrid"
+import { lineData } from "./GridOptions/lineData"
 import { candlestickData } from "./GridOptions/candlestickData"
 import { gaugeData } from "./GridOptions/gaugeData"
 import { funnelData } from "./GridOptions/funnelData"
@@ -49,7 +49,7 @@ const ChartData = {
   Line: {
     Option: LineOption,
     Url: lineUrl,
-    Grid: lineGrid,
+    Grid: lineData,
     explanation: `Line Chart는 수량을 점으로 표시하고 그 점들을 선분으로 이어 그린 그래프를 말한다.
     시간에 따라 뭔가가 지속적으로 변화하는 것을 기록할때 굉장히 유용하다.
     조사하지 않은 중간의 값도 대략 예측할 수 있다는 장점이 있다.`,

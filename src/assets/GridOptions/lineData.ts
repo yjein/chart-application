@@ -1,4 +1,4 @@
-export const lineGrid = {
+export const lineData = {
   columnDefs: [
     { headerName: "Make", field: "make" },
     { headerName: "Model", field: "model" },
