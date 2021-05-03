@@ -1,4 +1,4 @@
-export const pieGrid = {
+export const pieData = {
   columnDefs: [
     { headerName: "찬성", field: "찬성" },
     { headerName: "반대", field: "반대" },

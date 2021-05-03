@@ -31,7 +31,7 @@ import { gaugeData } from "./GridOptions/gaugeData"
 import { funnelData } from "./GridOptions/funnelData"
 import { parallelData } from "./GridOptions/parallelData"
 import { pictorialbarData } from "./GridOptions/pictorialbarData"
-import { pieGrid } from "./GridOptions/pieGrid"
+import { pieData } from "./GridOptions/pieData"
 import { radarGrid } from "./GridOptions/radarGrid"
 import { sankeyGrid } from "./GridOptions/sankeyGrid"
 import { scatterGrid } from "./GridOptions/scatterGrid"
@@ -99,7 +99,7 @@ const ChartData = {
   Pie: {
     Option: PieOption,
     Url: pieUrl,
-    Grid: pieGrid,
+    Grid: pieData,
     explanation: ``,
   },
   Radar: {
