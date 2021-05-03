@@ -1,3 +1,5 @@
+import { barGrid } from "../../Util/barGrid"
+
 export const BarOption = {
   tooltip: {},
   toolbox: {
@@ -9,14 +11,7 @@ export const BarOption = {
     },
   },
   legend: {},
-  dataset: {
-    source: [
-      ["product", "2018", "2019", "2020", "2021"],
-      ["제품A", 41, 30, 65, 53],
-      ["제품B", 86, 92, 85, 83],
-      ["제품C", 24, 67, 79, 86],
-    ],
-  },
+  dataset: barGrid,
   xAxis: [
     { type: "category", gridIndex: 0 },
     { type: "category", gridIndex: 1 },

@@ -24,7 +24,7 @@ import { SankeyOption } from "./ChartOptions/sankeyOption"
 import { ScatterOption } from "./ChartOptions/scatterOption"
 import { SunburstOption } from "./ChartOptions/sunburstOption"
 
-import { barGrid } from "./GridOptions/barGrid"
+import { barData } from "./GridOptions/barData"
 import { lineGrid } from "./GridOptions/lineGrid"
 import { candlestickGrid } from "./GridOptions/candlestickGrid"
 import { gaugeGrid } from "./GridOptions/gaugeGrid"
@@ -41,7 +41,7 @@ const ChartData = {
   Bar: {
     Option: BarOption,
     Url: barUrl,
-    Grid: barGrid,
+    Grid: barData,
     explanation: `Bar Chart는 표현 값에 비례하여 높이와 길이를 지는 직사각형 막대로 범주형 데이터를 표현하는 차트이다.
     막대는 수직이나 수평으로 그릴 수 있다.
     히스토그램은 공업 분야에서 품질 관리(QC)를 위한 도구 중 하나이다.`,

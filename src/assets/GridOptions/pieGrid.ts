@@ -1,27 +1,9 @@
-import { PieOption } from "../ChartOptions/pieOption"
-
-export const pieGrid = () => {
-  const pieGrid = {
-    columnDefs: [
-      { headerName: "", field: "" },
-      { headerName: "", field: "" },
-      { headerName: "", field: "" },
-      { headerName: "", field: "" },
-    ],
-    rowData: [{ 찬성: "", 반대: "", 모르겠다: "", 무응답: "" }],
-  }
-
-  PieOption.series.map((item) => {
-    item.data.map((data) => {
-      pieGrid.columnDefs.map((column) => {
-        column.headerName = data.name
-        column.field = data.name
-      })
-      Object.keys(pieGrid.rowData).map((item) => {
-        item = String(data.value)
-      })
-    })
-  })
-
-  return pieGrid
+export const pieGrid = {
+  columnDefs: [
+    { headerName: "찬성", field: "찬성" },
+    { headerName: "반대", field: "반대" },
+    { headerName: "모르겠다", field: "모르겠다" },
+    { headerName: "무응답", field: "무응답" },
+  ],
+  rowData: [{ 찬성: 30, 반대: "20", 모르겠다: "15", 무응답: "10" }],
 }
