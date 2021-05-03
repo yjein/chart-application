@@ -1,4 +1,4 @@
-export const pictorialbarGrid = {
+export const pictorialbarData = {
   columnDefs: [
     { headerName: "순록", field: "순록" },
     { headerName: "로켓", field: "로켓" },

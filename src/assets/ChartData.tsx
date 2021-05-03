@@ -30,7 +30,7 @@ import { candlestickData } from "./GridOptions/candlestickData"
 import { gaugeData } from "./GridOptions/gaugeData"
 import { funnelData } from "./GridOptions/funnelData"
 import { parallelData } from "./GridOptions/parallelData"
-import { pictorialbarGrid } from "./GridOptions/pictorialbarGrid"
+import { pictorialbarData } from "./GridOptions/pictorialbarData"
 import { pieGrid } from "./GridOptions/pieGrid"
 import { radarGrid } from "./GridOptions/radarGrid"
 import { sankeyGrid } from "./GridOptions/sankeyGrid"
@@ -92,7 +92,7 @@ const ChartData = {
   Pictorialbar: {
     Option: PictorialBarOption,
     Url: pictorialbarUrl,
-    Grid: pictorialbarGrid,
+    Grid: pictorialbarData,
     explanation: `그림 막대 차트는 디자이너가 인포그래픽에서 사용하는 막대 차트를 시각적으로 표현한 것이다.
     개체 길이를 늘리거나 크기를 조정하여 막대 대신 아이콘 또는 그림을 사용한다.`,
   },
