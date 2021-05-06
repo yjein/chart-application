@@ -1,9 +1,3 @@
-import {
-  ChangeLineRowData,
-  ChangeLineColumnData,
-} from "../../Util/ChangeLineData"
-import { lineData } from "../ChartDatas/lineData"
-
 export const LineOption = {
   title: {
     left: "center",
@@ -20,14 +14,22 @@ export const LineOption = {
   },
   xAxis: {
     type: "category",
-    data: ChangeLineRowData(lineData),
+    data: [
+      "월요일",
+      "화요일",
+      "수요일",
+      "목요일",
+      "금요일",
+      "토요일",
+      "일요일",
+    ],
   },
   yAxis: {
     type: "value",
   },
   series: [
     {
-      data: ChangeLineColumnData(lineData),
+      data: [282, 347, 406, 451, 557, 543, 443],
       type: "line",
       smooth: true,
       lineStyle: {
