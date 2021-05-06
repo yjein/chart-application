@@ -1,5 +1,8 @@
-import { rowData, columnData } from "../../Util/ChangeLineData"
-
+import {
+  ChangeLineRowData,
+  ChangeLineColumnData,
+} from "../../Util/ChangeLineData"
+import { lineData } from "../ChartDatas/lineData"
 
 export const LineOption = {
   title: {
@@ -17,14 +20,14 @@ export const LineOption = {
   },
   xAxis: {
     type: "category",
-    data: rowData,
+    data: ChangeLineRowData(lineData),
   },
   yAxis: {
     type: "value",
   },
   series: [
     {
-      data: columnData,
+      data: ChangeLineColumnData(lineData),
       type: "line",
       smooth: true,
       lineStyle: {
