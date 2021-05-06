@@ -52,7 +52,7 @@ const ChartData = {
     Option: BarOption,
     Url: barUrl,
     Grid: barData,
-    explanation: `Bar Chart는 표현 값에 비례하여 높이와 길이를 지는 직사각형 막대로 범주형 데이터를 표현하는 차트이다.
+    explanation: `바 차트는 표현 값에 비례하여 높이와 길이를 지는 직사각형 막대로 범주형 데이터를 표현하는 차트이다.
     막대는 수직이나 수평으로 그릴 수 있다.
     히스토그램은 공업 분야에서 품질 관리(QC)를 위한 도구 중 하나이다.`,
   },
@@ -60,7 +60,7 @@ const ChartData = {
     Option: LineOption,
     Url: lineUrl,
     Grid: lineData,
-    explanation: `Line Chart는 수량을 점으로 표시하고 그 점들을 선분으로 이어 그린 그래프를 말한다.
+    explanation: `라인 차트는 수량을 점으로 표시하고 그 점들을 선분으로 이어 그린 그래프를 말한다.
     시간에 따라 뭔가가 지속적으로 변화하는 것을 기록할때 굉장히 유용하다.
     조사하지 않은 중간의 값도 대략 예측할 수 있다는 장점이 있다.`,
   },
@@ -110,7 +110,9 @@ const ChartData = {
     Option: PieOption,
     Url: pieUrl,
     Grid: pieData,
-    explanation: ``,
+    explanation: `파이 차트는 전체에 대한 각 부분의 비율을 부채꼴 모양으로 나타낸 그래프이다.
+    각 부채꼴의 중심각이 전체에서 차지하는 비율을 나타내며,
+    비율을 한눈에 볼 수 있다는 장점이 있다.`,
   },
   Radar: {
     Option: RadarOption,
@@ -133,7 +135,7 @@ const ChartData = {
     Option: ScatterOption,
     Url: scatterUrl,
     Grid: scatterData,
-    explanation: `Scatter Chart는 2개의 연속형 변수 간의 관계를 보기 위하여
+    explanation: `산점도는 2개의 연속형 변수 간의 관계를 보기 위하여
     직교좌표의 평면에 관측점을 직어 만든 통계 그래프이다.
     이를 통해 두 변수 사이의 관계를 알 수 있다.`,
   },
