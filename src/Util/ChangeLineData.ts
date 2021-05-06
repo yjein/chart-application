@@ -1,17 +1,51 @@
 
-export const rowData: Array<string> = [];
-export const columnData: Array<number> = [];
+export const ChangeLineRowData = (lineData: {
+  columnDefs: {
+    headerName: string
+    field: string
+  }[]
+  rowData: {
+    mon: number
+    tue: number
+    wed: number
+    thu: number
+    fri: number
+    sat: number
+    sun: number
+  }[]
+}) => {
+  const rowData: Array<string> = []
 
-const ChangeLineData = () => {
-  lineData.columnDefs.map((v) => {
-    rowData.push(v.headerName);
+  lineData.columnDefs.forEach((v) => {
+    rowData.push(v.headerName)
+  })
+
+  return rowData
+}
+export const ChangeLineColumnData = (lineData: {
+  columnDefs: {
+    headerName: string
+    field: string
+  }[]
+  rowData: {
+    mon: number
+    tue: number
+    wed: number
+    thu: number
+    fri: number
+    sat: number
+    sun: number
+  }[]
+}) => {
+  const columnData: Array<number> = []
+
+  lineData.columnDefs.forEach((v) => {
     lineData.rowData.forEach((va) => {
-      const colValues = Object.entries(va).find(([key]) => key === v.field);
-      if (!colValues) return;
-      columnData.push(colValues[1]);
-    });
-  });
-};
+      const colValues = Object.entries(va).find(([key]) => key === v.field)
+      if (!colValues) return
+      columnData.push(colValues[1])
+    })
+  })
 
-ChangeLineData();
-
+  return columnData
+}
