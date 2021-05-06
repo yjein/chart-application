@@ -1,4 +1,3 @@
-import { lineData } from "../assets/ChartDatas/lineData"
 
 export const rowData: Array<string> = [];
 export const columnData: Array<number> = [];
