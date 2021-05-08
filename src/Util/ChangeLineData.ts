@@ -1,17 +1,10 @@
-
 export const ChangeLineRowData = (lineData: {
   columnDefs: {
     headerName: string
     field: string
   }[]
   rowData: {
-    mon: number
-    tue: number
-    wed: number
-    thu: number
-    fri: number
-    sat: number
-    sun: number
+    [key:string]: number
   }[]
 }) => {
   const rowData: Array<string> = []
@@ -22,19 +15,14 @@ export const ChangeLineRowData = (lineData: {
 
   return rowData
 }
+
 export const ChangeLineColumnData = (lineData: {
   columnDefs: {
     headerName: string
     field: string
   }[]
   rowData: {
-    mon: number
-    tue: number
-    wed: number
-    thu: number
-    fri: number
-    sat: number
-    sun: number
+    [key:string]: number
   }[]
 }) => {
   const columnData: Array<number> = []
